@@ -61,6 +61,7 @@ namespace ChapeauDAL
                          "Procedure: " + ex.Errors[i].Procedure + "\n"); 
                 }
                 Debug.WriteLine(errorMessages);
+                throw ex;
             }
             finally
             {
@@ -98,6 +99,7 @@ namespace ChapeauDAL
                          "Procedure: " + ex.Errors[i].Procedure + "\n");
                 }
                 Debug.WriteLine(errorMessages);
+                throw ex;
             }
             finally
             {
