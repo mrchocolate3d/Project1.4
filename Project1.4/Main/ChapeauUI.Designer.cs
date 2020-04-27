@@ -1,6 +1,6 @@
-﻿namespace Main
+﻿namespace ChapeauUI
 {
-    partial class Form1
+    partial class ChapeauUI
     {
         /// <summary>
         /// Required designer variable.
