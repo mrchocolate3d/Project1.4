@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChapeauDAL\ChapeauDAL.csproj">
+      <Project>{3e6b0cbd-f482-40c8-b08b-7463d7474af7}</Project>
+      <Name>ChapeauDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChapeauModel\ChapeauModel.csproj">
+      <Project>{dc20c01d-0a7e-42f8-b7d9-71bc78b4f2d3}</Project>
+      <Name>ChapeauModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
