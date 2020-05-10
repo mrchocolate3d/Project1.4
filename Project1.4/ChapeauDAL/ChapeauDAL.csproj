@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Base.cs" />
 =======
+=======
+>>>>>>> parent of 18db09e... DataAccessLayer Configured
     <Compile Include="Program.cs" />
 >>>>>>> parent of 18db09e... DataAccessLayer Configured
     <Compile Include="Properties\AssemblyInfo.cs" />
