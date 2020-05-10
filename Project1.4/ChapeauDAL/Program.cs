@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChapeauLogic
+namespace ChapeauDAL
 {
-    class ChapeauDAL
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
