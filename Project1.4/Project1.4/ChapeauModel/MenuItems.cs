@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChapeauModel
 {
-    class MenuItems
+    public class MenuItems
     {
-        private int OrderId;
-        private int quantity;
-        private int price;
-        private string comments;
+        public int OrderId;
+        public int quantity;
+        public int price;
+        public string comments;
 
         public MenuItems(int orderid,int quantity,int price,string comments)
         {
