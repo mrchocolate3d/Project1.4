@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChapeauDAL
 {
-    class StockItemsDAO
+    public class StockItemsDAO
     {
         //...
     }
