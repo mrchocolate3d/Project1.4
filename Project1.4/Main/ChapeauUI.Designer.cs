@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.roundButton1 = new ChapeauUI.RoundButton();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -39,11 +40,21 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // roundButton1
+            // 
+            this.roundButton1.Location = new System.Drawing.Point(101, 90);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(75, 23);
+            this.roundButton1.TabIndex = 1;
+            this.roundButton1.Text = "roundButton1";
+            this.roundButton1.UseVisualStyleBackColor = true;
+            // 
             // ChapeauUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ChapeauUI";
@@ -56,6 +67,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private ChapeauUI.RoundButton roundButton1;
     }
 }
 
