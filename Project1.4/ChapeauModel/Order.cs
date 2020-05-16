@@ -9,11 +9,13 @@ namespace ChapeauModel
     public class Order
     {
         public int OrderID;
-        public int TableID;
+        public int TableNumber;
         public int EmployeeID;
+        public string EmployeeName;
         public int OrderDate;
-        public string Feedback;
-        public int PaymentID;
+        public string Item;
+        public int Amount;
+        public string OrderStatus;
 
         public void CreateOrder()
         {
