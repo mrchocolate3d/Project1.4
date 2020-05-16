@@ -80,73 +80,70 @@ namespace ChapeauUI
 
         private void checkPasswod(string input)
         {
-            if(count == 4)
+            count++;
+            if(textBox1.TextLength == 4)
             {
+                count = 0;
                 password = int.Parse(textBox1.Text);
                 if(CheckLogin(password) == true)
                 {
-
+                    
+                    this.Hide();
+                    HomePage home = new HomePage();
+                    home.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
-
+                    MessageBox.Show("Incorrect Password");
                 }
 
             }
             if(input == "1")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if(input == "2")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if(input == "3")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "4")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "5")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "6")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "7")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "8")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "9")
             {
                 textBox1.AppendText(input);
-                count++;
             }
             if (input == "0")
             {
                 textBox1.AppendText(input);
-                count++;
                 
             }
             if (input == "delete")
             {
                 textBox1.Text = textBox1.Text.Substring(0, (textBox1.TextLength - 1));
+                count--;
             }
         }
 
