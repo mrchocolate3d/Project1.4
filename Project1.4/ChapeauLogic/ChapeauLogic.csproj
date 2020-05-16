@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChapeauDAL\ChapeauDAL.csproj">
+      <Project>{61f9c8b0-5e4f-40e5-89da-ee56ee91ac48}</Project>
+      <Name>ChapeauDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChapeauModel\ChapeauModel.csproj">
       <Project>{dc20c01d-0a7e-42f8-b7d9-71bc78b4f2d3}</Project>
       <Name>ChapeauModel</Name>
