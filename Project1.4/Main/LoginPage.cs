@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ChapeauUI
 {
-    public partial class ChapeauUI : Form
+    public partial class LoginPage : Form
     {
-        public ChapeauUI()
+        public LoginPage()
         {
             InitializeComponent();
         }
