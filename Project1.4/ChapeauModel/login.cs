@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChapeauModel
 {
-    class login
+    public class login
     {
         public int employeeID { get; set; }
         public int loginCode { get; set; }
         
     }
+
+
 }
