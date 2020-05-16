@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.btn_0 = new ChapeauUI.RoundButton();
             this.btn_9 = new ChapeauUI.RoundButton();
             this.btn_8 = new ChapeauUI.RoundButton();
@@ -39,15 +40,28 @@
             this.btn_3 = new ChapeauUI.RoundButton();
             this.btn_2 = new ChapeauUI.RoundButton();
             this.btn_1 = new ChapeauUI.RoundButton();
-            this.btn_delete = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 138);
+            this.textBox1.Location = new System.Drawing.Point(139, 166);
+            this.textBox1.MaxLength = 4;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 10;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Location = new System.Drawing.Point(237, 439);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(54, 23);
+            this.btn_delete.TabIndex = 11;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_0
             // 
@@ -169,23 +183,22 @@
             this.btn_1.UseVisualStyleBackColor = true;
             this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
-            // btn_delete
+            // label1
             // 
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Location = new System.Drawing.Point(237, 439);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(54, 23);
-            this.btn_delete.TabIndex = 11;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = true;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(92, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(199, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Enter your Employee ID";
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 527);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_0);
@@ -219,5 +232,6 @@
         private RoundButton btn_0;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Label label1;
     }
 }

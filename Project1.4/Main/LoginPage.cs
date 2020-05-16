@@ -14,7 +14,7 @@ namespace ChapeauUI
     public partial class LoginPage : Form
     {
         private int password;
-        private int count = 0;
+        public static int maxValue = 4;
 
         public LoginPage()
         {
@@ -80,25 +80,6 @@ namespace ChapeauUI
 
         private void checkPasswod(string input)
         {
-            count++;
-            if(textBox1.TextLength == 4)
-            {
-                count = 0;
-                password = int.Parse(textBox1.Text);
-                if(CheckLogin(password) == true)
-                {
-                    
-                    this.Hide();
-                    HomePage home = new HomePage();
-                    home.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Incorrect Password");
-                }
-
-            }
             if(input == "1")
             {
                 textBox1.AppendText(input);
@@ -142,8 +123,29 @@ namespace ChapeauUI
             }
             if (input == "delete")
             {
-                textBox1.Text = textBox1.Text.Substring(0, (textBox1.TextLength - 1));
-                count--;
+                textBox1.Text = textBox1.Text.Substring(0, (textBox1.TextLength - 1));  
+            }
+            PinCheck();
+        }
+
+        private void PinCheck()
+        {
+            if (textBox1.TextLength == maxValue)
+            {
+                password = int.Parse(textBox1.Text);
+                if (CheckLogin(password) == true)
+                {
+
+                    this.Hide();
+                    HomePage home = new HomePage();
+                    home.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect Password");
+                }
+
             }
         }
 
