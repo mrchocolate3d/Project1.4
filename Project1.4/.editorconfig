@@ -1,4 +1,7 @@
 ﻿[*.cs]
 
 # CS5001: Program does not contain a static 'Main' method suitable for an entry point
-dotnet_diagnostic.CS5001.severity = suggestion
+dotnet_diagnostic.CS5001.severity = none
+
+# CS0006: Metadata file 'C:\Users\Seyi\Documents\INHOLLAND_PROJECT_1.4\Project1.4\Project1.4\ChapeauModel\bin\Debug\ChapeauModel.exe' could not be found
+dotnet_diagnostic.CS0006.severity = none
