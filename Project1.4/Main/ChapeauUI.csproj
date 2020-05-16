@@ -55,6 +55,9 @@
     <Compile Include="ChapeauUI.Designer.cs">
       <DependentUpon>ChapeauUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ChapeauUI.resx">
