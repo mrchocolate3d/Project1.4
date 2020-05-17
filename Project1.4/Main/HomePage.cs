@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapeauModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace ChapeauUI
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void btn_OrderView_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderView order = new OrderView();
+            order.ShowDialog();
+            this.Close();
         }
     }
 }
