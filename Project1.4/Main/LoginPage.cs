@@ -135,7 +135,6 @@ namespace ChapeauUI
                 password = int.Parse(textBox1.Text);
                 if (CheckLogin(password) == true)
                 {
-
                     this.Hide();
                     HomePage home = new HomePage();
                     home.ShowDialog();
@@ -145,7 +144,6 @@ namespace ChapeauUI
                 {
                     MessageBox.Show("Incorrect Password");
                 }
-
             }
         }
 

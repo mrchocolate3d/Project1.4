@@ -22,5 +22,16 @@ namespace ChapeauUI.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=den1.mssql7.gear.host;Initial Catalog=dbchapeau10;Persist Security In" +
+            "fo=True;User ID=dbchapeau10")]
+        public string dbchapeau10ConnectionString {
+            get {
+                return ((string)(this["dbchapeau10ConnectionString"]));
+            }
+        }
     }
 }
