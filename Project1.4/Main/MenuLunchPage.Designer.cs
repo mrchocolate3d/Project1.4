@@ -109,8 +109,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.TotalPriceCalc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Navbar
@@ -819,15 +819,6 @@
             this.panel1.Size = new System.Drawing.Size(2077, 100);
             this.panel1.TabIndex = 83;
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(1540, 1592);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(190, 45);
-            this.label43.TabIndex = 84;
-            this.label43.Text = "TOTAL PRICE";
-            // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(1763, 1587);
@@ -835,14 +826,24 @@
             this.textBox13.Size = new System.Drawing.Size(196, 50);
             this.textBox13.TabIndex = 85;
             // 
+            // TotalPriceCalc
+            // 
+            this.TotalPriceCalc.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.TotalPriceCalc.Location = new System.Drawing.Point(1369, 1580);
+            this.TotalPriceCalc.Name = "TotalPriceCalc";
+            this.TotalPriceCalc.Size = new System.Drawing.Size(372, 64);
+            this.TotalPriceCalc.TabIndex = 86;
+            this.TotalPriceCalc.Text = "Calculate Total Price";
+            this.TotalPriceCalc.UseVisualStyleBackColor = false;
+            // 
             // MenuLunchPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(2077, 1759);
+            this.Controls.Add(this.TotalPriceCalc);
             this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.label43);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.button17);
@@ -1016,7 +1017,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button TotalPriceCalc;
     }
 }
