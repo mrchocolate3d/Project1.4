@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ChapeauUI
 {
-    public partial class OrderView : Form
+    public partial class ThankYouNote : Form
     {
-        public OrderView()
+        public ThankYouNote()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Reciept reciept = new Reciept();
-            reciept.Show();
         }
     }
 }
