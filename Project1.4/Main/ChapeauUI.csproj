@@ -69,6 +69,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbchapeau10DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbchapeau10DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,12 +85,6 @@
     </Compile>
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuLunchPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuLunchPage.Designer.cs">
-      <DependentUpon>MenuLunchPage.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderView.cs">
       <SubType>Form</SubType>
@@ -104,12 +103,6 @@
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuLunchPage.resx">
-      <DependentUpon>MenuLunchPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrderView.resx">
-      <DependentUpon>OrderView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -122,6 +115,17 @@
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
+    </None>
+    <None Include="dbchapeau10DataSet.xsc">
+      <DependentUpon>dbchapeau10DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbchapeau10DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbchapeau10DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbchapeau10DataSet.xss">
+      <DependentUpon>dbchapeau10DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
