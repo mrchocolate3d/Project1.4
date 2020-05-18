@@ -107,6 +107,9 @@
     <EmbeddedResource Include="MenuLunchPage.resx">
       <DependentUpon>MenuLunchPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderView.resx">
+      <DependentUpon>OrderView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
