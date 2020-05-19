@@ -21,8 +21,8 @@ namespace ChapeauUI
         private void btn_OrderView_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuLunchPage menu = new MenuLunchPage();
-            menu.ShowDialog();
+            MenuStartPage menustart = new MenuStartPage();
+            menustart.ShowDialog();
             this.Close();
         }
     }
