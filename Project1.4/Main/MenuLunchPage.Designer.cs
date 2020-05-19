@@ -114,7 +114,7 @@
             // 
             // Navbar2
             // 
-            this.Navbar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(191)))), ((int)(((byte)(143)))));
+            this.Navbar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.Navbar2.Controls.Add(this.label43);
             this.Navbar2.Controls.Add(this.btn_next_to_dinner);
             this.Navbar2.Controls.Add(this.btn_back_to_start);
@@ -167,7 +167,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(191)))), ((int)(((byte)(143)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.panel2.Controls.Add(this.btn_L_dinner);
             this.panel2.Controls.Add(this.btn_L_drinks);
             this.panel2.Controls.Add(this.btn_L_lunch);

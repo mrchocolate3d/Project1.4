@@ -61,5 +61,12 @@ namespace ChapeauUI
         {
 
         }
+
+        private void Tot_Calc_Dinner_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }

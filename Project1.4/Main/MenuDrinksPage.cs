@@ -49,6 +49,12 @@ namespace ChapeauUI
             this.Close();
         }
 
-        
+        private void btn_back_toDR_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuLunchPage menu = new MenuLunchPage();
+            menu.ShowDialog();
+            this.Close();
+        }
     }
 }
