@@ -81,11 +81,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(808, 47);
+            this.label1.Location = new System.Drawing.Point(721, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 128);
+            this.label1.Size = new System.Drawing.Size(521, 128);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Menu";
+            this.label1.Text = "Menu Start";
             // 
             // button2
             // 
@@ -123,13 +123,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuStartPage";
             this.Text = "MenuStartPage";
             this.panel1.ResumeLayout(false);

@@ -32,5 +32,34 @@ namespace ChapeauUI
             menu.ShowDialog();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuDrinksPage menu = new MenuDrinksPage();
+            menu.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuLunchPage menulunch = new MenuLunchPage();
+            menulunch.ShowDialog();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuStartPage menustart = new MenuStartPage();
+            menustart.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_dinner_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
