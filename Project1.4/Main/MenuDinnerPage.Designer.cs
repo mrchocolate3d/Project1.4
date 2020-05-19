@@ -33,11 +33,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_lunch = new System.Windows.Forms.Button();
-            this.btn_drinks = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.btn_dinner = new System.Windows.Forms.Button();
+            this.btn_drinks = new System.Windows.Forms.Button();
+            this.btn_lunch = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,9 +94,6 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.Tot_Calc_Dinner = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
@@ -133,7 +133,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(191)))), ((int)(((byte)(143)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.logo);
             this.panel3.Controls.Add(this.btn_dinner);
@@ -145,17 +145,40 @@
             this.panel3.Size = new System.Drawing.Size(389, 1986);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
+            // button7
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(191)))), ((int)(((byte)(143)))));
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(389, 46);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1471, 122);
-            this.panel4.TabIndex = 4;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
+            this.button7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+            this.button7.ForeColor = System.Drawing.SystemColors.Window;
+            this.button7.Location = new System.Drawing.Point(-6, 265);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(399, 151);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "MENU START";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // btn_dinner
+            // 
+            this.btn_dinner.Font = new System.Drawing.Font("Segoe UI Black", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dinner.Location = new System.Drawing.Point(31, 713);
+            this.btn_dinner.Name = "btn_dinner";
+            this.btn_dinner.Size = new System.Drawing.Size(327, 119);
+            this.btn_dinner.TabIndex = 5;
+            this.btn_dinner.Text = "Dinner";
+            this.btn_dinner.UseVisualStyleBackColor = true;
+            this.btn_dinner.Click += new System.EventHandler(this.btn_dinner_Click);
+            // 
+            // btn_drinks
+            // 
+            this.btn_drinks.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_drinks.Location = new System.Drawing.Point(31, 935);
+            this.btn_drinks.Name = "btn_drinks";
+            this.btn_drinks.Size = new System.Drawing.Size(327, 110);
+            this.btn_drinks.TabIndex = 5;
+            this.btn_drinks.Text = "Drinks";
+            this.btn_drinks.UseVisualStyleBackColor = true;
+            this.btn_drinks.Click += new System.EventHandler(this.btn_drinks_Click);
             // 
             // btn_lunch
             // 
@@ -168,27 +191,17 @@
             this.btn_lunch.UseVisualStyleBackColor = true;
             this.btn_lunch.Click += new System.EventHandler(this.btn_lunch_Click);
             // 
-            // btn_drinks
+            // panel4
             // 
-            this.btn_drinks.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_drinks.Location = new System.Drawing.Point(31, 981);
-            this.btn_drinks.Name = "btn_drinks";
-            this.btn_drinks.Size = new System.Drawing.Size(327, 110);
-            this.btn_drinks.TabIndex = 5;
-            this.btn_drinks.Text = "Drinks";
-            this.btn_drinks.UseVisualStyleBackColor = true;
-            this.btn_drinks.Click += new System.EventHandler(this.btn_drinks_Click);
-            // 
-            // btn_dinner
-            // 
-            this.btn_dinner.Font = new System.Drawing.Font("Segoe UI Black", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dinner.Location = new System.Drawing.Point(31, 737);
-            this.btn_dinner.Name = "btn_dinner";
-            this.btn_dinner.Size = new System.Drawing.Size(334, 119);
-            this.btn_dinner.TabIndex = 5;
-            this.btn_dinner.Text = "Dinner";
-            this.btn_dinner.UseVisualStyleBackColor = true;
-            this.btn_dinner.Click += new System.EventHandler(this.btn_dinner_Click);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(389, 46);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1471, 122);
+            this.panel4.TabIndex = 4;
             // 
             // label1
             // 
@@ -200,6 +213,28 @@
             this.label1.Size = new System.Drawing.Size(284, 50);
             this.label1.TabIndex = 5;
             this.label1.Text = "DINNER MENU";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(917, 39);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(64, 56);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(567, 39);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(64, 56);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -500,12 +535,12 @@
             // tot_price_dinner
             // 
             this.tot_price_dinner.AutoSize = true;
-            this.tot_price_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tot_price_dinner.Location = new System.Drawing.Point(1147, 245);
+            this.tot_price_dinner.Font = new System.Drawing.Font("Courier New", 19.875F);
+            this.tot_price_dinner.Location = new System.Drawing.Point(1121, 238);
             this.tot_price_dinner.Name = "tot_price_dinner";
-            this.tot_price_dinner.Size = new System.Drawing.Size(150, 45);
+            this.tot_price_dinner.Size = new System.Drawing.Size(249, 58);
             this.tot_price_dinner.TabIndex = 8;
-            this.tot_price_dinner.Text = "__________";
+            this.tot_price_dinner.Text = "_______";
             // 
             // button2
             // 
@@ -688,41 +723,6 @@
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(917, 39);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 56);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(567, 39);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(64, 56);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
-            this.button7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
-            this.button7.ForeColor = System.Drawing.SystemColors.Window;
-            this.button7.Location = new System.Drawing.Point(-6, 265);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(399, 151);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "MENU START";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Tot_Calc_Dinner
             // 

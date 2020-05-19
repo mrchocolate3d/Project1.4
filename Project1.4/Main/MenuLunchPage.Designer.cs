@@ -32,20 +32,16 @@
             this.Navbar = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.Navbar2 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_L_lunch = new System.Windows.Forms.Button();
-            this.btn_L_drinks = new System.Windows.Forms.Button();
-            this.btn_L_dinner = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.btn_next_to_dinner = new System.Windows.Forms.Button();
             this.btn_back_to_start = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_L_dinner = new System.Windows.Forms.Button();
+            this.btn_L_drinks = new System.Windows.Forms.Button();
+            this.btn_L_lunch = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,12 +51,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,10 +62,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.Tot_Calc_Lunch = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -85,11 +72,23 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_to_dinner = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.btn_to_start = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
             this.tot_price_lunch = new System.Windows.Forms.Label();
+            this.btn_to_dinner = new System.Windows.Forms.Button();
+            this.btn_to_start = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.Navbar2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,7 +98,6 @@
             // Navbar
             // 
             this.Navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
-            this.Navbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.Navbar.Location = new System.Drawing.Point(0, 0);
             this.Navbar.Name = "Navbar";
             this.Navbar.Size = new System.Drawing.Size(1860, 46);
@@ -120,11 +118,43 @@
             this.Navbar2.Controls.Add(this.label43);
             this.Navbar2.Controls.Add(this.btn_next_to_dinner);
             this.Navbar2.Controls.Add(this.btn_back_to_start);
-            this.Navbar2.Dock = System.Windows.Forms.DockStyle.Top;
             this.Navbar2.Location = new System.Drawing.Point(389, 46);
             this.Navbar2.Name = "Navbar2";
             this.Navbar2.Size = new System.Drawing.Size(1471, 100);
             this.Navbar2.TabIndex = 5;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
+            this.label43.Location = new System.Drawing.Point(587, 27);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(268, 50);
+            this.label43.TabIndex = 88;
+            this.label43.Text = "LUNCH MENU";
+            // 
+            // btn_next_to_dinner
+            // 
+            this.btn_next_to_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next_to_dinner.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_to_dinner.Image")));
+            this.btn_next_to_dinner.Location = new System.Drawing.Point(852, 27);
+            this.btn_next_to_dinner.Name = "btn_next_to_dinner";
+            this.btn_next_to_dinner.Size = new System.Drawing.Size(64, 56);
+            this.btn_next_to_dinner.TabIndex = 89;
+            this.btn_next_to_dinner.UseVisualStyleBackColor = true;
+            this.btn_next_to_dinner.Click += new System.EventHandler(this.btn_next_to_dinner_Click);
+            // 
+            // btn_back_to_start
+            // 
+            this.btn_back_to_start.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back_to_start.Image = ((System.Drawing.Image)(resources.GetObject("btn_back_to_start.Image")));
+            this.btn_back_to_start.Location = new System.Drawing.Point(517, 27);
+            this.btn_back_to_start.Name = "btn_back_to_start";
+            this.btn_back_to_start.Size = new System.Drawing.Size(64, 56);
+            this.btn_back_to_start.TabIndex = 90;
+            this.btn_back_to_start.UseVisualStyleBackColor = true;
+            this.btn_back_to_start.Click += new System.EventHandler(this.btn_back_to_start_Click);
             // 
             // label33
             // 
@@ -143,11 +173,43 @@
             this.panel2.Controls.Add(this.btn_L_lunch);
             this.panel2.Controls.Add(this.button25);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 46);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 1909);
             this.panel2.TabIndex = 87;
+            // 
+            // btn_L_dinner
+            // 
+            this.btn_L_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_L_dinner.Location = new System.Drawing.Point(29, 722);
+            this.btn_L_dinner.Name = "btn_L_dinner";
+            this.btn_L_dinner.Size = new System.Drawing.Size(332, 103);
+            this.btn_L_dinner.TabIndex = 8;
+            this.btn_L_dinner.Text = "Dinner";
+            this.btn_L_dinner.UseVisualStyleBackColor = true;
+            this.btn_L_dinner.Click += new System.EventHandler(this.btn_L_dinner_Click);
+            // 
+            // btn_L_drinks
+            // 
+            this.btn_L_drinks.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_L_drinks.Location = new System.Drawing.Point(29, 937);
+            this.btn_L_drinks.Name = "btn_L_drinks";
+            this.btn_L_drinks.Size = new System.Drawing.Size(332, 103);
+            this.btn_L_drinks.TabIndex = 8;
+            this.btn_L_drinks.Text = "Drinks";
+            this.btn_L_drinks.UseVisualStyleBackColor = true;
+            this.btn_L_drinks.Click += new System.EventHandler(this.btn_L_drinks_Click);
+            // 
+            // btn_L_lunch
+            // 
+            this.btn_L_lunch.Font = new System.Drawing.Font("Segoe UI Black", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_L_lunch.Location = new System.Drawing.Point(29, 507);
+            this.btn_L_lunch.Name = "btn_L_lunch";
+            this.btn_L_lunch.Size = new System.Drawing.Size(332, 103);
+            this.btn_L_lunch.TabIndex = 8;
+            this.btn_L_lunch.Text = "Lunch";
+            this.btn_L_lunch.UseVisualStyleBackColor = true;
+            this.btn_L_lunch.Click += new System.EventHandler(this.btn_L_lunch_Click);
             // 
             // button25
             // 
@@ -171,100 +233,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_L_lunch
-            // 
-            this.btn_L_lunch.Font = new System.Drawing.Font("Segoe UI Black", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_L_lunch.Location = new System.Drawing.Point(29, 507);
-            this.btn_L_lunch.Name = "btn_L_lunch";
-            this.btn_L_lunch.Size = new System.Drawing.Size(332, 103);
-            this.btn_L_lunch.TabIndex = 8;
-            this.btn_L_lunch.Text = "Lunch";
-            this.btn_L_lunch.UseVisualStyleBackColor = true;
-            this.btn_L_lunch.Click += new System.EventHandler(this.btn_L_lunch_Click);
-            // 
-            // btn_L_drinks
-            // 
-            this.btn_L_drinks.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_L_drinks.Location = new System.Drawing.Point(29, 937);
-            this.btn_L_drinks.Name = "btn_L_drinks";
-            this.btn_L_drinks.Size = new System.Drawing.Size(332, 103);
-            this.btn_L_drinks.TabIndex = 8;
-            this.btn_L_drinks.Text = "Drinks";
-            this.btn_L_drinks.UseVisualStyleBackColor = true;
-            this.btn_L_drinks.Click += new System.EventHandler(this.btn_L_drinks_Click);
-            // 
-            // btn_L_dinner
-            // 
-            this.btn_L_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_L_dinner.Location = new System.Drawing.Point(29, 722);
-            this.btn_L_dinner.Name = "btn_L_dinner";
-            this.btn_L_dinner.Size = new System.Drawing.Size(332, 103);
-            this.btn_L_dinner.TabIndex = 8;
-            this.btn_L_dinner.Text = "Dinner";
-            this.btn_L_dinner.UseVisualStyleBackColor = true;
-            this.btn_L_dinner.Click += new System.EventHandler(this.btn_L_dinner_Click);
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
-            this.label43.Location = new System.Drawing.Point(587, 27);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(268, 50);
-            this.label43.TabIndex = 88;
-            this.label43.Text = "LUNCH MENU";
-            // 
-            // btn_next_to_dinner
-            // 
-            this.btn_next_to_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next_to_dinner.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_to_dinner.Image")));
-            this.btn_next_to_dinner.Location = new System.Drawing.Point(861, 25);
-            this.btn_next_to_dinner.Name = "btn_next_to_dinner";
-            this.btn_next_to_dinner.Size = new System.Drawing.Size(64, 56);
-            this.btn_next_to_dinner.TabIndex = 89;
-            this.btn_next_to_dinner.UseVisualStyleBackColor = true;
-            this.btn_next_to_dinner.Click += new System.EventHandler(this.btn_next_to_dinner_Click);
-            // 
-            // btn_back_to_start
-            // 
-            this.btn_back_to_start.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back_to_start.Image = ((System.Drawing.Image)(resources.GetObject("btn_back_to_start.Image")));
-            this.btn_back_to_start.Location = new System.Drawing.Point(517, 27);
-            this.btn_back_to_start.Name = "btn_back_to_start";
-            this.btn_back_to_start.Size = new System.Drawing.Size(64, 56);
-            this.btn_back_to_start.TabIndex = 90;
-            this.btn_back_to_start.UseVisualStyleBackColor = true;
-            this.btn_back_to_start.Click += new System.EventHandler(this.btn_back_to_start_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1559, 498);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 50);
-            this.textBox4.TabIndex = 107;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(1559, 437);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 50);
-            this.textBox3.TabIndex = 106;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(1559, 376);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 50);
-            this.textBox2.TabIndex = 105;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(1559, 316);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 50);
-            this.textBox14.TabIndex = 104;
             // 
             // label4
             // 
@@ -356,16 +324,6 @@
             this.label13.TabIndex = 92;
             this.label13.Text = "PRICE/1";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1559, 237);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 45);
-            this.label14.TabIndex = 93;
-            this.label14.Text = "QTY.";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -375,34 +333,6 @@
             this.label15.Size = new System.Drawing.Size(226, 45);
             this.label15.TabIndex = 91;
             this.label15.Text = "LUNCH MAIN";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(1559, 867);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 50);
-            this.textBox1.TabIndex = 122;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(1559, 806);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 50);
-            this.textBox5.TabIndex = 121;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(1559, 745);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 50);
-            this.textBox6.TabIndex = 120;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(1559, 685);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 50);
-            this.textBox7.TabIndex = 119;
             // 
             // label1
             // 
@@ -506,34 +436,6 @@
             this.Tot_Calc_Lunch.Text = "Calculate Total Price";
             this.Tot_Calc_Lunch.UseVisualStyleBackColor = false;
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(1559, 1244);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 50);
-            this.textBox8.TabIndex = 136;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(1559, 1183);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 50);
-            this.textBox9.TabIndex = 135;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(1559, 1122);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 50);
-            this.textBox10.TabIndex = 134;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(1559, 1062);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 50);
-            this.textBox11.TabIndex = 133;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -633,11 +535,20 @@
             this.panel1.Controls.Add(this.btn_to_start);
             this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label32);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(389, 1507);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1471, 448);
             this.panel1.TabIndex = 83;
+            // 
+            // tot_price_lunch
+            // 
+            this.tot_price_lunch.AutoSize = true;
+            this.tot_price_lunch.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tot_price_lunch.Location = new System.Drawing.Point(1149, 193);
+            this.tot_price_lunch.Name = "tot_price_lunch";
+            this.tot_price_lunch.Size = new System.Drawing.Size(150, 45);
+            this.tot_price_lunch.TabIndex = 141;
+            this.tot_price_lunch.Text = "__________";
             // 
             // btn_to_dinner
             // 
@@ -650,16 +561,6 @@
             this.btn_to_dinner.UseVisualStyleBackColor = true;
             this.btn_to_dinner.Click += new System.EventHandler(this.btn_to_dinner_Click);
             // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(1533, 177);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(150, 45);
-            this.label31.TabIndex = 140;
-            this.label31.Text = "__________";
-            // 
             // btn_to_start
             // 
             this.btn_to_start.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -671,6 +572,16 @@
             this.btn_to_start.UseVisualStyleBackColor = true;
             this.btn_to_start.Click += new System.EventHandler(this.btn_to_start_Click);
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(1533, 177);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(150, 45);
+            this.label31.TabIndex = 140;
+            this.label31.Text = "__________";
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -681,15 +592,92 @@
             this.label32.TabIndex = 139;
             this.label32.Text = "TOTAL:";
             // 
-            // tot_price_lunch
+            // textBox12
             // 
-            this.tot_price_lunch.AutoSize = true;
-            this.tot_price_lunch.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tot_price_lunch.Location = new System.Drawing.Point(1149, 193);
-            this.tot_price_lunch.Name = "tot_price_lunch";
-            this.tot_price_lunch.Size = new System.Drawing.Size(150, 45);
-            this.tot_price_lunch.TabIndex = 141;
-            this.tot_price_lunch.Text = "__________";
+            this.textBox12.Location = new System.Drawing.Point(1531, 1048);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 50);
+            this.textBox12.TabIndex = 138;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(1531, 987);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 50);
+            this.textBox13.TabIndex = 139;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(1538, 553);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 50);
+            this.textBox15.TabIndex = 140;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(1531, 928);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(100, 50);
+            this.textBox16.TabIndex = 141;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(1531, 870);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 50);
+            this.textBox17.TabIndex = 142;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(1538, 488);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 50);
+            this.textBox18.TabIndex = 143;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(1531, 807);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 50);
+            this.textBox19.TabIndex = 144;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(1538, 427);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(100, 50);
+            this.textBox20.TabIndex = 145;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(1531, 744);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(100, 50);
+            this.textBox21.TabIndex = 146;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(1538, 366);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(100, 50);
+            this.textBox22.TabIndex = 147;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(1538, 306);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(100, 50);
+            this.textBox23.TabIndex = 148;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(1538, 227);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(87, 45);
+            this.label34.TabIndex = 137;
+            this.label34.Text = "QTY.";
             // 
             // MenuLunchPage
             // 
@@ -697,12 +685,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1894, 930);
+            this.ClientSize = new System.Drawing.Size(1894, 1099);
+            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.label34);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label24);
@@ -712,10 +708,6 @@
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
@@ -726,11 +718,7 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.Navbar2);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -741,7 +729,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Navbar);
@@ -776,10 +763,6 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Button btn_next_to_dinner;
         private System.Windows.Forms.Button btn_back_to_start;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
@@ -789,12 +772,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
@@ -805,10 +783,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button Tot_Calc_Lunch;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
@@ -824,5 +798,17 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button btn_to_start;
         private System.Windows.Forms.Label tot_price_lunch;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label34;
     }
 }
