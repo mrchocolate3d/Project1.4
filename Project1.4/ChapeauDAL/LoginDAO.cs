@@ -16,7 +16,7 @@ namespace ChapeauDAL
     {
         public List<login> GetAllLoginInfo()
         {
-            string query = "Select (loginCode) FROM [login]";
+            string query = "Select * FROM [login]";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -29,7 +29,8 @@ namespace ChapeauDAL
             {
                 login login = new login()
                 {
-                    loginCode = (int)dr["loginCode"]
+                    loginCode = (int)dr["loginCode"],
+                    employeeID = (int)dr["employeeID"]
                 };
                 logins.Add(login);
             }

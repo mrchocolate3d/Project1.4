@@ -13,8 +13,9 @@ namespace ChapeauUI
 {
     public partial class LoginPage : Form
     {
+        public static int loginEmployeeID = 0;
         private int password;
-        public static int maxValue = 4;
+        private static int maxValue = 4;
 
         public LoginPage()
         {
@@ -158,6 +159,7 @@ namespace ChapeauUI
                 if(password == login.loginCode)
                 {
                     check = true;
+                    loginEmployeeID = login.employeeID;
                 }
                 else
                 {
@@ -166,6 +168,7 @@ namespace ChapeauUI
             }
             return check;
         }
+        
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
