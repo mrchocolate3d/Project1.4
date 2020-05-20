@@ -135,13 +135,6 @@ namespace ChapeauUI
                 totalDinnerPrice += (int.Parse(txtD15.Text) * decimal.Parse(lblD15price.Text));
             }
             return totalDinnerPrice;
-            
-  
-
-        }
-
-
-
-        
+        }  
     }
 }
