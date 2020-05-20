@@ -36,7 +36,7 @@ namespace ChapeauUI
         private void btn_DRdinner_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuLunchPage menu = new MenuLunchPage();
+            MenuDinnerPage menu = new MenuDinnerPage();
             menu.ShowDialog();
             this.Close();
         }
@@ -44,7 +44,7 @@ namespace ChapeauUI
         private void btn_back_to_DINNER_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuLunchPage menu = new MenuLunchPage();
+            MenuDinnerPage menu = new MenuDinnerPage();
             menu.ShowDialog();
             this.Close();
         }
