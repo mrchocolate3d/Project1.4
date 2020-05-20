@@ -111,6 +111,12 @@
     <Compile Include="MenuStartPage.Designer.cs">
       <DependentUpon>MenuStartPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersList.Designer.cs">
+      <DependentUpon>OrdersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuStartPage.resx">
       <DependentUpon>MenuStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersList.resx">
+      <DependentUpon>OrdersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderView.resx">
       <DependentUpon>OrderView.cs</DependentUpon>
