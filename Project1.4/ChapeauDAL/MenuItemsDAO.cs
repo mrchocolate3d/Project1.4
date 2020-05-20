@@ -8,6 +8,6 @@ namespace ChapeauDAL
 {
     class MenuItemsDAO
     {
-        //...
+        
     }
 }
