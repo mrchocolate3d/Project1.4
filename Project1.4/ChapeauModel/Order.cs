@@ -8,35 +8,12 @@ namespace ChapeauModel
 {
     public class Order
     {
-        public int OrderID;
-        public int TableNumber;
-        public int EmployeeID;
-        public string EmployeeName;
-        public int OrderDate;
-        public string Item;
-        public int Amount;
-        public string OrderStatus;
-
-        public void CreateOrder()
-        {
-
-        }
-
-        public void CreateItem()
-        {
-
-        }
-
-        public void AddItem()
-        {
-
-        }
-
-        public void DeleteItem()
-        {
-
-        }
-
+        public int OrderID { get; set; }
+        public int TableID { get; set; }
+        public int EmployeeID { get; set; }
+        public int OrderDate { get; set; }
+        public string feedback { get; set; }
+        public DateTime dateOrder { get; set; }
 
     }
 }
