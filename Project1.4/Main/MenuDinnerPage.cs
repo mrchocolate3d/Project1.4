@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapeauModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace ChapeauUI
     public partial class MenuDinnerPage : Form
     {
         public decimal totalDinnerPrice = 0;
-
+        public List<OrderMenuItems> dinnerlist = new List<OrderMenuItems>();
         public MenuDinnerPage()
         {
             InitializeComponent();
