@@ -41,11 +41,11 @@ namespace ChapeauUI
             lbl_employeeName.Text = employee.FirstName + " " + employee.LastName ;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnTable_Click(object sender, EventArgs e)
         {
             this.Hide();
-            OrdersList orders = new OrdersList();
-            orders.ShowDialog();
+            TablePage table = new TablePage();
+            table.ShowDialog();
             this.Close();
         }
     }

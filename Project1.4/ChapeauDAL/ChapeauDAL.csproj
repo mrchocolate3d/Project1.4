@@ -57,6 +57,7 @@
     <Compile Include="OrdersDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockItemsDAO.cs" />
+    <Compile Include="TableDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
