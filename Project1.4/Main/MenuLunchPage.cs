@@ -12,6 +12,7 @@ namespace ChapeauUI
 {
     public partial class MenuLunchPage : Form
     {
+        public decimal totalLunchPrice = 0;
         public MenuLunchPage()
         {
             InitializeComponent();
@@ -80,5 +81,66 @@ namespace ChapeauUI
             menudinner.ShowDialog();
             this.Close();
         }
+
+        private void Tot_Calc_Lunch_Click(object sender, EventArgs e)
+        {
+            //Decimal.Round(Update_Price()).ToString();
+            tot_price_lunch.Text = "€" + Update_Price().ToString("0.00");
+
+        }
+        private decimal Update_Price()
+            {
+                if (!string.IsNullOrEmpty(txtL1.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL1.Text) * decimal.Parse(lblL1price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL2.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL2.Text) * decimal.Parse(lblL2price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL3.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL3.Text) * decimal.Parse(lblL3price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL4.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL4.Text) * decimal.Parse(lblL4price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL5.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL5.Text) * decimal.Parse(lblL5price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL6.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL6.Text) * decimal.Parse(lblL6price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL7.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL7.Text) * decimal.Parse(lblL7price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL8.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL8.Text) * decimal.Parse(lblL8price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL9.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL9.Text) * decimal.Parse(lblL9price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL10.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL10.Text) * decimal.Parse(lblL9price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL11.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL11.Text) * decimal.Parse(lblL10price.Text));
+                }
+                if (!string.IsNullOrEmpty(txtL12.Text))
+                {
+                    totalLunchPrice += (int.Parse(txtL12.Text) * decimal.Parse(lblL12price.Text));
+                }
+
+                return totalLunchPrice;
+            }
+        }
     }
-}
+

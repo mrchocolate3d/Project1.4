@@ -69,7 +69,7 @@ namespace ChapeauUI
         private void Tot_Calc_Dinner_Click(object sender, EventArgs e)
         {
             //Decimal.Round(Update_Price()).ToString();
-            tot_price_dinner.Text = Update_Price().ToString("0.00");
+            tot_price_dinner.Text = "€" + Update_Price().ToString("0.00");
         }
 
         private decimal Update_Price()
