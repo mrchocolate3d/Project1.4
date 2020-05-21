@@ -35,54 +35,54 @@
             this.btn_next_to_dinner = new System.Windows.Forms.Button();
             this.btn_back_to_start = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_L_dinner = new System.Windows.Forms.Button();
             this.btn_L_drinks = new System.Windows.Forms.Button();
             this.btn_L_lunch = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblL4price = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblL3price = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblL2price = new System.Windows.Forms.Label();
+            this.lblL1price = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblL8price = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblL7price = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblL6price = new System.Windows.Forms.Label();
+            this.lblL5price = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.Tot_Calc_Lunch = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblL12price = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lblL11price = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblL10price = new System.Windows.Forms.Label();
+            this.lblL9price = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.tot_price_lunch = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtL4 = new System.Windows.Forms.TextBox();
+            this.txtL3 = new System.Windows.Forms.TextBox();
+            this.txtL2 = new System.Windows.Forms.TextBox();
+            this.txtL1 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtL5 = new System.Windows.Forms.TextBox();
+            this.txtL6 = new System.Windows.Forms.TextBox();
+            this.txtL7 = new System.Windows.Forms.TextBox();
+            this.txtL8 = new System.Windows.Forms.TextBox();
+            this.txtL9 = new System.Windows.Forms.TextBox();
+            this.txtL10 = new System.Windows.Forms.TextBox();
+            this.txtL11 = new System.Windows.Forms.TextBox();
+            this.txtL12 = new System.Windows.Forms.TextBox();
             this.Navbar2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,6 +120,7 @@
             // 
             // btn_next_to_dinner
             // 
+            this.btn_next_to_dinner.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_next_to_dinner.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next_to_dinner.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_to_dinner.Image")));
             this.btn_next_to_dinner.Location = new System.Drawing.Point(488, 38);
@@ -153,8 +154,20 @@
             this.panel2.Size = new System.Drawing.Size(120, 1400);
             this.panel2.TabIndex = 87;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(124, 251);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_L_dinner
             // 
+            this.btn_L_dinner.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_L_dinner.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_L_dinner.Location = new System.Drawing.Point(0, 587);
             this.btn_L_dinner.Name = "btn_L_dinner";
@@ -166,6 +179,7 @@
             // 
             // btn_L_drinks
             // 
+            this.btn_L_drinks.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_L_drinks.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_L_drinks.Location = new System.Drawing.Point(0, 678);
             this.btn_L_drinks.Name = "btn_L_drinks";
@@ -177,6 +191,7 @@
             // 
             // btn_L_lunch
             // 
+            this.btn_L_lunch.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_L_lunch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_L_lunch.Location = new System.Drawing.Point(0, 492);
             this.btn_L_lunch.Name = "btn_L_lunch";
@@ -188,6 +203,7 @@
             // 
             // button25
             // 
+            this.button25.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
             this.button25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ForeColor = System.Drawing.SystemColors.Window;
@@ -199,25 +215,15 @@
             this.button25.UseVisualStyleBackColor = false;
             this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
-            // pictureBox1
+            // lblL4price
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 226);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(481, 433);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 30);
-            this.label4.TabIndex = 103;
-            this.label4.Text = "€ 8,50";
+            this.lblL4price.AutoSize = true;
+            this.lblL4price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL4price.Location = new System.Drawing.Point(524, 447);
+            this.lblL4price.Name = "lblL4price";
+            this.lblL4price.Size = new System.Drawing.Size(51, 30);
+            this.lblL4price.TabIndex = 103;
+            this.lblL4price.Text = "8.50";
             // 
             // label8
             // 
@@ -229,15 +235,15 @@
             this.label8.TabIndex = 100;
             this.label8.Text = "QUICHE OF THE DAY";
             // 
-            // label5
+            // lblL3price
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(481, 372);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 30);
-            this.label5.TabIndex = 99;
-            this.label5.Text = "€ 9,50";
+            this.lblL3price.AutoSize = true;
+            this.lblL3price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL3price.Location = new System.Drawing.Point(524, 386);
+            this.lblL3price.Name = "lblL3price";
+            this.lblL3price.Size = new System.Drawing.Size(51, 30);
+            this.lblL3price.TabIndex = 99;
+            this.lblL3price.Text = "9.50";
             // 
             // label7
             // 
@@ -249,25 +255,25 @@
             this.label7.TabIndex = 98;
             this.label7.Text = "FENNEL DAUPHINOISE";
             // 
-            // label6
+            // lblL2price
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(481, 311);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 30);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "€ 8,00";
+            this.lblL2price.AutoSize = true;
+            this.lblL2price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL2price.Location = new System.Drawing.Point(524, 325);
+            this.lblL2price.Name = "lblL2price";
+            this.lblL2price.Size = new System.Drawing.Size(51, 30);
+            this.lblL2price.TabIndex = 97;
+            this.lblL2price.Text = "8.00";
             // 
-            // label10
+            // lblL1price
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(481, 258);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 30);
-            this.label10.TabIndex = 96;
-            this.label10.Text = "€ 9,50";
+            this.lblL1price.AutoSize = true;
+            this.lblL1price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL1price.Location = new System.Drawing.Point(524, 272);
+            this.lblL1price.Name = "lblL1price";
+            this.lblL1price.Size = new System.Drawing.Size(51, 30);
+            this.lblL1price.TabIndex = 96;
+            this.lblL1price.Text = "9.50";
             // 
             // label11
             // 
@@ -299,15 +305,15 @@
             this.label15.TabIndex = 91;
             this.label15.Text = "LUNCH MAIN";
             // 
-            // label1
+            // lblL8price
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(471, 734);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 30);
-            this.label1.TabIndex = 118;
-            this.label1.Text = "€ 7,50";
+            this.lblL8price.AutoSize = true;
+            this.lblL8price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL8price.Location = new System.Drawing.Point(521, 753);
+            this.lblL8price.Name = "lblL8price";
+            this.lblL8price.Size = new System.Drawing.Size(50, 30);
+            this.lblL8price.TabIndex = 118;
+            this.lblL8price.Text = "7.50";
             // 
             // label2
             // 
@@ -319,15 +325,15 @@
             this.label2.TabIndex = 117;
             this.label2.Text = "HOMEMADE ONIONSOUP ";
             // 
-            // label9
+            // lblL7price
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(471, 673);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 30);
-            this.label9.TabIndex = 116;
-            this.label9.Text = "€ 6,95";
+            this.lblL7price.AutoSize = true;
+            this.lblL7price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL7price.Location = new System.Drawing.Point(521, 692);
+            this.lblL7price.Name = "lblL7price";
+            this.lblL7price.Size = new System.Drawing.Size(51, 30);
+            this.lblL7price.TabIndex = 116;
+            this.lblL7price.Text = "6.95";
             // 
             // label16
             // 
@@ -339,25 +345,25 @@
             this.label16.TabIndex = 115;
             this.label16.Text = "HOMEMADE SOUP OF THE DAY";
             // 
-            // label17
+            // lblL6price
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(471, 612);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 30);
-            this.label17.TabIndex = 114;
-            this.label17.Text = "€ 9,50";
+            this.lblL6price.AutoSize = true;
+            this.lblL6price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL6price.Location = new System.Drawing.Point(521, 631);
+            this.lblL6price.Name = "lblL6price";
+            this.lblL6price.Size = new System.Drawing.Size(51, 30);
+            this.lblL6price.TabIndex = 114;
+            this.lblL6price.Text = "9.50";
             // 
-            // label18
+            // lblL5price
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(471, 559);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 30);
-            this.label18.TabIndex = 113;
-            this.label18.Text = "€ 8,95";
+            this.lblL5price.AutoSize = true;
+            this.lblL5price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL5price.Location = new System.Drawing.Point(521, 578);
+            this.lblL5price.Name = "lblL5price";
+            this.lblL5price.Size = new System.Drawing.Size(51, 30);
+            this.lblL5price.TabIndex = 113;
+            this.lblL5price.Text = "8.95";
             // 
             // label19
             // 
@@ -400,16 +406,17 @@
             this.Tot_Calc_Lunch.TabIndex = 123;
             this.Tot_Calc_Lunch.Text = "Calculate Total Price";
             this.Tot_Calc_Lunch.UseVisualStyleBackColor = false;
+            this.Tot_Calc_Lunch.Click += new System.EventHandler(this.Tot_Calc_Lunch_Click);
             // 
-            // label21
+            // lblL12price
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(471, 1043);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 30);
-            this.label21.TabIndex = 132;
-            this.label21.Text = "€ 4,95";
+            this.lblL12price.AutoSize = true;
+            this.lblL12price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL12price.Location = new System.Drawing.Point(521, 1052);
+            this.lblL12price.Name = "lblL12price";
+            this.lblL12price.Size = new System.Drawing.Size(51, 30);
+            this.lblL12price.TabIndex = 132;
+            this.lblL12price.Text = "4.95";
             // 
             // label22
             // 
@@ -421,15 +428,15 @@
             this.label22.TabIndex = 131;
             this.label22.Text = "BREAD";
             // 
-            // label24
+            // lblL11price
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(471, 982);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(68, 30);
-            this.label24.TabIndex = 130;
-            this.label24.Text = "€ 5,50";
+            this.lblL11price.AutoSize = true;
+            this.lblL11price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL11price.Location = new System.Drawing.Point(521, 991);
+            this.lblL11price.Name = "lblL11price";
+            this.lblL11price.Size = new System.Drawing.Size(51, 30);
+            this.lblL11price.TabIndex = 130;
+            this.lblL11price.Text = "5.50";
             // 
             // label25
             // 
@@ -441,25 +448,25 @@
             this.label25.TabIndex = 129;
             this.label25.Text = "TOAST BELGIAN PRÉPARÉ";
             // 
-            // label26
+            // lblL10price
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(471, 921);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(68, 30);
-            this.label26.TabIndex = 128;
-            this.label26.Text = "€ 5,95";
+            this.lblL10price.AutoSize = true;
+            this.lblL10price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL10price.Location = new System.Drawing.Point(521, 930);
+            this.lblL10price.Name = "lblL10price";
+            this.lblL10price.Size = new System.Drawing.Size(51, 30);
+            this.lblL10price.TabIndex = 128;
+            this.lblL10price.Text = "5.95";
             // 
-            // label27
+            // lblL9price
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(471, 868);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 30);
-            this.label27.TabIndex = 127;
-            this.label27.Text = "€ 7,50";
+            this.lblL9price.AutoSize = true;
+            this.lblL9price.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL9price.Location = new System.Drawing.Point(520, 877);
+            this.lblL9price.Name = "lblL9price";
+            this.lblL9price.Size = new System.Drawing.Size(50, 30);
+            this.lblL9price.TabIndex = 127;
+            this.lblL9price.Text = "7.50";
             // 
             // label28
             // 
@@ -511,99 +518,112 @@
             this.label32.TabIndex = 139;
             this.label32.Text = "TOTAL:";
             // 
-            // textBox18
+            // txtL4
             // 
-            this.textBox18.Location = new System.Drawing.Point(684, 422);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(60, 50);
-            this.textBox18.TabIndex = 143;
+            this.txtL4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL4.Location = new System.Drawing.Point(674, 428);
+            this.txtL4.Name = "txtL4";
+            this.txtL4.Size = new System.Drawing.Size(60, 50);
+            this.txtL4.TabIndex = 143;
             // 
-            // textBox20
+            // txtL3
             // 
-            this.textBox20.Location = new System.Drawing.Point(684, 366);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(60, 50);
-            this.textBox20.TabIndex = 145;
+            this.txtL3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL3.Location = new System.Drawing.Point(674, 372);
+            this.txtL3.Name = "txtL3";
+            this.txtL3.Size = new System.Drawing.Size(60, 50);
+            this.txtL3.TabIndex = 145;
             // 
-            // textBox22
+            // txtL2
             // 
-            this.textBox22.Location = new System.Drawing.Point(684, 311);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(60, 50);
-            this.textBox22.TabIndex = 147;
+            this.txtL2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL2.Location = new System.Drawing.Point(674, 317);
+            this.txtL2.Name = "txtL2";
+            this.txtL2.Size = new System.Drawing.Size(60, 50);
+            this.txtL2.TabIndex = 147;
             // 
-            // textBox23
+            // txtL1
             // 
-            this.textBox23.Location = new System.Drawing.Point(684, 258);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(60, 50);
-            this.textBox23.TabIndex = 148;
+            this.txtL1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL1.Location = new System.Drawing.Point(674, 264);
+            this.txtL1.Name = "txtL1";
+            this.txtL1.Size = new System.Drawing.Size(60, 50);
+            this.txtL1.TabIndex = 148;
             // 
             // label34
             // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(677, 208);
+            this.label34.Location = new System.Drawing.Point(667, 214);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(73, 37);
             this.label34.TabIndex = 137;
             this.label34.Text = "QTY.";
             // 
-            // textBox1
+            // txtL5
             // 
-            this.textBox1.Location = new System.Drawing.Point(674, 563);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 50);
-            this.textBox1.TabIndex = 148;
+            this.txtL5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL5.Location = new System.Drawing.Point(674, 563);
+            this.txtL5.Name = "txtL5";
+            this.txtL5.Size = new System.Drawing.Size(60, 50);
+            this.txtL5.TabIndex = 148;
             // 
-            // textBox2
+            // txtL6
             // 
-            this.textBox2.Location = new System.Drawing.Point(674, 616);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 50);
-            this.textBox2.TabIndex = 147;
+            this.txtL6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL6.Location = new System.Drawing.Point(674, 616);
+            this.txtL6.Name = "txtL6";
+            this.txtL6.Size = new System.Drawing.Size(60, 50);
+            this.txtL6.TabIndex = 147;
             // 
-            // textBox3
+            // txtL7
             // 
-            this.textBox3.Location = new System.Drawing.Point(674, 671);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 50);
-            this.textBox3.TabIndex = 145;
+            this.txtL7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL7.Location = new System.Drawing.Point(674, 671);
+            this.txtL7.Name = "txtL7";
+            this.txtL7.Size = new System.Drawing.Size(60, 50);
+            this.txtL7.TabIndex = 145;
             // 
-            // textBox4
+            // txtL8
             // 
-            this.textBox4.Location = new System.Drawing.Point(674, 727);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(60, 50);
-            this.textBox4.TabIndex = 143;
+            this.txtL8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL8.Location = new System.Drawing.Point(674, 727);
+            this.txtL8.Name = "txtL8";
+            this.txtL8.Size = new System.Drawing.Size(60, 50);
+            this.txtL8.TabIndex = 143;
             // 
-            // textBox5
+            // txtL9
             // 
-            this.textBox5.Location = new System.Drawing.Point(677, 868);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(60, 50);
-            this.textBox5.TabIndex = 148;
+            this.txtL9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL9.Location = new System.Drawing.Point(677, 868);
+            this.txtL9.Name = "txtL9";
+            this.txtL9.Size = new System.Drawing.Size(60, 50);
+            this.txtL9.TabIndex = 148;
             // 
-            // textBox6
+            // txtL10
             // 
-            this.textBox6.Location = new System.Drawing.Point(677, 921);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(60, 50);
-            this.textBox6.TabIndex = 147;
+            this.txtL10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL10.Location = new System.Drawing.Point(677, 921);
+            this.txtL10.Name = "txtL10";
+            this.txtL10.Size = new System.Drawing.Size(60, 50);
+            this.txtL10.TabIndex = 147;
             // 
-            // textBox7
+            // txtL11
             // 
-            this.textBox7.Location = new System.Drawing.Point(677, 976);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(60, 50);
-            this.textBox7.TabIndex = 145;
+            this.txtL11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL11.Location = new System.Drawing.Point(677, 976);
+            this.txtL11.Name = "txtL11";
+            this.txtL11.Size = new System.Drawing.Size(60, 50);
+            this.txtL11.TabIndex = 145;
             // 
-            // textBox8
+            // txtL12
             // 
-            this.textBox8.Location = new System.Drawing.Point(677, 1032);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(60, 50);
-            this.textBox8.TabIndex = 143;
+            this.txtL12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtL12.Location = new System.Drawing.Point(677, 1032);
+            this.txtL12.Name = "txtL12";
+            this.txtL12.Size = new System.Drawing.Size(60, 50);
+            this.txtL12.TabIndex = 143;
             // 
             // MenuLunchPage
             // 
@@ -613,46 +633,46 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(742, 953);
             this.Controls.Add(this.tot_price_lunch);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtL12);
             this.Controls.Add(this.Tot_Calc_Lunch);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtL8);
+            this.Controls.Add(this.txtL11);
             this.Controls.Add(this.label32);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.txtL4);
+            this.Controls.Add(this.txtL10);
+            this.Controls.Add(this.txtL7);
+            this.Controls.Add(this.txtL6);
+            this.Controls.Add(this.txtL9);
+            this.Controls.Add(this.txtL3);
+            this.Controls.Add(this.txtL5);
+            this.Controls.Add(this.txtL2);
+            this.Controls.Add(this.txtL1);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.label21);
+            this.Controls.Add(this.lblL12price);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.lblL11price);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.lblL10price);
+            this.Controls.Add(this.lblL9price);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblL8price);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblL7price);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.lblL6price);
+            this.Controls.Add(this.lblL5price);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblL4price);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblL3price);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblL2price);
+            this.Controls.Add(this.lblL1price);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label15);
@@ -685,48 +705,48 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Button btn_next_to_dinner;
         private System.Windows.Forms.Button btn_back_to_start;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblL4price;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblL3price;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblL2price;
+        private System.Windows.Forms.Label lblL1price;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblL8price;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblL7price;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblL6price;
+        private System.Windows.Forms.Label lblL5price;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button Tot_Calc_Lunch;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblL12price;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblL11price;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblL10price;
+        private System.Windows.Forms.Label lblL9price;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label tot_price_lunch;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtL4;
+        private System.Windows.Forms.TextBox txtL3;
+        private System.Windows.Forms.TextBox txtL2;
+        private System.Windows.Forms.TextBox txtL1;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtL5;
+        private System.Windows.Forms.TextBox txtL6;
+        private System.Windows.Forms.TextBox txtL7;
+        private System.Windows.Forms.TextBox txtL8;
+        private System.Windows.Forms.TextBox txtL9;
+        private System.Windows.Forms.TextBox txtL10;
+        private System.Windows.Forms.TextBox txtL11;
+        private System.Windows.Forms.TextBox txtL12;
     }
 }
