@@ -16,21 +16,21 @@ namespace ChapeauDAL
         {
             string query = "Select tableID, orderID from orders";
             SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
+            return ReadOrdersTable(ExecuteSelectQuery(query, sqlParameters));
         }
         public List<Orders> GetAllOrdersInfo(string query)
         {
             SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
+            return ReadOrdersTable(ExecuteSelectQuery(query, sqlParameters));
         }
 
-        private List<Orders> ReadLoginTables(DataTable OrdersTable)
+        private List<Orders> ReadOrdersTable(DataTable dataTable)
         {
             List<Orders> orders = new List<Orders>();
 
-            foreach (DataRow dr in OrdersTable.Rows)
+            foreach (DataRow dr in dataTable.Rows)
             {
-                Orders order = new Orders()
+                Orders order = new Orders
                 {
                     tableID = (int)dr["Table"],
                     orderID = (int)dr["Order Number"]

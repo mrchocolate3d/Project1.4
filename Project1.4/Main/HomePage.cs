@@ -48,5 +48,13 @@ namespace ChapeauUI
             table.ShowDialog();
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrdersList orders = new OrdersList();
+            orders.ShowDialog();
+            this.Close();
+        }
     }
 }
