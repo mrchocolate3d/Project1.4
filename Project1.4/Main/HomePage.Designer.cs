@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTable = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_OrderView = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.lbl_employeeName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnTable
             // 
-            this.button1.Location = new System.Drawing.Point(72, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 137);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tables";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTable.Location = new System.Drawing.Point(72, 172);
+            this.btnTable.Name = "btnTable";
+            this.btnTable.Size = new System.Drawing.Size(142, 137);
+            this.btnTable.TabIndex = 1;
+            this.btnTable.Text = "Tables";
+            this.btnTable.UseVisualStyleBackColor = true;
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // button2
             // 
@@ -90,7 +91,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn_OrderView);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTable);
             this.Name = "HomePage";
             this.Text = "HomePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
@@ -101,7 +102,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTable;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_OrderView;
         private System.Windows.Forms.Button button4;

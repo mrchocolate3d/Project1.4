@@ -140,6 +140,12 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TablePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablePage.Designer.cs">
+      <DependentUpon>TablePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThankYouNote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </Compile>
     <EmbeddedResource Include="Reciept.resx">
       <DependentUpon>Reciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablePage.resx">
+      <DependentUpon>TablePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThankYouNote.resx">
       <DependentUpon>ThankYouNote.cs</DependentUpon>
