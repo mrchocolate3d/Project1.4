@@ -40,6 +40,13 @@ namespace ChapeauUI
             };
             lbl_employeeName.Text = employee.FirstName + " " + employee.LastName ;
         }
-        
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrdersList orders = new OrdersList();
+            orders.ShowDialog();
+            this.Close();
+        }
     }
 }
