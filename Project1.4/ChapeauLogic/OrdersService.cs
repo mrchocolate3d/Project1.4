@@ -10,24 +10,33 @@ using System.Windows.Forms;
 
 namespace ChapeauLogic
 {
-    class OrdersService
+    public class OrdersService
     {
-        public class OrdersServices
+        OrdersDAO orders_db = new OrdersDAO();
+        public List<Orders> GetOrders()
         {
-            OrdersDAO orders_db = new OrdersDAO();
-
-            public List<Orders> getOrders()
+            try
             {
-                try
-                {
-                    List<Orders> orders = orders_db.GetAllOrdersInfo();
-                    return orders;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    return null;
-                }
+                List<Orders> orders = orders_db.GetAllOrdersInfo();
+                return orders;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+        public List<Orders> GetOrders(string query)
+        {
+            try
+            {
+                List<Orders> orders = orders_db.GetAllOrdersInfo(query);
+                return orders;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
             }
         }
     }

@@ -18,6 +18,11 @@ namespace ChapeauDAL
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
         }
+        public List<Orders> GetAllOrdersInfo(string query)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[0];
+            return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
+        }
 
         private List<Orders> ReadLoginTables(DataTable OrdersTable)
         {
@@ -27,8 +32,8 @@ namespace ChapeauDAL
             {
                 Orders order = new Orders()
                 {
-                    tableID = (int)dr["tableID"],
-                    orderID = (int)dr["orderID"]
+                    tableID = (int)dr["Table"],
+                    orderID = (int)dr["Order Number"]
                 };
                 orders.Add(order);
             }
