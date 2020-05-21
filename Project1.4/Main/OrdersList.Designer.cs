@@ -31,11 +31,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listOrders = new System.Windows.Forms.ListView();
+            this.tableID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.orderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.table = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.orderNo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,20 +69,30 @@
             this.button3.Text = "Completed Orders";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // listView1
+            // listOrders
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.table,
-            this.orderNo});
-            this.listView1.ForeColor = System.Drawing.Color.White;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(111, 205);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(445, 378);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.listOrders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.tableID,
+            this.orderID});
+            this.listOrders.ForeColor = System.Drawing.Color.White;
+            this.listOrders.HideSelection = false;
+            this.listOrders.Location = new System.Drawing.Point(111, 205);
+            this.listOrders.Name = "listOrders";
+            this.listOrders.Size = new System.Drawing.Size(445, 378);
+            this.listOrders.TabIndex = 3;
+            this.listOrders.UseCompatibleStateImageBehavior = false;
+            this.listOrders.View = System.Windows.Forms.View.Details;
+            // 
+            // tableID
+            // 
+            this.tableID.Text = "Table";
+            this.tableID.Width = 307;
+            // 
+            // orderID
+            // 
+            this.orderID.Text = "Order Number";
+            this.orderID.Width = 134;
             // 
             // panel1
             // 
@@ -104,16 +114,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kitchen/Bar";
             // 
-            // table
-            // 
-            this.table.Text = "Table";
-            this.table.Width = 307;
-            // 
-            // orderNo
-            // 
-            this.orderNo.Text = "Order Number";
-            this.orderNo.Width = 134;
-            // 
             // OrdersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,7 +121,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(661, 666);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listOrders);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -138,10 +138,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listOrders;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader table;
-        private System.Windows.Forms.ColumnHeader orderNo;
+        private System.Windows.Forms.ColumnHeader tableID;
+        private System.Windows.Forms.ColumnHeader orderID;
     }
 }
