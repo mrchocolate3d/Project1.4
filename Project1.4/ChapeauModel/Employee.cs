@@ -8,12 +8,12 @@ namespace ChapeauModel
 {
     public class Employee
     {
-        public  int EmployeeId;
-        public int roleID;
-        public string FirstName;
-        public string LastName;
-        public string emailaddress;
-        public int phonenumber;
+        public int EmployeeId { get; set; }
+        public int roleID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string emailaddress { get; set; }
+        public int phonenumber { get; set; }
 
         //public Employee(int EmployeeId,string firstname,string lastname,string emailaddress,int phonenumber)
         //{

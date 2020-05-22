@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChapeauLogic.EmployeeServices">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>EmployeeServices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="employee_db" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauLogic.LoginServices">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>LoginServices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="login_db" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauLogic.OrdersService">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrdersService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="orders_db" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauLogic.TableServices">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>TableServices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="table_db" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauDAL.Base">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauDAL.EmployeeDAO">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauDAL.LoginDAO">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauDAL.OrdersDAO">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauDAL.TableDAO">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_table10 = new ChapeauUI.RoundButton();
             this.btn_table9 = new ChapeauUI.RoundButton();
             this.btn_table8 = new ChapeauUI.RoundButton();
@@ -39,9 +42,6 @@
             this.btn_table3 = new ChapeauUI.RoundButton();
             this.btn_table2 = new ChapeauUI.RoundButton();
             this.btn_table1 = new ChapeauUI.RoundButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +52,33 @@
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Resturant View";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Free table = green";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Occupied table = red";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Reserved table  = blue";
             // 
             // btn_table10
             // 
@@ -153,33 +180,6 @@
             this.btn_table1.TabIndex = 0;
             this.btn_table1.Text = "1";
             this.btn_table1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Free table = green";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Occupied table = red";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Reserved table  = blue";
             // 
             // TablePage
             // 
