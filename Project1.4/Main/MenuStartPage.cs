@@ -20,7 +20,7 @@ namespace ChapeauUI
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuLunchPage menulunch = new MenuLunchPage();
+            TakingLunchOrder menulunch = new TakingLunchOrder();
             menulunch.ShowDialog();
             this.Close();
         }

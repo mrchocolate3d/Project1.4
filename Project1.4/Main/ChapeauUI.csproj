@@ -146,6 +146,12 @@
     <Compile Include="TablePage.Designer.cs">
       <DependentUpon>TablePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="TakingLunchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakingLunchOrder.Designer.cs">
+      <DependentUpon>TakingLunchOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThankYouNote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TablePage.resx">
       <DependentUpon>TablePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakingLunchOrder.resx">
+      <DependentUpon>TakingLunchOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThankYouNote.resx">
       <DependentUpon>ThankYouNote.cs</DependentUpon>
