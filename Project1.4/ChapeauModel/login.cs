@@ -10,8 +10,8 @@ namespace ChapeauModel
     {
         public int employeeID { get; set; }
         public int loginCode { get; set; }
-        
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string role { get; set; }
     }
-
-
 }

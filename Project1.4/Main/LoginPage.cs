@@ -11,9 +11,12 @@ using ChapeauModel;
 
 namespace ChapeauUI
 {
+
     public partial class LoginPage : Form
     {
-        public static int loginEmployeeID = 0;
+
+        public static string UserName = "";
+        private static string role = "";
         private int password;
         private static int maxValue = 4;
 
@@ -22,124 +25,38 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        #region Keypad button setup  
-        private void btn_1_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
-            checkPasswod("1");
+            checkPasswod(((Button)sender).Text);
         }
-
-        private void btn_2_Click(object sender, EventArgs e)
-        {
-            checkPasswod("2");
-        }
-
-        private void btn_3_Click(object sender, EventArgs e)
-        {
-            checkPasswod("3");
-        }
-
-        private void btn_4_Click(object sender, EventArgs e)
-        {
-            checkPasswod("4");
-        }
-
-        private void btn_5_Click(object sender, EventArgs e)
-        {
-            checkPasswod("5");
-        }
-
-        private void btn_6_Click(object sender, EventArgs e)
-        {
-            checkPasswod("6");
-        }
-
-        private void btn_7_Click(object sender, EventArgs e)
-        {
-            checkPasswod("7");
-        }
-
-        private void btn_8_Click(object sender, EventArgs e)
-        {
-            checkPasswod("8");
-        }
-
-        private void btn_9_Click(object sender, EventArgs e)
-        {
-            checkPasswod("9");
-        }
-
-        private void btn_0_Click(object sender, EventArgs e)
-        {
-            checkPasswod("0");
-        }
-
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-            checkPasswod("delete");
-        }
-        #endregion
 
         private void checkPasswod(string input)
         {
-            if(input == "1")
+            if (input.ToLower() == "delete")
             {
-                textBox1.AppendText(input);
+                LoginBox.Text = LoginBox.Text.Substring(0, (LoginBox.TextLength - 1));  
             }
-            if(input == "2")
+            else
             {
-                textBox1.AppendText(input);
-            }
-            if(input == "3")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "4")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "5")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "6")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "7")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "8")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "9")
-            {
-                textBox1.AppendText(input);
-            }
-            if (input == "0")
-            {
-                textBox1.AppendText(input);
-                
-            }
-            if (input == "delete")
-            {
-                textBox1.Text = textBox1.Text.Substring(0, (textBox1.TextLength - 1));  
+                LoginBox.AppendText(input);
             }
             PinCheck();
         }
 
         private void PinCheck()
         {
-            if (textBox1.TextLength == maxValue)
+            if (LoginBox.TextLength == maxValue)
             {
-                password = int.Parse(textBox1.Text);
+                password = int.Parse(LoginBox.Text);
                 if (CheckLogin(password) == true)
                 {
-                    this.Hide();
-                    HomePage home = new HomePage();
-                    home.ShowDialog();
-                    this.Close();
+                    if(role == "Waiter")
+                    {
+                        this.Hide();
+                        TakingLunchOrder waiterPage = new TakingLunchOrder();
+                        waiterPage.ShowDialog();
+                        this.Close();
+                    }
                 }
                 else
                 {
@@ -148,18 +65,19 @@ namespace ChapeauUI
             }
         }
 
+
         private bool CheckLogin(int password)
         {
             bool check = false;
             ChapeauLogic.LoginServices loginServices = new ChapeauLogic.LoginServices();
-            List<login> loginList = loginServices.getLogin();
-
+            List<login> loginList = loginServices.getLogin(password);
             foreach (login login in loginList)
             {
                 if(password == login.loginCode)
                 {
                     check = true;
-                    loginEmployeeID = login.employeeID;
+                    UserName = login.firstname +" "+ login.lastname;
+                    role = login.role;
                 }
                 else
                 {

@@ -15,13 +15,6 @@ namespace ChapeauModel
         public string emailaddress { get; set; }
         public int phonenumber { get; set; }
 
-        //public Employee(int EmployeeId,string firstname,string lastname,string emailaddress,int phonenumber)
-        //{
-        //    this.EmployeeId = EmployeeId;
-        //    this.FirstName = firstname;
-        //    this.LastName = lastname;
-        //    this.emailaddress = emailaddress;
-        //    this.phonenumber = phonenumber;
-        //}
+
     }
 }
