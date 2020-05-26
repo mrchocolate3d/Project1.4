@@ -14,9 +14,11 @@ namespace ChapeauDAL
 {
     public class LoginDAO  : Base
     {
-        public List<login> GetAllLoginInfo()
+        public List<login> GetAllLoginInfo(int loginCode)
         {
-            string query = "Select * FROM [login]";
+            string query = $"SELECT [login].loginCode,[login].employeeID,firstName,lastName,roles.roleDescription " +
+                $"FROM (([login] inner join employees ON [login].employeeID = employees.employeeID) " +
+                $"INNER JOIN [roles] ON roles.roleID = employees.roleID) where [login].loginCode = {loginCode}";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -30,7 +32,11 @@ namespace ChapeauDAL
                 login login = new login()
                 {
                     loginCode = (int)dr["loginCode"],
-                    employeeID = (int)dr["employeeID"]
+                    employeeID = (int)dr["employeeID"],
+                    firstname = (string)(dr["firstName"]),
+                    lastname = (string)(dr["lastName"]),
+                    role = (string)(dr["roleDescription"])
+
                 };
                 logins.Add(login);
             }

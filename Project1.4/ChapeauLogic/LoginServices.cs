@@ -16,11 +16,11 @@ namespace ChapeauLogic
     {
         LoginDAO login_db = new LoginDAO();
 
-        public List<login> getLogin()
+        public List<login> getLogin(int loginCode)
         {
             try
             {
-                List<login> login = login_db.GetAllLoginInfo();
+                List<login> login = login_db.GetAllLoginInfo(loginCode);
                 return login;
             }
             catch (Exception ex)

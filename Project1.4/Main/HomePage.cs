@@ -28,17 +28,7 @@ namespace ChapeauUI
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
-
-            ChapeauLogic.EmployeeServices employeeServices = new ChapeauLogic.EmployeeServices();
-            List<Employee> employeeInfo = employeeServices.GetEmployees(LoginPage.loginEmployeeID);
-            foreach (Employee emp in employeeInfo)
-            {
-                employee.FirstName = emp.FirstName;
-                employee.LastName = emp.LastName;
-                employee.roleID = emp.roleID;
-            };
-            lbl_employeeName.Text = employee.FirstName + " " + employee.LastName ;
+            lbl_employeeName.Text = LoginPage.UserName;
         }
 
         private void btnTable_Click(object sender, EventArgs e)
