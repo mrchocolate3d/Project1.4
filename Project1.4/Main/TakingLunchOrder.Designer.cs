@@ -31,32 +31,32 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LunchMain = new System.Windows.Forms.GroupBox();
-            this.saladeNic = new System.Windows.Forms.CheckBox();
-            this.frenchOmlette = new System.Windows.Forms.CheckBox();
-            this.fennelDauph = new System.Windows.Forms.CheckBox();
-            this.quicheOTD = new System.Windows.Forms.CheckBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.quicheOTD = new System.Windows.Forms.CheckBox();
+            this.fennelDauph = new System.Windows.Forms.CheckBox();
+            this.frenchOmlette = new System.Windows.Forms.CheckBox();
+            this.saladeNic = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.croqueMON = new System.Windows.Forms.CheckBox();
-            this.croqueMAM = new System.Windows.Forms.CheckBox();
-            this.homeSoup = new System.Windows.Forms.CheckBox();
-            this.onionSoup = new System.Windows.Forms.CheckBox();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.onionSoup = new System.Windows.Forms.CheckBox();
+            this.homeSoup = new System.Windows.Forms.CheckBox();
+            this.croqueMAM = new System.Windows.Forms.CheckBox();
+            this.croqueMON = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.torChips = new System.Windows.Forms.CheckBox();
-            this.crudToast = new System.Windows.Forms.CheckBox();
-            this.belgPrep = new System.Windows.Forms.CheckBox();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.bread = new System.Windows.Forms.CheckBox();
+            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.belgPrep = new System.Windows.Forms.CheckBox();
+            this.crudToast = new System.Windows.Forms.CheckBox();
+            this.torChips = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,10 +77,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,46 +122,6 @@
             this.LunchMain.TabStop = false;
             this.LunchMain.Text = "LUNCH MAIN";
             // 
-            // saladeNic
-            // 
-            this.saladeNic.AutoSize = true;
-            this.saladeNic.Location = new System.Drawing.Point(16, 47);
-            this.saladeNic.Name = "saladeNic";
-            this.saladeNic.Size = new System.Drawing.Size(180, 34);
-            this.saladeNic.TabIndex = 0;
-            this.saladeNic.Text = "Salade Niçoise";
-            this.saladeNic.UseVisualStyleBackColor = true;
-            // 
-            // frenchOmlette
-            // 
-            this.frenchOmlette.AutoSize = true;
-            this.frenchOmlette.Location = new System.Drawing.Point(16, 87);
-            this.frenchOmlette.Name = "frenchOmlette";
-            this.frenchOmlette.Size = new System.Drawing.Size(188, 34);
-            this.frenchOmlette.TabIndex = 1;
-            this.frenchOmlette.Text = "French Omlette";
-            this.frenchOmlette.UseVisualStyleBackColor = true;
-            // 
-            // fennelDauph
-            // 
-            this.fennelDauph.AutoSize = true;
-            this.fennelDauph.Location = new System.Drawing.Point(16, 127);
-            this.fennelDauph.Name = "fennelDauph";
-            this.fennelDauph.Size = new System.Drawing.Size(234, 34);
-            this.fennelDauph.TabIndex = 2;
-            this.fennelDauph.Text = "Fennel Dauphinoise ";
-            this.fennelDauph.UseVisualStyleBackColor = true;
-            // 
-            // quicheOTD
-            // 
-            this.quicheOTD.AutoSize = true;
-            this.quicheOTD.Location = new System.Drawing.Point(16, 167);
-            this.quicheOTD.Name = "quicheOTD";
-            this.quicheOTD.Size = new System.Drawing.Size(220, 34);
-            this.quicheOTD.TabIndex = 3;
-            this.quicheOTD.Text = "Quiche of the Day ";
-            this.quicheOTD.UseVisualStyleBackColor = true;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(288, 46);
@@ -190,6 +150,46 @@
             this.numericUpDown4.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown4.TabIndex = 5;
             // 
+            // quicheOTD
+            // 
+            this.quicheOTD.AutoSize = true;
+            this.quicheOTD.Location = new System.Drawing.Point(16, 167);
+            this.quicheOTD.Name = "quicheOTD";
+            this.quicheOTD.Size = new System.Drawing.Size(220, 34);
+            this.quicheOTD.TabIndex = 3;
+            this.quicheOTD.Text = "Quiche of the Day ";
+            this.quicheOTD.UseVisualStyleBackColor = true;
+            // 
+            // fennelDauph
+            // 
+            this.fennelDauph.AutoSize = true;
+            this.fennelDauph.Location = new System.Drawing.Point(16, 127);
+            this.fennelDauph.Name = "fennelDauph";
+            this.fennelDauph.Size = new System.Drawing.Size(234, 34);
+            this.fennelDauph.TabIndex = 2;
+            this.fennelDauph.Text = "Fennel Dauphinoise ";
+            this.fennelDauph.UseVisualStyleBackColor = true;
+            // 
+            // frenchOmlette
+            // 
+            this.frenchOmlette.AutoSize = true;
+            this.frenchOmlette.Location = new System.Drawing.Point(16, 87);
+            this.frenchOmlette.Name = "frenchOmlette";
+            this.frenchOmlette.Size = new System.Drawing.Size(188, 34);
+            this.frenchOmlette.TabIndex = 1;
+            this.frenchOmlette.Text = "French Omlette";
+            this.frenchOmlette.UseVisualStyleBackColor = true;
+            // 
+            // saladeNic
+            // 
+            this.saladeNic.AutoSize = true;
+            this.saladeNic.Location = new System.Drawing.Point(16, 47);
+            this.saladeNic.Name = "saladeNic";
+            this.saladeNic.Size = new System.Drawing.Size(180, 34);
+            this.saladeNic.TabIndex = 0;
+            this.saladeNic.Text = "Salade Niçoise";
+            this.saladeNic.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.numericUpDown5);
@@ -207,46 +207,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SPECIALS";
-            // 
-            // croqueMON
-            // 
-            this.croqueMON.AutoSize = true;
-            this.croqueMON.Location = new System.Drawing.Point(11, 46);
-            this.croqueMON.Name = "croqueMON";
-            this.croqueMON.Size = new System.Drawing.Size(261, 34);
-            this.croqueMON.TabIndex = 0;
-            this.croqueMON.Text = "Croque Monsieur-Toast";
-            this.croqueMON.UseVisualStyleBackColor = true;
-            // 
-            // croqueMAM
-            // 
-            this.croqueMAM.AutoSize = true;
-            this.croqueMAM.Location = new System.Drawing.Point(11, 88);
-            this.croqueMAM.Name = "croqueMAM";
-            this.croqueMAM.Size = new System.Drawing.Size(256, 34);
-            this.croqueMAM.TabIndex = 1;
-            this.croqueMAM.Text = "Croque Madame-Toast";
-            this.croqueMAM.UseVisualStyleBackColor = true;
-            // 
-            // homeSoup
-            // 
-            this.homeSoup.AutoSize = true;
-            this.homeSoup.Location = new System.Drawing.Point(11, 131);
-            this.homeSoup.Name = "homeSoup";
-            this.homeSoup.Size = new System.Drawing.Size(206, 34);
-            this.homeSoup.TabIndex = 2;
-            this.homeSoup.Text = "Homemade Soup";
-            this.homeSoup.UseVisualStyleBackColor = true;
-            // 
-            // onionSoup
-            // 
-            this.onionSoup.AutoSize = true;
-            this.onionSoup.Location = new System.Drawing.Point(11, 174);
-            this.onionSoup.Name = "onionSoup";
-            this.onionSoup.Size = new System.Drawing.Size(155, 34);
-            this.onionSoup.TabIndex = 3;
-            this.onionSoup.Text = "Onion Soup";
-            this.onionSoup.UseVisualStyleBackColor = true;
             // 
             // numericUpDown5
             // 
@@ -276,6 +236,46 @@
             this.numericUpDown8.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown8.TabIndex = 6;
             // 
+            // onionSoup
+            // 
+            this.onionSoup.AutoSize = true;
+            this.onionSoup.Location = new System.Drawing.Point(11, 174);
+            this.onionSoup.Name = "onionSoup";
+            this.onionSoup.Size = new System.Drawing.Size(155, 34);
+            this.onionSoup.TabIndex = 3;
+            this.onionSoup.Text = "Onion Soup";
+            this.onionSoup.UseVisualStyleBackColor = true;
+            // 
+            // homeSoup
+            // 
+            this.homeSoup.AutoSize = true;
+            this.homeSoup.Location = new System.Drawing.Point(11, 131);
+            this.homeSoup.Name = "homeSoup";
+            this.homeSoup.Size = new System.Drawing.Size(206, 34);
+            this.homeSoup.TabIndex = 2;
+            this.homeSoup.Text = "Homemade Soup";
+            this.homeSoup.UseVisualStyleBackColor = true;
+            // 
+            // croqueMAM
+            // 
+            this.croqueMAM.AutoSize = true;
+            this.croqueMAM.Location = new System.Drawing.Point(11, 88);
+            this.croqueMAM.Name = "croqueMAM";
+            this.croqueMAM.Size = new System.Drawing.Size(256, 34);
+            this.croqueMAM.TabIndex = 1;
+            this.croqueMAM.Text = "Croque Madame-Toast";
+            this.croqueMAM.UseVisualStyleBackColor = true;
+            // 
+            // croqueMON
+            // 
+            this.croqueMON.AutoSize = true;
+            this.croqueMON.Location = new System.Drawing.Point(11, 46);
+            this.croqueMON.Name = "croqueMON";
+            this.croqueMON.Size = new System.Drawing.Size(261, 34);
+            this.croqueMON.TabIndex = 0;
+            this.croqueMON.Text = "Croque Monsieur-Toast";
+            this.croqueMON.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.bread);
@@ -294,25 +294,43 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BITES";
             // 
-            // torChips
+            // bread
             // 
-            this.torChips.AutoSize = true;
-            this.torChips.Location = new System.Drawing.Point(19, 43);
-            this.torChips.Name = "torChips";
-            this.torChips.Size = new System.Drawing.Size(169, 34);
-            this.torChips.TabIndex = 0;
-            this.torChips.Text = "Tortilla Chips ";
-            this.torChips.UseVisualStyleBackColor = true;
+            this.bread.AutoSize = true;
+            this.bread.Location = new System.Drawing.Point(19, 167);
+            this.bread.Name = "bread";
+            this.bread.Size = new System.Drawing.Size(98, 34);
+            this.bread.TabIndex = 8;
+            this.bread.Text = "Bread";
+            this.bread.UseVisualStyleBackColor = true;
             // 
-            // crudToast
+            // numericUpDown12
             // 
-            this.crudToast.AutoSize = true;
-            this.crudToast.Location = new System.Drawing.Point(19, 84);
-            this.crudToast.Name = "crudToast";
-            this.crudToast.Size = new System.Drawing.Size(328, 34);
-            this.crudToast.TabIndex = 1;
-            this.crudToast.Text = "Crudités with Olive- Aioli Toast";
-            this.crudToast.UseVisualStyleBackColor = true;
+            this.numericUpDown12.Location = new System.Drawing.Point(446, 166);
+            this.numericUpDown12.Name = "numericUpDown12";
+            this.numericUpDown12.Size = new System.Drawing.Size(120, 35);
+            this.numericUpDown12.TabIndex = 7;
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.Location = new System.Drawing.Point(446, 125);
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(120, 35);
+            this.numericUpDown11.TabIndex = 6;
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.Location = new System.Drawing.Point(446, 84);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(120, 35);
+            this.numericUpDown10.TabIndex = 5;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Location = new System.Drawing.Point(446, 43);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(120, 35);
+            this.numericUpDown9.TabIndex = 4;
             // 
             // belgPrep
             // 
@@ -324,43 +342,25 @@
             this.belgPrep.Text = "Belgian Préparé";
             this.belgPrep.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown9
+            // crudToast
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(446, 43);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(120, 35);
-            this.numericUpDown9.TabIndex = 4;
+            this.crudToast.AutoSize = true;
+            this.crudToast.Location = new System.Drawing.Point(19, 84);
+            this.crudToast.Name = "crudToast";
+            this.crudToast.Size = new System.Drawing.Size(328, 34);
+            this.crudToast.TabIndex = 1;
+            this.crudToast.Text = "Crudités with Olive- Aioli Toast";
+            this.crudToast.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown10
+            // torChips
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(446, 84);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(120, 35);
-            this.numericUpDown10.TabIndex = 5;
-            // 
-            // numericUpDown11
-            // 
-            this.numericUpDown11.Location = new System.Drawing.Point(446, 125);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(120, 35);
-            this.numericUpDown11.TabIndex = 6;
-            // 
-            // numericUpDown12
-            // 
-            this.numericUpDown12.Location = new System.Drawing.Point(446, 166);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(120, 35);
-            this.numericUpDown12.TabIndex = 7;
-            // 
-            // bread
-            // 
-            this.bread.AutoSize = true;
-            this.bread.Location = new System.Drawing.Point(19, 167);
-            this.bread.Name = "bread";
-            this.bread.Size = new System.Drawing.Size(98, 34);
-            this.bread.TabIndex = 8;
-            this.bread.Text = "Bread";
-            this.bread.UseVisualStyleBackColor = true;
+            this.torChips.AutoSize = true;
+            this.torChips.Location = new System.Drawing.Point(19, 43);
+            this.torChips.Name = "torChips";
+            this.torChips.Size = new System.Drawing.Size(169, 34);
+            this.torChips.TabIndex = 0;
+            this.torChips.Text = "Tortilla Chips ";
+            this.torChips.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -371,11 +371,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(38, 522);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 506);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(881, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(876, 432);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -422,7 +422,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1126, 539);
+            this.label2.Location = new System.Drawing.Point(1109, 664);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 59);
             this.label2.TabIndex = 6;
@@ -432,13 +432,13 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox1.Location = new System.Drawing.Point(1052, 620);
+            this.textBox1.Location = new System.Drawing.Point(1030, 751);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(284, 125);
             this.textBox1.TabIndex = 7;
             // 
-            // TakingOrder
+            // TakingLunchOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -451,7 +451,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LunchMain);
             this.Controls.Add(this.panel1);
-            this.Name = "TakingOrder";
+            this.Name = "TakingLunchOrder";
             this.Text = "TakingOrder";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -469,10 +469,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
