@@ -24,21 +24,5 @@ namespace ChapeauUI
             menulunch.ShowDialog();
             this.Close();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            MenuDinnerPage menudinner = new MenuDinnerPage();
-            menudinner.ShowDialog();
-            this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            MenuDrinksPage menudrinks = new MenuDrinksPage();
-            menudrinks.ShowDialog();
-            this.Close();
-        }
     }
 }
