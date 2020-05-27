@@ -12,119 +12,41 @@ namespace ChapeauUI
 {
     public partial class TakingLunchOrder : Form
     {
+        List<NumericUpDown> x = new List<NumericUpDown>();
         public TakingLunchOrder()
         {
             InitializeComponent();
         }
-        string name;
-        double price;
-        double tot;
+
+
 
         private void addItem_lunch_Click(object sender, EventArgs e)
         {
-            //Lunch Main
+            dataGridView1.Rows.Clear();
+            foreach (NumericUpDown item in x)
+            {
+                dataGridView1.Rows.Add(item.Name,item.Value);
+            }
+        }
 
-            if(saladeNic.Checked)
-            {
-                name = "Salade Niçoise";
-                int qty = int.Parse(numericUpDown1.Value.ToString());
-                price = 9.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
+        private void foodCount(object sender, EventArgs e)
+        {
+            CheckAmount(((NumericUpDown)sender));
+        }
+
+
+        private void CheckAmount(NumericUpDown lunch)
+        {
+            if (lunch.Value >= 1 && !(x.Contains(lunch)))
+            {               
+                x.Add(lunch);  
             }
-             if (frenchOmlette.Checked)
+            else if (x.Contains(lunch))
             {
-                name = "French Omlette";
-                int qty = int.Parse(numericUpDown2.Value.ToString());
-                price = 8.00;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-             if (fennelDauph.Checked)
-            {
-                name = "Fennel Dauphinoise";
-                int qty = int.Parse(numericUpDown3.Value.ToString());
-                price = 9.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-             if (quicheOTD.Checked)
-            {
-                name = "Quiche of the Day";
-                int qty = int.Parse(numericUpDown4.Value.ToString());
-                price = 8.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
+                x.Remove(lunch);
+                x.Add(lunch);
             }
 
-            // Specials
-
-             if (croqueMON.Checked)
-            {
-                name = "Croque Monsieur-Toast";
-                int qty = int.Parse(numericUpDown5.Value.ToString());
-                price = 8.95;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-             if (croqueMAM.Checked)
-            {
-                name = "Croque Madame-Toast";
-                int qty = int.Parse(numericUpDown6.Value.ToString());
-                price = 9.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-             if (homeSoup.Checked)
-            {
-                name = "Homemade Soup";
-                int qty = int.Parse(numericUpDown7.Value.ToString());
-                price = 6.95;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-             if (onionSoup.Checked)
-            {
-                name = "Onion Soup";
-                int qty = int.Parse(numericUpDown8.Value.ToString());
-                price = 7.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-            // Bites
-
-            if (torChips.Checked)
-            {
-                name = "Tortilla Chips";
-                int qty = int.Parse(numericUpDown9.Value.ToString());
-                price = 7.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-            if (crudToast.Checked)
-            {
-                name = "Crudités with Olive- Aioli Toast";
-                int qty = int.Parse(numericUpDown10.Value.ToString());
-                price = 5.95;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-            if (belgPrep.Checked)
-            {
-                name = "Belgian Préparé";
-                int qty = int.Parse(numericUpDown11.Value.ToString());
-                price = 5.50;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
-            if (bread.Checked)
-            {
-                name = "Bread";
-                int qty = int.Parse(numericUpDown12.Value.ToString());
-                price = 4.95;
-                tot = qty * price;
-                this.dataGridView1.Rows.Add(name, price, qty, tot);
-            }
         }
     }
 }
