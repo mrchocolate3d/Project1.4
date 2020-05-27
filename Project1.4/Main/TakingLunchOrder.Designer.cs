@@ -88,10 +88,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(782, 47);
+            this.panel1.Size = new System.Drawing.Size(1564, 91);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -99,10 +98,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(334, -5);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(667, -9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 51);
+            this.label1.Size = new System.Drawing.Size(307, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "LUNCH";
             // 
@@ -117,54 +115,47 @@
             this.LunchMain.Controls.Add(this.frenchOmlette);
             this.LunchMain.Controls.Add(this.saladeNic);
             this.LunchMain.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LunchMain.Location = new System.Drawing.Point(14, 62);
-            this.LunchMain.Margin = new System.Windows.Forms.Padding(2);
+            this.LunchMain.Location = new System.Drawing.Point(27, 119);
             this.LunchMain.Name = "LunchMain";
-            this.LunchMain.Padding = new System.Windows.Forms.Padding(2);
-            this.LunchMain.Size = new System.Drawing.Size(222, 125);
+            this.LunchMain.Size = new System.Drawing.Size(445, 240);
             this.LunchMain.TabIndex = 1;
             this.LunchMain.TabStop = false;
             this.LunchMain.Text = "LUNCH MAIN";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(144, 24);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown1.Location = new System.Drawing.Point(288, 46);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown1.TabIndex = 2;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(144, 45);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown2.Location = new System.Drawing.Point(288, 87);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown2.TabIndex = 3;
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(144, 66);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown3.Location = new System.Drawing.Point(288, 126);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown3.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown3.TabIndex = 4;
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(144, 87);
-            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown4.Location = new System.Drawing.Point(288, 167);
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown4.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown4.TabIndex = 5;
             // 
             // quicheOTD
             // 
             this.quicheOTD.AutoSize = true;
-            this.quicheOTD.Location = new System.Drawing.Point(8, 87);
-            this.quicheOTD.Margin = new System.Windows.Forms.Padding(2);
+            this.quicheOTD.Location = new System.Drawing.Point(16, 167);
             this.quicheOTD.Name = "quicheOTD";
-            this.quicheOTD.Size = new System.Drawing.Size(121, 17);
+            this.quicheOTD.Size = new System.Drawing.Size(220, 34);
             this.quicheOTD.TabIndex = 3;
             this.quicheOTD.Text = "Quiche of the Day ";
             this.quicheOTD.UseVisualStyleBackColor = true;
@@ -172,38 +163,32 @@
             // fennelDauph
             // 
             this.fennelDauph.AutoSize = true;
-            this.fennelDauph.Location = new System.Drawing.Point(8, 66);
-            this.fennelDauph.Margin = new System.Windows.Forms.Padding(2);
+            this.fennelDauph.Location = new System.Drawing.Point(16, 127);
             this.fennelDauph.Name = "fennelDauph";
-            this.fennelDauph.Size = new System.Drawing.Size(133, 17);
+            this.fennelDauph.Size = new System.Drawing.Size(234, 34);
             this.fennelDauph.TabIndex = 2;
             this.fennelDauph.Text = "Fennel Dauphinoise ";
             this.fennelDauph.UseVisualStyleBackColor = true;
-            this.fennelDauph.Click += new System.EventHandler(this.FoodSelected);
             // 
             // frenchOmlette
             // 
             this.frenchOmlette.AutoSize = true;
-            this.frenchOmlette.Location = new System.Drawing.Point(8, 45);
-            this.frenchOmlette.Margin = new System.Windows.Forms.Padding(2);
+            this.frenchOmlette.Location = new System.Drawing.Point(16, 87);
             this.frenchOmlette.Name = "frenchOmlette";
-            this.frenchOmlette.Size = new System.Drawing.Size(105, 17);
+            this.frenchOmlette.Size = new System.Drawing.Size(188, 34);
             this.frenchOmlette.TabIndex = 1;
             this.frenchOmlette.Text = "French Omlette";
             this.frenchOmlette.UseVisualStyleBackColor = true;
-            this.frenchOmlette.Click += new System.EventHandler(this.FoodSelected);
             // 
             // saladeNic
             // 
             this.saladeNic.AutoSize = true;
-            this.saladeNic.Location = new System.Drawing.Point(8, 24);
-            this.saladeNic.Margin = new System.Windows.Forms.Padding(2);
+            this.saladeNic.Location = new System.Drawing.Point(16, 47);
             this.saladeNic.Name = "saladeNic";
-            this.saladeNic.Size = new System.Drawing.Size(100, 17);
+            this.saladeNic.Size = new System.Drawing.Size(180, 34);
             this.saladeNic.TabIndex = 0;
             this.saladeNic.Text = "Salade Niçoise";
             this.saladeNic.UseVisualStyleBackColor = true;
-            this.saladeNic.Click += new System.EventHandler(this.FoodSelected);
             // 
             // groupBox1
             // 
@@ -216,54 +201,47 @@
             this.groupBox1.Controls.Add(this.croqueMAM);
             this.groupBox1.Controls.Add(this.croqueMON);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(245, 62);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(490, 119);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(230, 125);
+            this.groupBox1.Size = new System.Drawing.Size(460, 240);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SPECIALS";
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(154, 23);
-            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown5.Location = new System.Drawing.Point(309, 45);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown5.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown5.TabIndex = 3;
             // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(154, 45);
-            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown6.Location = new System.Drawing.Point(309, 86);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown6.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown6.TabIndex = 4;
             // 
             // numericUpDown7
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(154, 66);
-            this.numericUpDown7.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown7.Location = new System.Drawing.Point(309, 126);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown7.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown7.TabIndex = 5;
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(154, 86);
-            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown8.Location = new System.Drawing.Point(309, 166);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown8.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown8.TabIndex = 6;
             // 
             // onionSoup
             // 
             this.onionSoup.AutoSize = true;
-            this.onionSoup.Location = new System.Drawing.Point(6, 90);
-            this.onionSoup.Margin = new System.Windows.Forms.Padding(2);
+            this.onionSoup.Location = new System.Drawing.Point(11, 174);
             this.onionSoup.Name = "onionSoup";
-            this.onionSoup.Size = new System.Drawing.Size(89, 17);
+            this.onionSoup.Size = new System.Drawing.Size(155, 34);
             this.onionSoup.TabIndex = 3;
             this.onionSoup.Text = "Onion Soup";
             this.onionSoup.UseVisualStyleBackColor = true;
@@ -271,10 +249,9 @@
             // homeSoup
             // 
             this.homeSoup.AutoSize = true;
-            this.homeSoup.Location = new System.Drawing.Point(6, 68);
-            this.homeSoup.Margin = new System.Windows.Forms.Padding(2);
+            this.homeSoup.Location = new System.Drawing.Point(11, 131);
             this.homeSoup.Name = "homeSoup";
-            this.homeSoup.Size = new System.Drawing.Size(114, 17);
+            this.homeSoup.Size = new System.Drawing.Size(206, 34);
             this.homeSoup.TabIndex = 2;
             this.homeSoup.Text = "Homemade Soup";
             this.homeSoup.UseVisualStyleBackColor = true;
@@ -282,10 +259,9 @@
             // croqueMAM
             // 
             this.croqueMAM.AutoSize = true;
-            this.croqueMAM.Location = new System.Drawing.Point(6, 46);
-            this.croqueMAM.Margin = new System.Windows.Forms.Padding(2);
+            this.croqueMAM.Location = new System.Drawing.Point(11, 88);
             this.croqueMAM.Name = "croqueMAM";
-            this.croqueMAM.Size = new System.Drawing.Size(142, 17);
+            this.croqueMAM.Size = new System.Drawing.Size(256, 34);
             this.croqueMAM.TabIndex = 1;
             this.croqueMAM.Text = "Croque Madame-Toast";
             this.croqueMAM.UseVisualStyleBackColor = true;
@@ -293,10 +269,9 @@
             // croqueMON
             // 
             this.croqueMON.AutoSize = true;
-            this.croqueMON.Location = new System.Drawing.Point(6, 24);
-            this.croqueMON.Margin = new System.Windows.Forms.Padding(2);
+            this.croqueMON.Location = new System.Drawing.Point(11, 46);
             this.croqueMON.Name = "croqueMON";
-            this.croqueMON.Size = new System.Drawing.Size(147, 17);
+            this.croqueMON.Size = new System.Drawing.Size(261, 34);
             this.croqueMON.TabIndex = 0;
             this.croqueMON.Text = "Croque Monsieur-Toast";
             this.croqueMON.UseVisualStyleBackColor = true;
@@ -312,11 +287,9 @@
             this.groupBox2.Controls.Add(this.crudToast);
             this.groupBox2.Controls.Add(this.torChips);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(484, 68);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(967, 131);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(294, 119);
+            this.groupBox2.Size = new System.Drawing.Size(587, 228);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BITES";
@@ -324,53 +297,47 @@
             // bread
             // 
             this.bread.AutoSize = true;
-            this.bread.Location = new System.Drawing.Point(10, 87);
-            this.bread.Margin = new System.Windows.Forms.Padding(2);
+            this.bread.Location = new System.Drawing.Point(19, 167);
             this.bread.Name = "bread";
-            this.bread.Size = new System.Drawing.Size(55, 17);
+            this.bread.Size = new System.Drawing.Size(98, 34);
             this.bread.TabIndex = 8;
             this.bread.Text = "Bread";
             this.bread.UseVisualStyleBackColor = true;
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(223, 86);
-            this.numericUpDown12.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown12.Location = new System.Drawing.Point(446, 166);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown12.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown12.TabIndex = 7;
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(223, 65);
-            this.numericUpDown11.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown11.Location = new System.Drawing.Point(446, 125);
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown11.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown11.TabIndex = 6;
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(223, 44);
-            this.numericUpDown10.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown10.Location = new System.Drawing.Point(446, 84);
             this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown10.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown10.TabIndex = 5;
             // 
             // numericUpDown9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(223, 22);
-            this.numericUpDown9.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown9.Location = new System.Drawing.Point(446, 43);
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(60, 21);
+            this.numericUpDown9.Size = new System.Drawing.Size(120, 35);
             this.numericUpDown9.TabIndex = 4;
             // 
             // belgPrep
             // 
             this.belgPrep.AutoSize = true;
-            this.belgPrep.Location = new System.Drawing.Point(10, 66);
-            this.belgPrep.Margin = new System.Windows.Forms.Padding(2);
+            this.belgPrep.Location = new System.Drawing.Point(19, 126);
             this.belgPrep.Name = "belgPrep";
-            this.belgPrep.Size = new System.Drawing.Size(106, 17);
+            this.belgPrep.Size = new System.Drawing.Size(190, 34);
             this.belgPrep.TabIndex = 3;
             this.belgPrep.Text = "Belgian Préparé";
             this.belgPrep.UseVisualStyleBackColor = true;
@@ -378,10 +345,9 @@
             // crudToast
             // 
             this.crudToast.AutoSize = true;
-            this.crudToast.Location = new System.Drawing.Point(10, 44);
-            this.crudToast.Margin = new System.Windows.Forms.Padding(2);
+            this.crudToast.Location = new System.Drawing.Point(19, 84);
             this.crudToast.Name = "crudToast";
-            this.crudToast.Size = new System.Drawing.Size(184, 17);
+            this.crudToast.Size = new System.Drawing.Size(328, 34);
             this.crudToast.TabIndex = 1;
             this.crudToast.Text = "Crudités with Olive- Aioli Toast";
             this.crudToast.UseVisualStyleBackColor = true;
@@ -389,10 +355,9 @@
             // torChips
             // 
             this.torChips.AutoSize = true;
-            this.torChips.Location = new System.Drawing.Point(10, 22);
-            this.torChips.Margin = new System.Windows.Forms.Padding(2);
+            this.torChips.Location = new System.Drawing.Point(19, 43);
             this.torChips.Name = "torChips";
-            this.torChips.Size = new System.Drawing.Size(96, 17);
+            this.torChips.Size = new System.Drawing.Size(169, 34);
             this.torChips.TabIndex = 0;
             this.torChips.Text = "Tortilla Chips ";
             this.torChips.UseVisualStyleBackColor = true;
@@ -406,12 +371,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(28, 263);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 506);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(438, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(876, 432);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -445,10 +409,9 @@
             // addItem_lunch
             // 
             this.addItem_lunch.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addItem_lunch.Location = new System.Drawing.Point(239, 202);
-            this.addItem_lunch.Margin = new System.Windows.Forms.Padding(2);
+            this.addItem_lunch.Location = new System.Drawing.Point(478, 389);
             this.addItem_lunch.Name = "addItem_lunch";
-            this.addItem_lunch.Size = new System.Drawing.Size(303, 45);
+            this.addItem_lunch.Size = new System.Drawing.Size(606, 86);
             this.addItem_lunch.TabIndex = 5;
             this.addItem_lunch.Text = "Add";
             this.addItem_lunch.UseVisualStyleBackColor = true;
@@ -459,10 +422,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(554, 345);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(1109, 664);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 30);
+            this.label2.Size = new System.Drawing.Size(124, 59);
             this.label2.TabIndex = 6;
             this.label2.Text = "Total";
             // 
@@ -470,18 +432,17 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox1.Location = new System.Drawing.Point(515, 391);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(1030, 751);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 67);
+            this.textBox1.Size = new System.Drawing.Size(284, 125);
             this.textBox1.TabIndex = 7;
             // 
             // TakingLunchOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 512);
+            this.ClientSize = new System.Drawing.Size(1566, 985);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.addItem_lunch);
@@ -490,7 +451,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LunchMain);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TakingLunchOrder";
             this.Text = "TakingOrder";
             this.panel1.ResumeLayout(false);
