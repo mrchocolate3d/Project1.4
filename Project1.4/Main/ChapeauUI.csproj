@@ -87,24 +87,6 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuDinnerPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDinnerPage.Designer.cs">
-      <DependentUpon>MenuDinnerPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuDrinksPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDrinksPage.Designer.cs">
-      <DependentUpon>MenuDrinksPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuLunchPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuLunchPage.Designer.cs">
-      <DependentUpon>MenuLunchPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuStartPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +128,18 @@
     <Compile Include="TablePage.Designer.cs">
       <DependentUpon>TablePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="TakingDinnerOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakingDinnerOrder.Designer.cs">
+      <DependentUpon>TakingDinnerOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakingDrinksOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakingDrinksOrder.Designer.cs">
+      <DependentUpon>TakingDrinksOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="TakingLunchOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,15 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuDinnerPage.resx">
-      <DependentUpon>MenuDinnerPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuDrinksPage.resx">
-      <DependentUpon>MenuDrinksPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuLunchPage.resx">
-      <DependentUpon>MenuLunchPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuStartPage.resx">
       <DependentUpon>MenuStartPage.cs</DependentUpon>
@@ -204,6 +189,12 @@
     <EmbeddedResource Include="TablePage.resx">
       <DependentUpon>TablePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TakingDinnerOrder.resx">
+      <DependentUpon>TakingDinnerOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakingDrinksOrder.resx">
+      <DependentUpon>TakingDrinksOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TakingLunchOrder.resx">
       <DependentUpon>TakingLunchOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +204,7 @@
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

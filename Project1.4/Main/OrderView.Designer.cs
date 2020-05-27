@@ -39,6 +39,7 @@
             this.lblOrder = new System.Windows.Forms.Label();
             this.lblWaiter = new System.Windows.Forms.Label();
             this.lblTable = new System.Windows.Forms.Label();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -154,12 +155,23 @@
             this.lblTable.TabIndex = 1;
             this.lblTable.Text = "Table #";
             // 
+            // btnOrder
+            // 
+            this.btnOrder.Location = new System.Drawing.Point(492, 91);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(86, 100);
+            this.btnOrder.TabIndex = 5;
+            this.btnOrder.Text = "Show Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
             // OrderView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 624);
+            this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listOrder);
@@ -189,5 +201,6 @@
         private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.Label lblWaiter;
         private System.Windows.Forms.Label lblTable;
+        private System.Windows.Forms.Button btnOrder;
     }
 }
