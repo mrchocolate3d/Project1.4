@@ -11,10 +11,10 @@ namespace ChapeauDAL
 {
     class PaymentDAO: Base
     {
-        public List<Payment> GetPayments()
-        {
-            string query = "";
-            SqlParameter[] sqlParameter = new SqlParameter[0];
-        }
+        //public List<Payment> GetPayments()
+        //{
+        //    string query = "";
+        //    SqlParameter[] sqlParameter = new SqlParameter[0];
+        //}
     }
 }
