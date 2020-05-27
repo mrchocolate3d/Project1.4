@@ -42,8 +42,8 @@ namespace ChapeauUI
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            OrderView order = new OrderView();
-            order.ShowDialog();
+            OrdersList orders = new OrdersList();
+            orders.ShowDialog();
             this.Close();
         }
     }
