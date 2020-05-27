@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ChapeauLogic;
+using ChapeauModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +23,23 @@ namespace ChapeauUI
         {
             Reciept reciept = new Reciept();
             reciept.Show();
+        }
+        void ViewOrder()
+        {
+            OrderService orderService = new OrderService();
+            List<Order> orderList = orderService.GetOrders();
+
+            listOrder.Items.Clear();
+
+            foreach (Order o in orderList)
+            {
+                
+            }
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            ViewOrder();
         }
     }
 }
