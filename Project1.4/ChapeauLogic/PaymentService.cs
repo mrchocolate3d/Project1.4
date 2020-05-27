@@ -13,11 +13,11 @@ namespace ChapeauLogic
     {
         PaymentDAO payment_db = new PaymentDAO();
 
-        public List<Payment> GetPayments()
+        public List<Payment> GetPayments(int orderid)
         {
             try
             {
-                List<Payment> payments = payment_db.GetPayments();
+                List<Payment> payments = payment_db.GetPayments(orderid);
                 return payments;
             }
             catch(Exception exception)

@@ -11,9 +11,11 @@ namespace ChapeauDAL
 {
     public class PaymentDAO: Base
     {
-        public List<Payment> GetPayments()
+        public List<Payment> GetPayments(int OrderId)
         {
-            string query = "";
+            string query = "SELECT [MenuItem].itemname,menuitem.price OrderMenuItem.quantity * OrderMenu_Item.price, Orders.orderId,"
+                + " FROM ((INNER JOIN [Order], [OrderMenuItems] ON Order.orderid = menuitems.orderId) " +
+                $" INNER JOIN [OrderMenuItems], [MenuItem] ON OrderMenuItems.MenuItemId = MenuItem.MenuItemId WHERE Orders.OrderId = {OrderId}";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadInfoForPayments(ExecuteSelectQuery(query, sqlParameters));
         }
