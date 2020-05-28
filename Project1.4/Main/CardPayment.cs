@@ -19,6 +19,12 @@ namespace ChapeauUI
 
         private void btnconfirmpayement_Click(object sender, EventArgs e)
         {
+            int cardnumber = int.Parse(txtcardnumber.Text);
+            int pasnumber = int.Parse(txtpasnumber.Text);
+            DateTime DateOfExpire = DateTime.Parse(txtdateofexpire.Text);
+            
+
+            // then the thankyou note is displayed 
             ThankYouNote thankYouNote = new ThankYouNote();
             thankYouNote.Show();
         }

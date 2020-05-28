@@ -17,19 +17,16 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        private void btncash_Click(object sender, EventArgs e)
+        private void radiobtnpaybypin_CheckedChanged(object sender, EventArgs e)
+        {
+            CardPayment cardPayment = new CardPayment();
+            cardPayment.Show();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             ThankYouNote thankYouNote = new ThankYouNote();
             thankYouNote.Show();
-
-            Reciept reciept = new Reciept();
-            reciept.Hide();
-        }
-
-        private void btncreditcard_Click(object sender, EventArgs e)
-        {
-            CardPayment cardpayment = new CardPayment();
-            cardpayment.Show();
         }
     }
 }

@@ -40,7 +40,7 @@
             // lblcardnumber
             // 
             this.lblcardnumber.AutoSize = true;
-            this.lblcardnumber.Location = new System.Drawing.Point(64, 45);
+            this.lblcardnumber.Location = new System.Drawing.Point(20, 45);
             this.lblcardnumber.Name = "lblcardnumber";
             this.lblcardnumber.Size = new System.Drawing.Size(134, 17);
             this.lblcardnumber.TabIndex = 0;
@@ -59,20 +59,20 @@
             // 
             this.txtcardnumber.Location = new System.Drawing.Point(214, 45);
             this.txtcardnumber.Name = "txtcardnumber";
-            this.txtcardnumber.Size = new System.Drawing.Size(139, 22);
+            this.txtcardnumber.Size = new System.Drawing.Size(214, 22);
             this.txtcardnumber.TabIndex = 2;
             // 
             // txtpasnumber
             // 
             this.txtpasnumber.Location = new System.Drawing.Point(214, 80);
             this.txtpasnumber.Name = "txtpasnumber";
-            this.txtpasnumber.Size = new System.Drawing.Size(139, 22);
+            this.txtpasnumber.Size = new System.Drawing.Size(214, 22);
             this.txtpasnumber.TabIndex = 3;
             // 
             // lblexpire
             // 
             this.lblexpire.AutoSize = true;
-            this.lblexpire.Location = new System.Drawing.Point(64, 121);
+            this.lblexpire.Location = new System.Drawing.Point(50, 121);
             this.lblexpire.Name = "lblexpire";
             this.lblexpire.Size = new System.Drawing.Size(104, 17);
             this.lblexpire.TabIndex = 4;
@@ -82,12 +82,12 @@
             // 
             this.txtdateofexpire.Location = new System.Drawing.Point(214, 121);
             this.txtdateofexpire.Name = "txtdateofexpire";
-            this.txtdateofexpire.Size = new System.Drawing.Size(139, 22);
+            this.txtdateofexpire.Size = new System.Drawing.Size(214, 22);
             this.txtdateofexpire.TabIndex = 5;
             // 
             // btnconfirmpayement
             // 
-            this.btnconfirmpayement.Location = new System.Drawing.Point(108, 184);
+            this.btnconfirmpayement.Location = new System.Drawing.Point(110, 183);
             this.btnconfirmpayement.Name = "btnconfirmpayement";
             this.btnconfirmpayement.Size = new System.Drawing.Size(245, 57);
             this.btnconfirmpayement.TabIndex = 6;

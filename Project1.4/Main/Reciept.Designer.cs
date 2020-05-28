@@ -35,20 +35,20 @@
             this.lblserver = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.colpaymentid = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colorderid = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colorderId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colemployeeid = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colpaymentmethod = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coldateorder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colvat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coltotalprice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnproceedpayment = new System.Windows.Forms.Button();
+            this.btnproceedtopayment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(237, 9);
+            this.label1.Location = new System.Drawing.Point(302, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 29);
             this.label1.TabIndex = 2;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 85);
+            this.label2.Location = new System.Drawing.Point(12, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 17);
             this.label2.TabIndex = 3;
@@ -66,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(454, 85);
+            this.label3.Location = new System.Drawing.Point(620, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 4;
@@ -75,16 +75,17 @@
             // lbltablenumber
             // 
             this.lbltablenumber.AutoSize = true;
-            this.lbltablenumber.Location = new System.Drawing.Point(195, 85);
+            this.lbltablenumber.Location = new System.Drawing.Point(135, 75);
             this.lbltablenumber.Name = "lbltablenumber";
             this.lbltablenumber.Size = new System.Drawing.Size(38, 17);
             this.lbltablenumber.TabIndex = 5;
             this.lbltablenumber.Text = "------";
+            this.lbltablenumber.Click += new System.EventHandler(this.lbltablenumber_Click);
             // 
             // lblserver
             // 
             this.lblserver.AutoSize = true;
-            this.lblserver.Location = new System.Drawing.Point(543, 85);
+            this.lblserver.Location = new System.Drawing.Point(733, 75);
             this.lblserver.Name = "lblserver";
             this.lblserver.Size = new System.Drawing.Size(38, 17);
             this.lblserver.TabIndex = 6;
@@ -94,69 +95,70 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colpaymentid,
-            this.colorderid,
+            this.colorderId,
             this.colemployeeid,
             this.colpaymentmethod,
             this.coldateorder,
             this.colvat,
             this.coltotalprice});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(61, 139);
+            this.listView1.Location = new System.Drawing.Point(84, 174);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(612, 424);
-            this.listView1.TabIndex = 16;
+            this.listView1.Size = new System.Drawing.Size(643, 340);
+            this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // colpaymentid
             // 
-            this.colpaymentid.Text = "PaymentID";
-            this.colpaymentid.Width = 99;
+            this.colpaymentid.Text = "paymentID";
+            this.colpaymentid.Width = 89;
             // 
-            // colorderid
+            // colorderId
             // 
-            this.colorderid.Text = "orderID";
-            this.colorderid.Width = 67;
+            this.colorderId.Text = "orderID";
             // 
             // colemployeeid
             // 
-            this.colemployeeid.Text = "employeeID";
-            this.colemployeeid.Width = 96;
+            this.colemployeeid.Text = "EmployeeId";
+            this.colemployeeid.Width = 101;
             // 
             // colpaymentmethod
             // 
-            this.colpaymentmethod.Text = "paymentMethod";
-            this.colpaymentmethod.Width = 117;
+            this.colpaymentmethod.Text = "PaymentMethod";
+            this.colpaymentmethod.Width = 121;
             // 
             // coldateorder
             // 
-            this.coldateorder.Text = "dateOrder";
-            this.coldateorder.Width = 80;
+            this.coldateorder.Text = "DateOrder";
+            this.coldateorder.Width = 101;
             // 
             // colvat
             // 
             this.colvat.Text = "vat";
+            this.colvat.Width = 84;
             // 
             // coltotalprice
             // 
-            this.coltotalprice.Text = "totalPrice";
-            this.coltotalprice.Width = 88;
+            this.coltotalprice.Text = "totalprice";
+            this.coltotalprice.Width = 79;
             // 
-            // btnproceedpayment
+            // btnproceedtopayment
             // 
-            this.btnproceedpayment.Location = new System.Drawing.Point(61, 584);
-            this.btnproceedpayment.Name = "btnproceedpayment";
-            this.btnproceedpayment.Size = new System.Drawing.Size(612, 50);
-            this.btnproceedpayment.TabIndex = 17;
-            this.btnproceedpayment.Text = "Proceed To Payment";
-            this.btnproceedpayment.UseVisualStyleBackColor = true;
+            this.btnproceedtopayment.Location = new System.Drawing.Point(84, 547);
+            this.btnproceedtopayment.Name = "btnproceedtopayment";
+            this.btnproceedtopayment.Size = new System.Drawing.Size(643, 46);
+            this.btnproceedtopayment.TabIndex = 8;
+            this.btnproceedtopayment.Text = "Proceed To Payment";
+            this.btnproceedtopayment.UseVisualStyleBackColor = true;
+            this.btnproceedtopayment.Click += new System.EventHandler(this.btnproceedtopayment_Click);
             // 
             // Reciept
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 657);
-            this.Controls.Add(this.btnproceedpayment);
+            this.ClientSize = new System.Drawing.Size(873, 605);
+            this.Controls.Add(this.btnproceedtopayment);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblserver);
             this.Controls.Add(this.lbltablenumber);
@@ -178,12 +180,12 @@
         private System.Windows.Forms.Label lblserver;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader colpaymentid;
-        private System.Windows.Forms.ColumnHeader colorderid;
+        private System.Windows.Forms.ColumnHeader colorderId;
         private System.Windows.Forms.ColumnHeader colemployeeid;
         private System.Windows.Forms.ColumnHeader colpaymentmethod;
         private System.Windows.Forms.ColumnHeader coldateorder;
         private System.Windows.Forms.ColumnHeader colvat;
         private System.Windows.Forms.ColumnHeader coltotalprice;
-        private System.Windows.Forms.Button btnproceedpayment;
+        private System.Windows.Forms.Button btnproceedtopayment;
     }
 }

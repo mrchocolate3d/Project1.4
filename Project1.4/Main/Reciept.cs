@@ -17,14 +17,16 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void lbltablenumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnproceedtopayment_Click(object sender, EventArgs e)
         {
             Payment payment = new Payment();
             payment.Show();
-
-            OrderView orderView = new OrderView();
-            orderView.Hide();
-
         }
     }
 }
