@@ -13,7 +13,7 @@ namespace ChapeauDAL
     {
         public List<Payment> GetPayments(int OrderId)
         {
-            string query = "SELECT [MenuItem].itemname,menuitem.price OrderMenuItem.quantity * OrderMenu_Item.price, Orders.orderId,"
+            string query = "SELECT [MenuItem].itemname,menuitem.price OrderMenuItem.quantity , OrderMenu_Item.price, Orders.orderId,"
                 + " FROM ((INNER JOIN [Order], [OrderMenuItems] ON Order.orderid = menuitems.orderId) " +
                 $" INNER JOIN [OrderMenuItems], [MenuItem] ON OrderMenuItems.MenuItemId = MenuItem.MenuItemId WHERE Orders.OrderId = {OrderId}";
             SqlParameter[] sqlParameters = new SqlParameter[0];
@@ -27,11 +27,11 @@ namespace ChapeauDAL
             {
                 Payment payment = new Payment()
                 {
-                    paymentID = (int)dataRow["paymentID"],
+                    paymentID = (int)dataRow["paymentID"], // change the attributes 
                     employeeID = (int)dataRow["employeeID"],
                     dateorder = (DateTime)dataRow["dateorder"],
-                    vat = (double)dataRow["vat"],
-                    TotalPrice = (double)dataRow["totalprice"]
+                    vat = (float)dataRow["vat"],
+                    TotalPrice = (float)dataRow["totalprice"]
                 };
                 payments.Add(payment);
             }

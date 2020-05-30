@@ -11,9 +11,10 @@ namespace ChapeauModel
         public int paymentID { get; set; }
         public int orderID { get; set; }
         public int employeeID { get; set; }
+        public string paymentMethod { get; set; }
         public DateTime dateorder { get; set; }
-        public double vat { get; set; }
-        public double TotalPrice { get; set; }
+        public float vat { get; set; }
+        public float TotalPrice { get; set; }
 
     }
 }
