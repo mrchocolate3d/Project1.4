@@ -22,25 +22,40 @@ namespace ChapeauDAL
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadLoginTables(ExecuteSelectQuery(query, sqlParameters));
         }
+       
+        private login getLogin(DataTable dt)
+        {
+                DataRow dr = dt.Rows[0];
+            //    login logins = new login()
+            //    {
+            //        loginCode = (int)dr["loginCode"],
+            //        employeeID = (int)dr["employeeID"],
+            //        firstname = (string)(dr["firstName"]),
+            //        lastname = (string)(dr["lastName"]),
+            //        role = (string)(dr["roleDescription"])
+
+            //    };
+            return null;
+        }
 
         private List<login> ReadLoginTables(DataTable loginTable)
         {
             List<login> logins = new List<login>();
 
-            foreach(DataRow dr in loginTable.Rows)
-            {
-                login login = new login()
-                {
-                    loginCode = (int)dr["loginCode"],
-                    employeeID = (int)dr["employeeID"],
-                    firstname = (string)(dr["firstName"]),
-                    lastname = (string)(dr["lastName"]),
-                    role = (string)(dr["roleDescription"])
+            //foreach(DataRow dr in loginTable.Rows)
+            //{
+            //    Employee login = new login()
+            //    {
+            //        loginCode = (int)dr["loginCode"],
+            //        employeeID = (int)dr["employeeID"],
+            //        firstname = (string)(dr["firstName"]),
+            //        lastname = (string)(dr["lastName"]),
+            //        role = (string)(dr["roleDescription"])
 
-                };
-                logins.Add(login);
-            }
-            return logins;
+            //    };
+            //    logins.Add(login);
+            //}
+            return null;
         }
            
     }

@@ -28,15 +28,15 @@ namespace ChapeauUI
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            lbl_employeeName.Text = LoginPage.UserName;
+            //lbl_employeeName.Text = LoginPage.UserName;
         }
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TablePage table = new TablePage();
-            table.ShowDialog();
-            this.Close();
+            //this.Hide();
+            //TablePage table = new TablePage();
+            //table.ShowDialog();
+            //this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)

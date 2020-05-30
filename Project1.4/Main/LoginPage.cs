@@ -14,10 +14,7 @@ namespace ChapeauUI
 
     public partial class LoginPage : Form
     {
-
-        public static string UserName = "";
-        private static string role = "";
-        private int password;
+        private string role;
         private static int maxValue = 4;
 
         public LoginPage()
@@ -47,14 +44,14 @@ namespace ChapeauUI
         {
             if (LoginBox.TextLength == maxValue)
             {
-                password = int.Parse(LoginBox.Text);
+                login password = new login(int.Parse(LoginBox.Text));
                 if (CheckLogin(password) == true)
                 {
                     if(role == "Waiter")
                     {
                         this.Hide();
-                        TakingLunchOrder waiterPage = new TakingLunchOrder();
-                        waiterPage.ShowDialog();
+                        TablePage tablepage = new TablePage(employee);
+                        tablepage.ShowDialog();
                         this.Close();
                     }
                 }
@@ -65,25 +62,22 @@ namespace ChapeauUI
             }
         }
 
-
-        private bool CheckLogin(int password)
+        ChapeauLogic.EmployeeServices employeeServices = new ChapeauLogic.EmployeeServices();
+        Employee employee;
+        private bool CheckLogin(login password)
         {
-            bool check = false;
-            ChapeauLogic.LoginServices loginServices = new ChapeauLogic.LoginServices();
-            List<login> loginList = loginServices.getLogin(password);
-            foreach (login login in loginList)
-            {
-                if(password == login.loginCode)
+            bool check;
+            
+            employee = employeeServices.GetEmployees(password);
+            if (password.loginCode == employee.password.loginCode)
                 {
                     check = true;
-                    UserName = login.firstname +" "+ login.lastname;
-                    role = login.role;
+                    role = employee.role;
                 }
                 else
                 {
                     check = false;
                 }
-            }
             return check;
         }
         

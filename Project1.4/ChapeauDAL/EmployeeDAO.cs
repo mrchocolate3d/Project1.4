@@ -12,29 +12,28 @@ namespace ChapeauDAL
 {
     public class EmployeeDAO : Base
     {
-        public List<Employee> GetUserLoginInfo(int EmployeeID)
+        public Employee GetUserLoginInfo(login loginCode)
         {
-            string query = "Select firstName,lastName,roleID FROM employees WHERE employeeID = " + EmployeeID + "";
+            string query = $"SELECT [login].loginCode,firstName,lastName,roles.roleDescription " +
+                $"FROM (([login] inner join employees ON [login].employeeID = employees.employeeID) " +
+                $"INNER JOIN [roles] ON roles.roleID = employees.roleID) WHERE [login].loginCode = {loginCode.loginCode}";
             SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadEmployeeTables(ExecuteSelectQuery(query, sqlParameters));
+            return GetEmployee(ExecuteSelectQuery(query, sqlParameters));
         }
 
-        private List<Employee> ReadEmployeeTables(DataTable loginTable)
-        {
-            List<Employee> employees = new List<Employee>();
 
-            foreach (DataRow dr in loginTable.Rows)
-            {
+        private Employee GetEmployee(DataTable loginTable)
+        {
+            DataRow dr = loginTable.Rows[0];
                 Employee employee = new Employee()
                 {
+                    password = new login((int)dr["loginCode"]),
                     FirstName = (string)(dr["firstName"]),
                     LastName = (string)(dr["lastName"]),
-                    roleID = (int)dr["roleID"]
-
+                    role = (string)(dr["roleDescription"])
                 };
-                employees.Add(employee);
-            }
-            return employees;
+            return employee;
         }
     }
 }
+

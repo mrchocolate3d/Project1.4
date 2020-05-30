@@ -13,9 +13,11 @@ namespace ChapeauUI
 {
     public partial class TablePage : Form
     {
-        public TablePage()
+        Employee employee;
+        public TablePage(Employee employee)
         {
             InitializeComponent();
+            this.employee = employee;
         }
         private void TablePage_Load(object sender, EventArgs e)
         {
@@ -26,6 +28,8 @@ namespace ChapeauUI
             {
                 tableStatusCheck(table.TableID, table.status);
             }
+
+            lbl_employeeName.Text = employee.FirstName + employee.LastName;
         }
 
         private void tableStatusCheck(int tableNumber, string status)

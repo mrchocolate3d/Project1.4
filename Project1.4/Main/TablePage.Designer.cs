@@ -42,6 +42,7 @@
             this.btn_table3 = new ChapeauUI.RoundButton();
             this.btn_table2 = new ChapeauUI.RoundButton();
             this.btn_table1 = new ChapeauUI.RoundButton();
+            this.lbl_employeeName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -181,11 +182,21 @@
             this.btn_table1.Text = "1";
             this.btn_table1.UseVisualStyleBackColor = true;
             // 
+            // lbl_employeeName
+            // 
+            this.lbl_employeeName.AutoSize = true;
+            this.lbl_employeeName.Location = new System.Drawing.Point(506, 9);
+            this.lbl_employeeName.Name = "lbl_employeeName";
+            this.lbl_employeeName.Size = new System.Drawing.Size(34, 13);
+            this.lbl_employeeName.TabIndex = 14;
+            this.lbl_employeeName.Text = ".........";
+            // 
             // TablePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 520);
+            this.Controls.Add(this.lbl_employeeName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -224,5 +235,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_employeeName;
     }
 }

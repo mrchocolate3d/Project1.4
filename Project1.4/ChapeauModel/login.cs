@@ -13,5 +13,10 @@ namespace ChapeauModel
         public string firstname { get; set; }
         public string lastname { get; set; }
         public string role { get; set; }
+
+        public login(int loginCode)
+        {
+            this.loginCode = loginCode;
+        }
     }
 }
