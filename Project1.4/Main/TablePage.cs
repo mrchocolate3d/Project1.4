@@ -28,10 +28,9 @@ namespace ChapeauUI
             {
                 tableStatusCheck(table.TableID, table.status);
             }
-
             lbl_employeeName.Text = employee.FirstName + employee.LastName;
         }
-
+        
         private void tableStatusCheck(int tableNumber, string status)
         {
             if (tableNumber == 1)
@@ -75,7 +74,6 @@ namespace ChapeauUI
             {
                 statusCheck(status, btn_table10);
             }
-
         }
 
         private void statusCheck(string status, Button button)
@@ -94,10 +92,16 @@ namespace ChapeauUI
             }
         }
 
-        private void roundButton5_Click(object sender, EventArgs e)
+        private void TableOrder(object sender, EventArgs e)
         {
-
+            newTableOrder(int.Parse(((Button)sender).Text));
         }
+        private void newTableOrder(int tableNumber)
+        {
+            
+        }
+
+
 
 
     }

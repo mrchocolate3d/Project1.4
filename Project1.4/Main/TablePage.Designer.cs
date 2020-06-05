@@ -90,6 +90,7 @@
             this.btn_table10.TabIndex = 9;
             this.btn_table10.Text = "10";
             this.btn_table10.UseVisualStyleBackColor = true;
+            this.btn_table10.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table9
             // 
@@ -100,6 +101,7 @@
             this.btn_table9.TabIndex = 8;
             this.btn_table9.Text = "9";
             this.btn_table9.UseVisualStyleBackColor = true;
+            this.btn_table9.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table8
             // 
@@ -110,6 +112,7 @@
             this.btn_table8.TabIndex = 7;
             this.btn_table8.Text = "8";
             this.btn_table8.UseVisualStyleBackColor = true;
+            this.btn_table8.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table7
             // 
@@ -120,6 +123,7 @@
             this.btn_table7.TabIndex = 6;
             this.btn_table7.Text = "7";
             this.btn_table7.UseVisualStyleBackColor = true;
+            this.btn_table7.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table6
             // 
@@ -130,6 +134,7 @@
             this.btn_table6.TabIndex = 5;
             this.btn_table6.Text = "6";
             this.btn_table6.UseVisualStyleBackColor = true;
+            this.btn_table6.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table5
             // 
@@ -140,7 +145,7 @@
             this.btn_table5.TabIndex = 4;
             this.btn_table5.Text = "5";
             this.btn_table5.UseVisualStyleBackColor = true;
-            this.btn_table5.Click += new System.EventHandler(this.roundButton5_Click);
+            this.btn_table5.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table4
             // 
@@ -151,6 +156,7 @@
             this.btn_table4.TabIndex = 3;
             this.btn_table4.Text = "4";
             this.btn_table4.UseVisualStyleBackColor = true;
+            this.btn_table4.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table3
             // 
@@ -161,6 +167,7 @@
             this.btn_table3.TabIndex = 2;
             this.btn_table3.Text = "3";
             this.btn_table3.UseVisualStyleBackColor = true;
+            this.btn_table3.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table2
             // 
@@ -171,6 +178,7 @@
             this.btn_table2.TabIndex = 1;
             this.btn_table2.Text = "2";
             this.btn_table2.UseVisualStyleBackColor = true;
+            this.btn_table2.Click += new System.EventHandler(this.TableOrder);
             // 
             // btn_table1
             // 
@@ -181,6 +189,7 @@
             this.btn_table1.TabIndex = 0;
             this.btn_table1.Text = "1";
             this.btn_table1.UseVisualStyleBackColor = true;
+            this.btn_table1.Click += new System.EventHandler(this.TableOrder);
             // 
             // lbl_employeeName
             // 
