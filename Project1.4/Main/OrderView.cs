@@ -21,7 +21,7 @@ namespace ChapeauUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reciept reciept = new Reciept();
+            Payment reciept = new Payment();
             reciept.Show();
         }
         void ViewOrder()

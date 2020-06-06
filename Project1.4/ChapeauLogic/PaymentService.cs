@@ -9,15 +9,15 @@ using System.Windows.Forms;
 
 namespace ChapeauLogic
 {
-    class PaymentService
+    public class PaymentService
     {
         PaymentDAO payment_db = new PaymentDAO();
 
-        public List<Payment> GetPayments(int orderid)
+        public List<Payment> GetPayments()
         {
             try
             {
-                List<Payment> payments = payment_db.GetPayments(orderid);
+                List<Payment> payments = payment_db.GetPayments();
                 return payments;
             }
             catch(Exception exception)

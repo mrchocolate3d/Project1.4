@@ -53,6 +53,11 @@ namespace ChapeauUI
                         TablePage tablepage = new TablePage(employee);
                         tablepage.ShowDialog();
                         this.Close();
+                        /*
+                        Payment payment = new Payment();
+                        payment.ShowDialog();
+                        this.Close();
+                        */
                     }
                 }
                 else

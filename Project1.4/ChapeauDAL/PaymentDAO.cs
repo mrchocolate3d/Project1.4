@@ -11,11 +11,11 @@ namespace ChapeauDAL
 {
     public class PaymentDAO: Base
     {
-        public List<Payment> GetPayments(int OrderId)
+        public List<Payment> GetPayments()
         {
-            string query = "SELECT [MenuItem].itemname,menuitem.price OrderMenuItem.quantity , OrderMenu_Item.price, Orders.orderId,"
-                + " FROM ((INNER JOIN [Order], [OrderMenuItems] ON Order.orderid = menuitems.orderId) " +
-                $" INNER JOIN [OrderMenuItems], [MenuItem] ON OrderMenuItems.MenuItemId = MenuItem.MenuItemId WHERE Orders.OrderId = {OrderId}";
+            string query = "SELECT m.itemName,m.price, om.quantity, o.orderID" + "FROM Order_MenuItem as om" +
+                "join menuItem as m on m.menuItemID = om.MenuItemID" + "join orders as o on o.orderID = om.orderID " + 
+                "WHERE o.orderID = 1";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadInfoForPayments(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -27,11 +27,10 @@ namespace ChapeauDAL
             {
                 Payment payment = new Payment()
                 {
-                    paymentID = (int)dataRow["paymentID"], // change the attributes 
-                    employeeID = (int)dataRow["employeeID"],
-                    dateorder = (DateTime)dataRow["dateorder"],
-                    vat = (float)dataRow["vat"],
-                    TotalPrice = (float)dataRow["totalprice"]
+                    itemName = (string)dataRow["itemName"],
+                    price = (int)dataRow["price"],
+                    quantity = (int)dataRow["quantity"],
+                    orderID = (int)dataRow["orderID"]
                 };
                 payments.Add(payment);
             }

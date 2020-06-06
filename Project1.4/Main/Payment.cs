@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapeauLogic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,35 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        private void radiobtnpaybypin_CheckedChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            CardPayment cardPayment = new CardPayment();
-            cardPayment.Show();
-        }
+            int tablenumber = 6;
+            string servername = "rachel green";
+            double totalprice = 56.89;
+            if (radiobtnpin.Checked)
+            {
+                CardPayment cardPayment = new CardPayment();
+                cardPayment.Show();
+            }
+            else if (radiobtncash.Checked)
+            {
+                ThankYouNote thankYouNote = new ThankYouNote();
+                thankYouNote.Show();
+            }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            ThankYouNote thankYouNote = new ThankYouNote();
-            thankYouNote.Show();
+            lbltablenumber.Text = tablenumber.ToString();
+            lblserver.Text = servername.ToString();
+            lbltotalprice.Text = totalprice.ToString("0.00");
         }
+        /*
+        public void ShowPanel(string panelname)
+        {
+            if (panelname=="pnlpayment")
+            {
+                PaymentService paymentService = new PaymentService();
+                List<Payment> payments = paymentService.GetPayments();
+            }
+        }
+        */
     }
 }
