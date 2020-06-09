@@ -9,7 +9,7 @@ namespace ChapeauModel
     public class Payment
     {
         public string itemName { get; set; }
-        public int price { get; set; }
+        public float price { get; set; }
         public int quantity { get; set; }
         public int orderID { get; set; }
 
