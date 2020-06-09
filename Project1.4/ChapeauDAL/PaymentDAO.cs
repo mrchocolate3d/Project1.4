@@ -13,9 +13,9 @@ namespace ChapeauDAL
     {
         public List<Payment> GetPayments()
         {
-            string query = "SELECT m.itemName,m.price, om.quantity, o.orderID" + "FROM Order_MenuItem as om" +
-                "join menuItem as m on m.menuItemID = om.MenuItemID" + "join orders as o on o.orderID = om.orderID " + 
-                "WHERE o.orderID = 1";
+            string query = "SELECT m.itemName,m.price, om.quantity, o.orderID FROM Order_MenuItem as om join menuItem as m on m.menuItemID = om.MenuItemID " +
+                "  join orders as o on o.orderID = om.orderID WHERE o.orderID = 1";
+                
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadInfoForPayments(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -28,7 +28,7 @@ namespace ChapeauDAL
                 Payment payment = new Payment()
                 {
                     itemName = (string)dataRow["itemName"],
-                    price = (int)dataRow["price"],
+                    price = (float)dataRow["price"],
                     quantity = (int)dataRow["quantity"],
                     orderID = (int)dataRow["orderID"]
                 };

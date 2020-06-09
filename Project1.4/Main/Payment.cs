@@ -1,4 +1,4 @@
-﻿using ChapeauLogic;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChapeauModel;
 
 namespace ChapeauUI
 {
@@ -18,11 +19,43 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void ShowPanel(string panelname)
         {
+            pnlpayment.Show();
+
+            if (panelname=="pnlpayment")
+            {
+               ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
+                List<ChapeauModel.Payment> payments = paymentService.GetPayments();
+
+                listViewrecipt.Items.Clear();
+
+                foreach (ChapeauModel.Payment item in payments)
+                {
+                    ListViewItem list = new ListViewItem(item.itemName);
+                    list.SubItems.Add(item.price.ToString());
+                    list.SubItems.Add(item.quantity.ToString());
+                    list.SubItems.Add(item.orderID.ToString());
+                    listViewrecipt.Items.Add(list);
+                }
+            }
+        }
+
+        private void btnprintrecipt_Click(object sender, EventArgs e)
+        {
+            ShowPanel("pnlpayment");
+
             int tablenumber = 6;
             string servername = "rachel green";
             double totalprice = 56.89;
+
+            lbltablenumber.Text = tablenumber.ToString();
+            lblserver.Text = servername.ToString();
+            lbltotalprice.Text = totalprice.ToString("0.00");
+        }
+
+        private void btnpay_Click(object sender, EventArgs e)
+        {
             if (radiobtnpin.Checked)
             {
                 CardPayment cardPayment = new CardPayment();
@@ -34,19 +67,6 @@ namespace ChapeauUI
                 thankYouNote.Show();
             }
 
-            lbltablenumber.Text = tablenumber.ToString();
-            lblserver.Text = servername.ToString();
-            lbltotalprice.Text = totalprice.ToString("0.00");
         }
-        /*
-        public void ShowPanel(string panelname)
-        {
-            if (panelname=="pnlpayment")
-            {
-                PaymentService paymentService = new PaymentService();
-                List<Payment> payments = paymentService.GetPayments();
-            }
-        }
-        */
     }
 }
