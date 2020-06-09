@@ -18,9 +18,7 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-
-
-        private void addItem_lunch_Click(object sender, EventArgs e)
+        private void AddItem_lunch_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
             foreach (NumericUpDown item in x)
@@ -29,11 +27,10 @@ namespace ChapeauUI
             }
         }
 
-        private void foodCount(object sender, EventArgs e)
+        private void FoodCount(object sender, EventArgs e)
         {
             CheckAmount(((NumericUpDown)sender));
         }
-
 
         private void CheckAmount(NumericUpDown lunch)
         {
@@ -46,7 +43,6 @@ namespace ChapeauUI
                 x.Remove(lunch);
                 x.Add(lunch);
             }
-
         }
     }
 }

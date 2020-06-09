@@ -94,15 +94,26 @@ namespace ChapeauUI
 
         private void TableOrder(object sender, EventArgs e)
         {
-            newTableOrder(int.Parse(((Button)sender).Text));
+            // newTableOrder(int.Parse(((Button)sender).Text));
+            newTableOrder((Button)sender);
         }
-        private void newTableOrder(int tableNumber)
+        private void newTableOrder(Button button)
         {
-            
+            if(button.BackColor == Color.Green)
+            {
+                this.Hide();
+                TakingLunchOrder tablepage = new TakingLunchOrder();
+                tablepage.ShowDialog();
+                this.Close();
+            }
+            else if (button.BackColor == Color.Blue)
+            {
+                
+            }
+            else
+            {
+                
+            }
         }
-
-
-
-
     }
 }

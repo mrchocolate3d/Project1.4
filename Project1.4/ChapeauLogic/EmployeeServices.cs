@@ -21,9 +21,8 @@ namespace ChapeauLogic
                 Employee employee = employee_db.GetUserLoginInfo(loginCode);
                 return employee;
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
                 return null;
             }
         }

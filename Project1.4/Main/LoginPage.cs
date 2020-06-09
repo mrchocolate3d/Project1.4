@@ -62,6 +62,7 @@ namespace ChapeauUI
                 }
                 else
                 {
+                    LoginBox.Text = "";
                     MessageBox.Show("Incorrect Password");
                 }
             }
@@ -71,22 +72,23 @@ namespace ChapeauUI
         Employee employee;
         private bool CheckLogin(login password)
         {
-            bool check;
-            
+            bool check = false;
+
             employee = employeeServices.GetEmployees(password);
-            if (password.loginCode == employee.password.loginCode)
+            if (employee != null)
+            {
+                if (password.loginCode == employee.password.loginCode)
                 {
                     check = true;
                     role = employee.role;
                 }
-                else
-                {
-                    check = false;
-                }
+            }
             return check;
+
+
         }
-        
-        
+
+
         private void LoginPage_Load(object sender, EventArgs e)
         {
 
