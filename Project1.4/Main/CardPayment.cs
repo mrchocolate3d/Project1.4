@@ -19,7 +19,8 @@ namespace ChapeauUI
 
         private void btnconfirmpayement_Click(object sender, EventArgs e)
         {
-            int cardnumber = int.Parse(txtcardnumber.Text);
+            // firstly you insert the credit card details
+            string cardnumber = txtcardnumber.Text;
             int pasnumber = int.Parse(txtpasnumber.Text);
             DateTime DateOfExpire = DateTime.Parse(txtdateofexpire.Text);
             
