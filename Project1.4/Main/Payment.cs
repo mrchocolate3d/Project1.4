@@ -19,12 +19,8 @@ namespace ChapeauUI
             InitializeComponent();
         }
 
-        public void ShowPanel(string panelname)
+        public void ShowPanel()
         {
-            pnlpayment.Show();
-
-            if (panelname=="pnlpayment")
-            {
                ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
                 List<ChapeauModel.Payment> payments = paymentService.GetPayments();
 
@@ -38,12 +34,11 @@ namespace ChapeauUI
                     list.SubItems.Add(item.orderID.ToString());
                     listViewrecipt.Items.Add(list);
                 }
-            }
         }
 
         private void btnprintrecipt_Click(object sender, EventArgs e)
         {
-            ShowPanel("pnlpayment");
+            ShowPanel();
 
             int tablenumber = 6;
             string servername = "rachel green";
