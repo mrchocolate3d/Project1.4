@@ -17,15 +17,21 @@ namespace ChapeauUI
         public OrderView()
         {
             InitializeComponent();
+            //ViewOrder();                                              Still having issues with this at the time of upload
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Payment reciept = new Payment();
-            reciept.Show();
+            Payment payment = new Payment();
+            payment.Show();
         }
         void ViewOrder()
         {
+            lblTable.Text = "Table #2";
+            lblOrder.Text = "Order #2";
+            lblWaiter.Text = "Waiter: Seyifunmi";
+
             OrderService orderService = new OrderService();
             List<Order> orderList = orderService.GetOrders();
 
@@ -33,13 +39,11 @@ namespace ChapeauUI
 
             foreach (Order o in orderList)
             {
-                
+                ListViewItem li = new ListViewItem(o.table.TableID.ToString());
+                li.SubItems.Add(o.EmployeeID.ToString());
+                li.SubItems.Add(o.OrderID.ToString());
+                listOrder.Items.Add(li);
             }
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            ViewOrder();
         }
     }
 }

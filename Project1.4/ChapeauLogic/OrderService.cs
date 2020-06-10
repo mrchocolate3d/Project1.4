@@ -18,8 +18,8 @@ namespace ChapeauLogic
         {
             try
             {
-                List<Order> student = order_db.Db_Get_Order_Info();
-                return student;
+                List<Order> order = order_db.Db_Get_Order_Info();
+                return order;
             }
             catch (Exception ex)
             {

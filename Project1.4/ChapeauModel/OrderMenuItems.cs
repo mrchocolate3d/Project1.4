@@ -12,7 +12,7 @@ namespace ChapeauModel
 
         public int menuItemID { get; set; }
 
-        public float quantity { get; set; }
+        public int quantity { get; set; }
 
         public string comments { get; set; }
 
