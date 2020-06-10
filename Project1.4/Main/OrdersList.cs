@@ -21,9 +21,9 @@ namespace ChapeauUI
             PrintOrders();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOngoing_Click(object sender, EventArgs e)
         {
-            PrintOrders("Select distinct os.orderID from orders as os join Order_MenuItem as om on os.orderID = om.orderID where om.[status] >= 2");
+            PrintOrders();
         }
 
         void PrintOrders()
@@ -40,24 +40,18 @@ namespace ChapeauUI
                 listOrders.Items.Add(li);
             }
         }
-        void PrintOrders(string query)
+        
+        private void btnComplete_Click(object sender, EventArgs e)
         {
-            OrdersListService ordersService = new OrdersListService();
-            List<ChapeauModel.OrdersList> ordersList = ordersService.GetOrders(query);
-
-            listOrders.Items.Clear();
-
-            foreach (ChapeauModel.OrdersList o in ordersList)
-            {
-                ListViewItem li = new ListViewItem(o.tableID.ToString());
-                li.SubItems.Add(o.orderID.ToString());
-                listOrders.Items.Add(li);
-            }
+            PrintOrders();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void listOrders_ItemActivate(object sender, EventArgs e)
         {
-            PrintOrders("Select distinct os.orderID from orders as os join Order_MenuItem as om on os.orderID = om.orderID where om.[status] = 3");
+            this.Hide();
+            OrderView OrderPage = new OrderView();
+            OrderPage.ShowDialog();
+            this.Close();
         }
     }
 }
