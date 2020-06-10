@@ -28,12 +28,12 @@ namespace ChapeauUI
 
         void PrintOrders()
         {
-            OrdersService ordersService = new OrdersService();
-            List<Orders> ordersList = ordersService.GetOrders();
+            OrdersListService ordersService = new OrdersListService();
+            List<ChapeauModel.OrdersList> ordersList = ordersService.GetOrders();
 
             listOrders.Items.Clear();
 
-            foreach (Orders o in ordersList)
+            foreach (ChapeauModel.OrdersList o in ordersList)
             {
                 ListViewItem li = new ListViewItem(o.tableID.ToString());
                 li.SubItems.Add(o.orderID.ToString());
@@ -42,12 +42,12 @@ namespace ChapeauUI
         }
         void PrintOrders(string query)
         {
-            OrdersService ordersService = new OrdersService();
-            List<Orders> ordersList = ordersService.GetOrders(query);
+            OrdersListService ordersService = new OrdersListService();
+            List<ChapeauModel.OrdersList> ordersList = ordersService.GetOrders(query);
 
             listOrders.Items.Clear();
 
-            foreach (Orders o in ordersList)
+            foreach (ChapeauModel.OrdersList o in ordersList)
             {
                 ListViewItem li = new ListViewItem(o.tableID.ToString());
                 li.SubItems.Add(o.orderID.ToString());

@@ -34,28 +34,28 @@
             this.FD = new System.Windows.Forms.Label();
             this.FO = new System.Windows.Forms.Label();
             this.SaladeNicoise = new System.Windows.Forms.Label();
-            this.SaladeNiçoise = new System.Windows.Forms.NumericUpDown();
-            this.FrenchOmlette = new System.Windows.Forms.NumericUpDown();
-            this.FennelDauph = new System.Windows.Forms.NumericUpDown();
-            this.Quiche_OT_Day = new System.Windows.Forms.NumericUpDown();
+            this.lSaladeNicoise = new System.Windows.Forms.NumericUpDown();
+            this.lFrenchOmlette = new System.Windows.Forms.NumericUpDown();
+            this.lFennelDauphinoise = new System.Windows.Forms.NumericUpDown();
+            this.lQuiche_OT_Day = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CMT1 = new System.Windows.Forms.Label();
-            this.CroqueMonsieurToast = new System.Windows.Forms.NumericUpDown();
+            this.lCroqueMonsieurToast = new System.Windows.Forms.NumericUpDown();
             this.CMT2 = new System.Windows.Forms.Label();
             this.HS = new System.Windows.Forms.Label();
-            this.CroqueMadameToast = new System.Windows.Forms.NumericUpDown();
+            this.lCroqueMadameToast = new System.Windows.Forms.NumericUpDown();
             this.OS = new System.Windows.Forms.Label();
-            this.HomemadeSoup = new System.Windows.Forms.NumericUpDown();
-            this.OnionSoup = new System.Windows.Forms.NumericUpDown();
+            this.lHomemadeSoup = new System.Windows.Forms.NumericUpDown();
+            this.lOnionSoup = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.B = new System.Windows.Forms.Label();
-            this.Bread = new System.Windows.Forms.NumericUpDown();
+            this.lBread = new System.Windows.Forms.NumericUpDown();
             this.BP = new System.Windows.Forms.Label();
-            this.BelgianPréparé = new System.Windows.Forms.NumericUpDown();
+            this.lBelgianPréparé = new System.Windows.Forms.NumericUpDown();
             this.CWOAT = new System.Windows.Forms.Label();
             this.TC = new System.Windows.Forms.Label();
-            this.Crudités_w_OliveAioliToast = new System.Windows.Forms.NumericUpDown();
-            this.TortillaChips = new System.Windows.Forms.NumericUpDown();
+            this.lCrudités_w_OliveAioliToast = new System.Windows.Forms.NumericUpDown();
+            this.lTortillaChips = new System.Windows.Forms.NumericUpDown();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,20 +75,20 @@
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_Confirm = new System.Windows.Forms.Button();
             this.LunchMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SaladeNiçoise)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FrenchOmlette)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FennelDauph)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Quiche_OT_Day)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lSaladeNicoise)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lFrenchOmlette)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lFennelDauphinoise)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lQuiche_OT_Day)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CroqueMonsieurToast)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CroqueMadameToast)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HomemadeSoup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnionSoup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCroqueMonsieurToast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCroqueMadameToast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lHomemadeSoup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOnionSoup)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Bread)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BelgianPréparé)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Crudités_w_OliveAioliToast)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TortillaChips)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBread)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBelgianPréparé)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCrudités_w_OliveAioliToast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lTortillaChips)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,10 +100,10 @@
             this.LunchMain.Controls.Add(this.FD);
             this.LunchMain.Controls.Add(this.FO);
             this.LunchMain.Controls.Add(this.SaladeNicoise);
-            this.LunchMain.Controls.Add(this.SaladeNiçoise);
-            this.LunchMain.Controls.Add(this.FrenchOmlette);
-            this.LunchMain.Controls.Add(this.FennelDauph);
-            this.LunchMain.Controls.Add(this.Quiche_OT_Day);
+            this.LunchMain.Controls.Add(this.lSaladeNicoise);
+            this.LunchMain.Controls.Add(this.lFrenchOmlette);
+            this.LunchMain.Controls.Add(this.lFennelDauphinoise);
+            this.LunchMain.Controls.Add(this.lQuiche_OT_Day);
             this.LunchMain.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LunchMain.Location = new System.Drawing.Point(10, 119);
             this.LunchMain.Margin = new System.Windows.Forms.Padding(2);
@@ -153,52 +153,52 @@
             this.SaladeNicoise.TabIndex = 6;
             this.SaladeNicoise.Text = "Salade Niçoise";
             // 
-            // SaladeNiçoise
+            // lSaladeNicoise
             // 
-            this.SaladeNiçoise.Location = new System.Drawing.Point(144, 24);
-            this.SaladeNiçoise.Margin = new System.Windows.Forms.Padding(2);
-            this.SaladeNiçoise.Name = "SaladeNiçoise";
-            this.SaladeNiçoise.Size = new System.Drawing.Size(60, 21);
-            this.SaladeNiçoise.TabIndex = 2;
-            this.SaladeNiçoise.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lSaladeNicoise.Location = new System.Drawing.Point(144, 24);
+            this.lSaladeNicoise.Margin = new System.Windows.Forms.Padding(2);
+            this.lSaladeNicoise.Name = "lSaladeNicoise";
+            this.lSaladeNicoise.Size = new System.Drawing.Size(60, 21);
+            this.lSaladeNicoise.TabIndex = 2;
+            this.lSaladeNicoise.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
-            // FrenchOmlette
+            // lFrenchOmlette
             // 
-            this.FrenchOmlette.Location = new System.Drawing.Point(144, 45);
-            this.FrenchOmlette.Margin = new System.Windows.Forms.Padding(2);
-            this.FrenchOmlette.Name = "FrenchOmlette";
-            this.FrenchOmlette.Size = new System.Drawing.Size(60, 21);
-            this.FrenchOmlette.TabIndex = 3;
-            this.FrenchOmlette.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lFrenchOmlette.Location = new System.Drawing.Point(144, 45);
+            this.lFrenchOmlette.Margin = new System.Windows.Forms.Padding(2);
+            this.lFrenchOmlette.Name = "lFrenchOmlette";
+            this.lFrenchOmlette.Size = new System.Drawing.Size(60, 21);
+            this.lFrenchOmlette.TabIndex = 3;
+            this.lFrenchOmlette.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
-            // FennelDauph
+            // lFennelDauphinoise
             // 
-            this.FennelDauph.Location = new System.Drawing.Point(144, 66);
-            this.FennelDauph.Margin = new System.Windows.Forms.Padding(2);
-            this.FennelDauph.Name = "FennelDauph";
-            this.FennelDauph.Size = new System.Drawing.Size(60, 21);
-            this.FennelDauph.TabIndex = 4;
-            this.FennelDauph.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lFennelDauphinoise.Location = new System.Drawing.Point(144, 66);
+            this.lFennelDauphinoise.Margin = new System.Windows.Forms.Padding(2);
+            this.lFennelDauphinoise.Name = "lFennelDauphinoise";
+            this.lFennelDauphinoise.Size = new System.Drawing.Size(60, 21);
+            this.lFennelDauphinoise.TabIndex = 4;
+            this.lFennelDauphinoise.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
-            // Quiche_OT_Day
+            // lQuiche_OT_Day
             // 
-            this.Quiche_OT_Day.Location = new System.Drawing.Point(144, 87);
-            this.Quiche_OT_Day.Margin = new System.Windows.Forms.Padding(2);
-            this.Quiche_OT_Day.Name = "Quiche_OT_Day";
-            this.Quiche_OT_Day.Size = new System.Drawing.Size(60, 21);
-            this.Quiche_OT_Day.TabIndex = 5;
-            this.Quiche_OT_Day.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lQuiche_OT_Day.Location = new System.Drawing.Point(144, 87);
+            this.lQuiche_OT_Day.Margin = new System.Windows.Forms.Padding(2);
+            this.lQuiche_OT_Day.Name = "lQuiche_OT_Day";
+            this.lQuiche_OT_Day.Size = new System.Drawing.Size(60, 21);
+            this.lQuiche_OT_Day.TabIndex = 5;
+            this.lQuiche_OT_Day.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.CMT1);
-            this.groupBox1.Controls.Add(this.CroqueMonsieurToast);
+            this.groupBox1.Controls.Add(this.lCroqueMonsieurToast);
             this.groupBox1.Controls.Add(this.CMT2);
             this.groupBox1.Controls.Add(this.HS);
-            this.groupBox1.Controls.Add(this.CroqueMadameToast);
+            this.groupBox1.Controls.Add(this.lCroqueMadameToast);
             this.groupBox1.Controls.Add(this.OS);
-            this.groupBox1.Controls.Add(this.HomemadeSoup);
-            this.groupBox1.Controls.Add(this.OnionSoup);
+            this.groupBox1.Controls.Add(this.lHomemadeSoup);
+            this.groupBox1.Controls.Add(this.lOnionSoup);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(242, 119);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -219,14 +219,14 @@
             this.CMT1.TabIndex = 10;
             this.CMT1.Text = "Croque Monsieur-Toast";
             // 
-            // CroqueMonsieurToast
+            // lCroqueMonsieurToast
             // 
-            this.CroqueMonsieurToast.Location = new System.Drawing.Point(154, 23);
-            this.CroqueMonsieurToast.Margin = new System.Windows.Forms.Padding(2);
-            this.CroqueMonsieurToast.Name = "CroqueMonsieurToast";
-            this.CroqueMonsieurToast.Size = new System.Drawing.Size(60, 21);
-            this.CroqueMonsieurToast.TabIndex = 3;
-            this.CroqueMonsieurToast.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lCroqueMonsieurToast.Location = new System.Drawing.Point(154, 23);
+            this.lCroqueMonsieurToast.Margin = new System.Windows.Forms.Padding(2);
+            this.lCroqueMonsieurToast.Name = "lCroqueMonsieurToast";
+            this.lCroqueMonsieurToast.Size = new System.Drawing.Size(60, 21);
+            this.lCroqueMonsieurToast.TabIndex = 3;
+            this.lCroqueMonsieurToast.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // CMT2
             // 
@@ -248,14 +248,14 @@
             this.HS.TabIndex = 12;
             this.HS.Text = "Homemade Soup";
             // 
-            // CroqueMadameToast
+            // lCroqueMadameToast
             // 
-            this.CroqueMadameToast.Location = new System.Drawing.Point(154, 45);
-            this.CroqueMadameToast.Margin = new System.Windows.Forms.Padding(2);
-            this.CroqueMadameToast.Name = "CroqueMadameToast";
-            this.CroqueMadameToast.Size = new System.Drawing.Size(60, 21);
-            this.CroqueMadameToast.TabIndex = 4;
-            this.CroqueMadameToast.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lCroqueMadameToast.Location = new System.Drawing.Point(154, 45);
+            this.lCroqueMadameToast.Margin = new System.Windows.Forms.Padding(2);
+            this.lCroqueMadameToast.Name = "lCroqueMadameToast";
+            this.lCroqueMadameToast.Size = new System.Drawing.Size(60, 21);
+            this.lCroqueMadameToast.TabIndex = 4;
+            this.lCroqueMadameToast.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // OS
             // 
@@ -267,34 +267,34 @@
             this.OS.TabIndex = 13;
             this.OS.Text = "Onion Soup";
             // 
-            // HomemadeSoup
+            // lHomemadeSoup
             // 
-            this.HomemadeSoup.Location = new System.Drawing.Point(154, 66);
-            this.HomemadeSoup.Margin = new System.Windows.Forms.Padding(2);
-            this.HomemadeSoup.Name = "HomemadeSoup";
-            this.HomemadeSoup.Size = new System.Drawing.Size(60, 21);
-            this.HomemadeSoup.TabIndex = 5;
-            this.HomemadeSoup.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lHomemadeSoup.Location = new System.Drawing.Point(154, 66);
+            this.lHomemadeSoup.Margin = new System.Windows.Forms.Padding(2);
+            this.lHomemadeSoup.Name = "lHomemadeSoup";
+            this.lHomemadeSoup.Size = new System.Drawing.Size(60, 21);
+            this.lHomemadeSoup.TabIndex = 5;
+            this.lHomemadeSoup.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
-            // OnionSoup
+            // lOnionSoup
             // 
-            this.OnionSoup.Location = new System.Drawing.Point(154, 86);
-            this.OnionSoup.Margin = new System.Windows.Forms.Padding(2);
-            this.OnionSoup.Name = "OnionSoup";
-            this.OnionSoup.Size = new System.Drawing.Size(60, 21);
-            this.OnionSoup.TabIndex = 6;
-            this.OnionSoup.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lOnionSoup.Location = new System.Drawing.Point(154, 86);
+            this.lOnionSoup.Margin = new System.Windows.Forms.Padding(2);
+            this.lOnionSoup.Name = "lOnionSoup";
+            this.lOnionSoup.Size = new System.Drawing.Size(60, 21);
+            this.lOnionSoup.TabIndex = 6;
+            this.lOnionSoup.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.B);
-            this.groupBox2.Controls.Add(this.Bread);
+            this.groupBox2.Controls.Add(this.lBread);
             this.groupBox2.Controls.Add(this.BP);
-            this.groupBox2.Controls.Add(this.BelgianPréparé);
+            this.groupBox2.Controls.Add(this.lBelgianPréparé);
             this.groupBox2.Controls.Add(this.CWOAT);
             this.groupBox2.Controls.Add(this.TC);
-            this.groupBox2.Controls.Add(this.Crudités_w_OliveAioliToast);
-            this.groupBox2.Controls.Add(this.TortillaChips);
+            this.groupBox2.Controls.Add(this.lCrudités_w_OliveAioliToast);
+            this.groupBox2.Controls.Add(this.lTortillaChips);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(480, 125);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -315,14 +315,14 @@
             this.B.TabIndex = 17;
             this.B.Text = "Bread";
             // 
-            // Bread
+            // lBread
             // 
-            this.Bread.Location = new System.Drawing.Point(223, 86);
-            this.Bread.Margin = new System.Windows.Forms.Padding(2);
-            this.Bread.Name = "Bread";
-            this.Bread.Size = new System.Drawing.Size(60, 21);
-            this.Bread.TabIndex = 7;
-            this.Bread.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lBread.Location = new System.Drawing.Point(223, 86);
+            this.lBread.Margin = new System.Windows.Forms.Padding(2);
+            this.lBread.Name = "lBread";
+            this.lBread.Size = new System.Drawing.Size(60, 21);
+            this.lBread.TabIndex = 7;
+            this.lBread.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // BP
             // 
@@ -334,14 +334,14 @@
             this.BP.TabIndex = 16;
             this.BP.Text = "Belgian Préparé";
             // 
-            // BelgianPréparé
+            // lBelgianPréparé
             // 
-            this.BelgianPréparé.Location = new System.Drawing.Point(223, 65);
-            this.BelgianPréparé.Margin = new System.Windows.Forms.Padding(2);
-            this.BelgianPréparé.Name = "BelgianPréparé";
-            this.BelgianPréparé.Size = new System.Drawing.Size(60, 21);
-            this.BelgianPréparé.TabIndex = 6;
-            this.BelgianPréparé.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lBelgianPréparé.Location = new System.Drawing.Point(223, 65);
+            this.lBelgianPréparé.Margin = new System.Windows.Forms.Padding(2);
+            this.lBelgianPréparé.Name = "lBelgianPréparé";
+            this.lBelgianPréparé.Size = new System.Drawing.Size(60, 21);
+            this.lBelgianPréparé.TabIndex = 6;
+            this.lBelgianPréparé.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // CWOAT
             // 
@@ -363,23 +363,23 @@
             this.TC.TabIndex = 14;
             this.TC.Text = "Tortilla Chips ";
             // 
-            // Crudités_w_OliveAioliToast
+            // lCrudités_w_OliveAioliToast
             // 
-            this.Crudités_w_OliveAioliToast.Location = new System.Drawing.Point(223, 44);
-            this.Crudités_w_OliveAioliToast.Margin = new System.Windows.Forms.Padding(2);
-            this.Crudités_w_OliveAioliToast.Name = "Crudités_w_OliveAioliToast";
-            this.Crudités_w_OliveAioliToast.Size = new System.Drawing.Size(60, 21);
-            this.Crudités_w_OliveAioliToast.TabIndex = 5;
-            this.Crudités_w_OliveAioliToast.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lCrudités_w_OliveAioliToast.Location = new System.Drawing.Point(223, 44);
+            this.lCrudités_w_OliveAioliToast.Margin = new System.Windows.Forms.Padding(2);
+            this.lCrudités_w_OliveAioliToast.Name = "lCrudités_w_OliveAioliToast";
+            this.lCrudités_w_OliveAioliToast.Size = new System.Drawing.Size(60, 21);
+            this.lCrudités_w_OliveAioliToast.TabIndex = 5;
+            this.lCrudités_w_OliveAioliToast.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
-            // TortillaChips
+            // lTortillaChips
             // 
-            this.TortillaChips.Location = new System.Drawing.Point(223, 22);
-            this.TortillaChips.Margin = new System.Windows.Forms.Padding(2);
-            this.TortillaChips.Name = "TortillaChips";
-            this.TortillaChips.Size = new System.Drawing.Size(60, 21);
-            this.TortillaChips.TabIndex = 4;
-            this.TortillaChips.ValueChanged += new System.EventHandler(this.FoodCount);
+            this.lTortillaChips.Location = new System.Drawing.Point(223, 22);
+            this.lTortillaChips.Margin = new System.Windows.Forms.Padding(2);
+            this.lTortillaChips.Name = "lTortillaChips";
+            this.lTortillaChips.Size = new System.Drawing.Size(60, 21);
+            this.lTortillaChips.TabIndex = 4;
+            this.lTortillaChips.ValueChanged += new System.EventHandler(this.FoodCount);
             // 
             // dataGridView1
             // 
@@ -485,7 +485,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 99);
+            this.panel1.Size = new System.Drawing.Size(785, 99);
             this.panel1.TabIndex = 25;
             // 
             // tablenr
@@ -547,6 +547,7 @@
             this.btn_backOverview.TabIndex = 28;
             this.btn_backOverview.Text = "Back to Dinner";
             this.btn_backOverview.UseVisualStyleBackColor = false;
+            this.btn_backOverview.Click += new System.EventHandler(this.btn_backOverview_Click);
             // 
             // btn_cancel
             // 
@@ -560,6 +561,7 @@
             this.btn_cancel.TabIndex = 27;
             this.btn_cancel.Text = "Cancel Order";
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_Confirm
             // 
@@ -571,15 +573,16 @@
             this.btn_Confirm.Name = "btn_Confirm";
             this.btn_Confirm.Size = new System.Drawing.Size(190, 34);
             this.btn_Confirm.TabIndex = 26;
-            this.btn_Confirm.Text = "Confirm Order";
+            this.btn_Confirm.Text = "Choose Drinks";
             this.btn_Confirm.UseVisualStyleBackColor = false;
+            this.btn_Confirm.Click += new System.EventHandler(this.btn_Confirm_Click);
             // 
             // TakingLunchOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(785, 556);
+            this.ClientSize = new System.Drawing.Size(785, 752);
             this.Controls.Add(this.btn_backOverview);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_Confirm);
@@ -596,22 +599,22 @@
             this.Text = "TakingOrder";
             this.LunchMain.ResumeLayout(false);
             this.LunchMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SaladeNiçoise)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FrenchOmlette)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FennelDauph)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Quiche_OT_Day)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lSaladeNicoise)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lFrenchOmlette)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lFennelDauphinoise)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lQuiche_OT_Day)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CroqueMonsieurToast)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CroqueMadameToast)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HomemadeSoup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnionSoup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCroqueMonsieurToast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCroqueMadameToast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lHomemadeSoup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOnionSoup)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Bread)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BelgianPréparé)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Crudités_w_OliveAioliToast)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TortillaChips)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBread)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBelgianPréparé)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lCrudités_w_OliveAioliToast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lTortillaChips)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -623,20 +626,20 @@
 
         #endregion
         private System.Windows.Forms.GroupBox LunchMain;
-        private System.Windows.Forms.NumericUpDown SaladeNiçoise;
-        private System.Windows.Forms.NumericUpDown FrenchOmlette;
-        private System.Windows.Forms.NumericUpDown FennelDauph;
-        private System.Windows.Forms.NumericUpDown Quiche_OT_Day;
+        private System.Windows.Forms.NumericUpDown lSaladeNicoise;
+        private System.Windows.Forms.NumericUpDown lFrenchOmlette;
+        private System.Windows.Forms.NumericUpDown lFennelDauphinoise;
+        private System.Windows.Forms.NumericUpDown lQuiche_OT_Day;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown CroqueMonsieurToast;
-        private System.Windows.Forms.NumericUpDown CroqueMadameToast;
-        private System.Windows.Forms.NumericUpDown HomemadeSoup;
-        private System.Windows.Forms.NumericUpDown OnionSoup;
+        private System.Windows.Forms.NumericUpDown lCroqueMonsieurToast;
+        private System.Windows.Forms.NumericUpDown lCroqueMadameToast;
+        private System.Windows.Forms.NumericUpDown lHomemadeSoup;
+        private System.Windows.Forms.NumericUpDown lOnionSoup;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.NumericUpDown Bread;
-        private System.Windows.Forms.NumericUpDown BelgianPréparé;
-        private System.Windows.Forms.NumericUpDown Crudités_w_OliveAioliToast;
-        private System.Windows.Forms.NumericUpDown TortillaChips;
+        private System.Windows.Forms.NumericUpDown lBread;
+        private System.Windows.Forms.NumericUpDown lBelgianPréparé;
+        private System.Windows.Forms.NumericUpDown lCrudités_w_OliveAioliToast;
+        private System.Windows.Forms.NumericUpDown lTortillaChips;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button addItem_lunch;
         private System.Windows.Forms.Label SaladeNicoise;
