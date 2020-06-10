@@ -101,9 +101,10 @@ namespace ChapeauUI
         {
             if(button.BackColor == Color.Green)
             {
+                Table table = new Table(int.Parse(button.Text));
                 this.Hide();
-                TakingLunchOrder tablepage = new TakingLunchOrder();
-                tablepage.ShowDialog();
+                MenuStartPage orderSelect = new MenuStartPage(employee,table);
+                orderSelect.ShowDialog();
                 this.Close();
             }
             else if (button.BackColor == Color.Blue)

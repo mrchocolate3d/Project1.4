@@ -35,10 +35,23 @@ CREATE TABLE orders(
 	feedback VARCHAR(250),
 	DateOrder DateTime,
 	paymentID int,
+	orderComplete bit,
 	PRIMARY KEY (orderID),
 	FOREIGN KEY (tableID) REFERENCES  [tables](tableID),
 	FOREIGN KEY (employeeID) REFERENCES employees(employeeID),
 );
+
+ALTER TABLE orders ADD orderComplete bit;
+
+SELECT * FROM orders;
+SELECT * FROM Order_MenuItem where orderID = 1;
+
+UPDATE orders SET tableID = 4 WHERE orderID = 3;
+
+UPDATE orders SET tableID = 4 WHERE orderID = 3;
+UPDATE orders SET tableID = 4 WHERE orderID = 3;
+UPDATE orders SET tableID = 4 WHERE orderID = 3;
+
 
 CREATE TABLE categories(
 	categoryID INT,
@@ -68,7 +81,9 @@ CREATE TABLE Order_MenuItem(
 	comment VARCHAR(250),
 	FOREIGN KEY (orderID) REFERENCES  orders(orderID),
 	FOREIGN KEY (MenuItemID) REFERENCES  MenuItem(MenuItemID),
-); 
+);
+
+select itemName, price, quantity, orderID from Order_MenuItem inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID where orderID = 1;
 
 CREATE TABLE payment(
 	paymentID  INT  NOT NULL,
@@ -84,7 +99,7 @@ CREATE TABLE payment(
 	FOREIGN KEY (employeeID) REFERENCES employees(employeeID)
 );
 
-
+SELECT * FROM tables;
 
 /*Insert*/
 

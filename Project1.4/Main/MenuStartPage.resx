@@ -1350,7 +1350,7 @@
         K1AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Lunch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAYAAACKAxD9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAABEJJREFUeF7tnUuKXlUYRQsDAUE0BiNKukJ6jiFDyERs205T0ZYYfJGQh8SWOAUF
@@ -1374,7 +1374,7 @@
         S94gF8c/i4iIiIiIiIiIiIjI/4WTk38BGU772M/Lr4EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Dinner.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAYAAACKAxD9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAABEJJREFUeF7tnUuKXlUYRQsDAUE0BiNKukJ6jiFDyERs205T0ZYYfJGQh8SWOAUF
@@ -1398,7 +1398,7 @@
         S94gF8c/i4iIiIiIiIiIiIjI/4WTk38BGU772M/Lr4EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Drinks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAYAAACKAxD9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAABEJJREFUeF7tnUuKXlUYRQsDAUE0BiNKukJ6jiFDyERs205T0ZYYfJGQh8SWOAUF
