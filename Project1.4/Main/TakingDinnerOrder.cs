@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChapeauModel;
+
 
 namespace ChapeauUI
 {
     public partial class TakingDinnerOrder : Form
     {
+        readonly Employee employee;
+        readonly Table table;
         List<NumericUpDown> x = new List<NumericUpDown>();
-        public TakingDinnerOrder()
+        public TakingDinnerOrder(Employee employee, Table table)
         {
+            this.employee = employee;
+            this.table = table;
             InitializeComponent();
         }
 
@@ -53,7 +59,7 @@ namespace ChapeauUI
         private void btn_chooseDrinks_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TakingDrinksOrder waiterPage = new TakingDrinksOrder();
+            TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table);
             waiterPage.ShowDialog();
             this.Close();
         }
@@ -61,7 +67,7 @@ namespace ChapeauUI
         private void btn_backLunch_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TakingLunchOrder waiterPage = new TakingLunchOrder();
+            TakingLunchOrder waiterPage = new TakingLunchOrder(employee, table);
             waiterPage.ShowDialog();
             this.Close();
         }

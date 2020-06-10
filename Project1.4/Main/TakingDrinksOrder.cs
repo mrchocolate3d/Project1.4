@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChapeauModel;
+
 
 namespace ChapeauUI
 {
     public partial class TakingDrinksOrder : Form
     {
+        readonly Employee employee;
+        readonly Table table;
         List<NumericUpDown> x = new List<NumericUpDown>();
-        public TakingDrinksOrder()
+        public TakingDrinksOrder(Employee employee, Table table)
         {
+            this.employee = employee;
+            this.table = table;
             InitializeComponent();
         }
 

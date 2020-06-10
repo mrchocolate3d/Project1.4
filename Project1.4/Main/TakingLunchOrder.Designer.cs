@@ -67,7 +67,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.commentBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tablenr = new System.Windows.Forms.Label();
+            this.txt_tablenumber = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -477,7 +477,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel1.Controls.Add(this.tablenr);
+            this.panel1.Controls.Add(this.txt_tablenumber);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
@@ -488,17 +488,17 @@
             this.panel1.Size = new System.Drawing.Size(785, 99);
             this.panel1.TabIndex = 25;
             // 
-            // tablenr
+            // txt_tablenumber
             // 
-            this.tablenr.AutoSize = true;
-            this.tablenr.BackColor = System.Drawing.Color.LightCyan;
-            this.tablenr.Font = new System.Drawing.Font("Segoe UI Black", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tablenr.Location = new System.Drawing.Point(704, 73);
-            this.tablenr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tablenr.Name = "tablenr";
-            this.tablenr.Size = new System.Drawing.Size(39, 19);
-            this.tablenr.TabIndex = 33;
-            this.tablenr.Text = "_____";
+            this.txt_tablenumber.AutoSize = true;
+            this.txt_tablenumber.BackColor = System.Drawing.Color.LightCyan;
+            this.txt_tablenumber.Font = new System.Drawing.Font("Segoe UI Black", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tablenumber.Location = new System.Drawing.Point(704, 73);
+            this.txt_tablenumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txt_tablenumber.Name = "txt_tablenumber";
+            this.txt_tablenumber.Size = new System.Drawing.Size(39, 19);
+            this.txt_tablenumber.TabIndex = 33;
+            this.txt_tablenumber.Text = "_____";
             // 
             // pictureBox1
             // 
@@ -657,7 +657,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox commentBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label tablenr;
+        private System.Windows.Forms.Label txt_tablenumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;

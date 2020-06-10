@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapeauModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +13,36 @@ namespace ChapeauUI
 {
     public partial class MenuStartPage : Form
     {
-        public MenuStartPage()
+        readonly Employee employee;
+        readonly Table table;
+        public MenuStartPage(Employee employee,Table table)
         {
+            this.employee = employee;
+            this.table = table;
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Lunch_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TakingLunchOrder menulunch = new TakingLunchOrder();
-            menulunch.ShowDialog();
+            TakingLunchOrder orderSelect = new TakingLunchOrder(employee, table);
+            orderSelect.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Dinner_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TakingDinnerOrder orderSelect = new TakingDinnerOrder(employee, table);
+            orderSelect.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Drinks_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TakingDrinksOrder orderSelect = new TakingDrinksOrder(employee, table);
+            orderSelect.ShowDialog();
             this.Close();
         }
     }
