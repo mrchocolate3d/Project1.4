@@ -54,7 +54,7 @@
     <Compile Include="LoginDAO.cs" />
     <Compile Include="MenuItemsDAO.cs" />
     <Compile Include="OrderDAO.cs" />
-    <Compile Include="OrdersListDAO.cs" />
+    <Compile Include="OrdersDAO.cs" />
     <Compile Include="PaymentDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockItemsDAO.cs" />

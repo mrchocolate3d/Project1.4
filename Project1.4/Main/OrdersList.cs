@@ -21,37 +21,43 @@ namespace ChapeauUI
             PrintOrders();
         }
 
-        private void btnOngoing_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            PrintOrders();
+            PrintOrders("Select distinct os.orderID from orders as os join Order_MenuItem as om on os.orderID = om.orderID where om.[status] >= 2");
         }
 
         void PrintOrders()
         {
-            OrdersListService ordersService = new OrdersListService();
-            List<ChapeauModel.OrdersList> ordersList = ordersService.GetOrders();
+            OrdersService ordersService = new OrdersService();
+            List<Orders> ordersList = ordersService.GetOrders();
 
             listOrders.Items.Clear();
 
-            foreach (ChapeauModel.OrdersList o in ordersList)
+            foreach (Orders o in ordersList)
             {
                 ListViewItem li = new ListViewItem(o.tableID.ToString());
                 li.SubItems.Add(o.orderID.ToString());
                 listOrders.Items.Add(li);
             }
         }
-        
-        private void btnComplete_Click(object sender, EventArgs e)
+        void PrintOrders(string query)
         {
-            PrintOrders();
+            OrdersService ordersService = new OrdersService();
+            List<Orders> ordersList = ordersService.GetOrders(query);
+
+            listOrders.Items.Clear();
+
+            foreach (Orders o in ordersList)
+            {
+                ListViewItem li = new ListViewItem(o.tableID.ToString());
+                li.SubItems.Add(o.orderID.ToString());
+                listOrders.Items.Add(li);
+            }
         }
 
-        private void listOrders_ItemActivate(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            OrderView OrderPage = new OrderView();
-            OrderPage.ShowDialog();
-            this.Close();
+            PrintOrders("Select distinct os.orderID from orders as os join Order_MenuItem as om on os.orderID = om.orderID where om.[status] = 3");
         }
     }
 }

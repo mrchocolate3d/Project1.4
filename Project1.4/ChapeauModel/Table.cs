@@ -11,9 +11,15 @@ namespace ChapeauModel
         public int TableID { get; set; }
         public string status { get; set; }
 
-        public Table(int tableID)
+        public Table()
+        {
+
+        }
+
+        public Table(int tableID, string status)
         {
             TableID = tableID;
+            this.status = status;
         }
 
     }

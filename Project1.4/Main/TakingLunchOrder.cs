@@ -44,26 +44,5 @@ namespace ChapeauUI
                 x.Add(lunch);
             }
         }
-
-        private void btn_cancel_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Rows.Clear();
-        }
-
-        private void btn_Confirm_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            TakingDrinksOrder waiterPage = new TakingDrinksOrder();
-            waiterPage.ShowDialog();
-            this.Close();
-        }
-
-        private void btn_backOverview_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            TakingDinnerOrder waiterPage = new TakingDinnerOrder();
-            waiterPage.ShowDialog();
-            this.Close();
-        }
     }
 }
