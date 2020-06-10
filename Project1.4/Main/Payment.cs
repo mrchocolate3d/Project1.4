@@ -40,13 +40,25 @@ namespace ChapeauUI
         {
             ShowPanel();
 
+            double VAT = 0.21;
             int tablenumber = 6;
-            string servername = "rachel green";
-            double totalprice = 56.89;
+            string servername = "Rachel Green";
+            double totalprice = 16.5;
 
+            // let user enter a tip amount first
+            int tipvalue = int.Parse(txttip.Text);
+
+            double vatvalue = VAT * totalprice;
+
+            double totalamount = totalprice + vatvalue + tipvalue;
+
+            // displays the values on the screen
             lbltablenumber.Text = tablenumber.ToString();
             lblserver.Text = servername.ToString();
             lbltotalprice.Text = totalprice.ToString("0.00");
+            lblvat.Text = vatvalue.ToString("0.00");
+
+            lbltotalamount.Text = totalamount.ToString("0.00");
         }
 
         private void btnpay_Click(object sender, EventArgs e)
