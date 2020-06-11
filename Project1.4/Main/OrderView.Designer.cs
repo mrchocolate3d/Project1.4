@@ -155,16 +155,6 @@
             this.lblTable.TabIndex = 1;
             this.lblTable.Text = "Table #";
             // 
-            // btnOrder
-            // 
-            this.btnOrder.Location = new System.Drawing.Point(492, 91);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(86, 100);
-            this.btnOrder.TabIndex = 5;
-            this.btnOrder.Text = "Show Order";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
-            // 
             // OrderView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

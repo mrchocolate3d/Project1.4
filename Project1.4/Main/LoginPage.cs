@@ -50,7 +50,7 @@ namespace ChapeauUI
                     if(role == "Waiter")
                     {
                         this.Hide();
-                        TablePage tablepage = new TablePage(employee);
+                        OrdersList tablepage = new OrdersList();
                         tablepage.ShowDialog();
                         this.Close(); 
                     }
