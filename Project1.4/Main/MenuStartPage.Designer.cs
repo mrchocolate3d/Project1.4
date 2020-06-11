@@ -35,7 +35,6 @@
             this.btn_Lunch = new System.Windows.Forms.Button();
             this.btn_Dinner = new System.Windows.Forms.Button();
             this.btn_Drinks = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +42,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -127,15 +125,6 @@
             this.btn_Drinks.UseVisualStyleBackColor = false;
             this.btn_Drinks.Click += new System.EventHandler(this.btn_Drinks_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(869, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // MenuStartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +154,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Dinner;
         private System.Windows.Forms.Button btn_Drinks;
-        private System.Windows.Forms.Button button1;
     }
 }
