@@ -17,10 +17,32 @@ namespace ChapeauDAL
                 "inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID " +
                 "inner join orders on Order_MenuItem.orderID = orders.orderID " +
                 "inner join[tables] on[tables].tableID = orders.tableID " +
-                $"where orders.tableID = {table.TableID} AND orderComplete = {0} ";
-            SqlParameter[] sqlParameters = new SqlParameter[0];
+                "where orders.tableID = @tableId AND paidOrders = @paidOrders";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
+            sqlParameters[1] = new SqlParameter("@paidOrders", false);
+
             return ReadInfoForPayments(ExecuteSelectQuery(query, sqlParameters));
         }
+
+        public void UpdatePaidOrders(Table table)
+        {
+            string query = "UPDATE orders SET paidOrders = @paidOrders WHERE tableID = @tableId AND orderComplete = @orderComplete";
+            SqlParameter[] sqlParameters = new SqlParameter[3];
+            sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
+            sqlParameters[1] = new SqlParameter("@paidOrders", true);
+            sqlParameters[2] = new SqlParameter("@orderComplete", true);
+            ExecuteEditQuery(query, sqlParameters);
+        }
+
+        public void UpdateTable(Table table)
+        {
+            string query = "UPDATE [tables] SET status = 'free' WHERE tableID = @tableId";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
+            ExecuteEditQuery(query, sqlParameters);
+        }
+
         private List<Payment> ReadInfoForPayments(DataTable paymenttable)
         {
             List<Payment> payments = new List<Payment>();

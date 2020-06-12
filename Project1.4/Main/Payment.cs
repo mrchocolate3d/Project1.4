@@ -16,6 +16,8 @@ namespace ChapeauUI
     {
         Table table;
         Employee employee;
+        ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
+
         public Payment(Employee employee,Table table)
         {
             this.table = table;
@@ -25,7 +27,6 @@ namespace ChapeauUI
         double ItemTotalPrice = 0;
         public void ShowPanel()
         {
-               ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
                 List<ChapeauModel.Payment> payments = paymentService.GetPayments(table);
 
                 listViewrecipt.Items.Clear();
@@ -73,17 +74,20 @@ namespace ChapeauUI
 
         private void btnpay_Click(object sender, EventArgs e)
         {
-            if (radiobtnpin.Checked)
+            if (radiobtnpin.Checked || radiobtncash.Checked)
             {
-                CardPayment cardPayment = new CardPayment();
-                cardPayment.Show();
-            }
-            else if (radiobtncash.Checked)
-            {
-                ThankYouNote thankYouNote = new ThankYouNote();
-                thankYouNote.Show();
-            }
+                paymentService.Update(table);
+                paymentService.UpdateTable(table);
 
+                this.Hide();
+                TablePage tablepage = new TablePage(employee);
+                tablepage.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(text: "Choose an option");
+            }
         }
     }
 }

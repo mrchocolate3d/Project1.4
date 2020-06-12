@@ -26,5 +26,14 @@ namespace ChapeauLogic
                 return null;
             }
         }
+        public void Update(Table table)
+        {
+            payment_db.UpdatePaidOrders(table);
+        }
+
+        public void UpdateTable(Table table)
+        {
+            payment_db.UpdateTable(table);
+        }
     }
 }
