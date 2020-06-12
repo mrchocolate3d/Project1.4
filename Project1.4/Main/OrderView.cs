@@ -17,8 +17,7 @@ namespace ChapeauUI
         public OrderView()
         {
             InitializeComponent();
-            //ViewOrder();                                              Still having issues with this at the time of upload
-
+            ViewOrder(2);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,22 +25,21 @@ namespace ChapeauUI
             Payment payment = new Payment();
             payment.Show();
         }
-        void ViewOrder()
+
+        void ViewOrder(int orderno)
         {
             lblTable.Text = "Table #2";
             lblOrder.Text = "Order #2";
             lblWaiter.Text = "Waiter: Seyifunmi";
 
-            OrderService orderService = new OrderService();
-            List<Order> orderList = orderService.GetOrders();
+            MenuItemService details = new MenuItemService();
+            List<OrderMenuItems> detail = details.GetMenuItems(orderno);
 
             listOrder.Items.Clear();
-
-            foreach (Order o in orderList)
+            foreach(OrderMenuItems om in detail)
             {
-                ListViewItem li = new ListViewItem(o.TableID.ToString());
-                li.SubItems.Add(o.EmployeeID.ToString());
-                li.SubItems.Add(o.OrderID.ToString());
+                ListViewItem li = new ListViewItem(om.itemName);
+                li.SubItems.Add(om.quantity.ToString());
                 listOrder.Items.Add(li);
             }
         }
