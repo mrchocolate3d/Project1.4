@@ -47,5 +47,10 @@ namespace ChapeauLogic
         {
             order_db.UpdateTabe(table);
         }
+
+        public void UpdateStock(OrderMenuItems menuItem)
+        {
+            order_db.UpdateStock(menuItem);
+        }
     }
 }

@@ -104,14 +104,13 @@ namespace ChapeauUI
                 foreach (OrderMenuItems menuItems in orderMenuItems)
                 {
                     orderServices.InsertMenu(menuItems, order.OrderID);
+                    orderServices.UpdateStock(menuItems);
                 };
 
                 this.Hide();
                 TablePage waiterPage = new TablePage(employee);
                 waiterPage.ShowDialog();
                 this.Close();
-
-
             }
             catch (Exception ex)
             {

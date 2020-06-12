@@ -59,6 +59,17 @@ namespace ChapeauDAL
             ExecuteEditQuery(query, sqlParameters);
         }
 
+        public void UpdateStock(OrderMenuItems menuItem)
+        {
+            string query = "UPDATE menuItem SET amount = amount - @quantity WHERE menuItemID = @id";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = new SqlParameter("@quantity", menuItem.quantity);
+            sqlParameters[1] = new SqlParameter("@id", menuItem.menuItemID);
+            ExecuteEditQuery(query, sqlParameters);
+        }
+
+
+
         private Order GetOrder(DataTable dataTable)
         {
             DataRow dr = dataTable.Rows[0];

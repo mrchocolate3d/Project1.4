@@ -58,11 +58,11 @@ namespace ChapeauUI
             ShowPanel();
 
             double VAT = 0.21;
-            int tipvalue;
+            float tipvalue;
             //let user enter a tip amount first
             if (txttip.Text.Length > 0)
             {
-                tipvalue = int.Parse(txttip.Text);
+                tipvalue = float.Parse(txttip.Text);
             }
             else
             {

@@ -35,5 +35,30 @@ namespace ChapeauDAL
             }
             return tables;
         }
+
+        public List<Order> getOrderStatus()
+        {
+            string query = "SELECT tableID,orderComplete,paidOrders FROM orders WHERE paidOrders = @paidOrder";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@paidOrder", false);
+            return ReadStatus(ExecuteSelectQuery(query, sqlParameters));
+        }
+        private List<Order> ReadStatus(DataTable resturantTables)
+        {
+            List<Order> orders = new List<Order>();
+
+            foreach (DataRow dr in resturantTables.Rows)
+            {
+                Order order = new Order()
+                {
+                    TableID = new Table((int)dr["tableID"]),
+                    orderComplete = (bool)(dr["orderComplete"]),
+                    paidOrders = (bool)(dr["paidOrders"])
+                };
+                orders.Add(order);
+            }
+            return orders;
+        }
+
     }
 }

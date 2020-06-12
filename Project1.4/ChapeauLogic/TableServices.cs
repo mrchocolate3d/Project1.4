@@ -27,5 +27,10 @@ namespace ChapeauLogic
                 return null;
             }
         }
+        public List<Order> getStatus()
+        {
+                List<Order> orders = table_db.getOrderStatus();
+                return orders;
+        }
     }
 }
