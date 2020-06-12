@@ -14,15 +14,19 @@ namespace ChapeauUI
 {
     public partial class Payment : Form
     {
-        public Payment()
+        Table table;
+        Employee employee;
+        public Payment(Employee employee,Table table)
         {
+            this.table = table;
+            this.employee = employee;
             InitializeComponent();
         }
-
+        double ItemTotalPrice = 0;
         public void ShowPanel()
         {
                ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
-                List<ChapeauModel.Payment> payments = paymentService.GetPayments();
+                List<ChapeauModel.Payment> payments = paymentService.GetPayments(table);
 
                 listViewrecipt.Items.Clear();
 
@@ -33,6 +37,7 @@ namespace ChapeauUI
                     list.SubItems.Add(item.quantity.ToString());
                     list.SubItems.Add(item.orderID.ToString());
                     listViewrecipt.Items.Add(list);
+                    ItemTotalPrice += item.price;
                 }
         }
 
@@ -41,21 +46,26 @@ namespace ChapeauUI
             ShowPanel();
 
             double VAT = 0.21;
-            int tablenumber = 6;
-            string servername = "Rachel Green";
-            double totalprice = 16.5;
+            int tipvalue;
+            //let user enter a tip amount first
+            if (txttip.Text.Length > 0)
+            {
+                tipvalue = int.Parse(txttip.Text);
+            }
+            else
+            {
+                tipvalue = 0;
+            }
+            
 
-            // let user enter a tip amount first
-            int tipvalue = int.Parse(txttip.Text);
+            double vatvalue = VAT * ItemTotalPrice;
 
-            double vatvalue = VAT * totalprice;
-
-            double totalamount = totalprice + vatvalue + tipvalue;
+            double totalamount = ItemTotalPrice+ vatvalue + tipvalue;
 
             // displays the values on the screen
-            lbltablenumber.Text = tablenumber.ToString();
-            lblserver.Text = servername.ToString();
-            lbltotalprice.Text = totalprice.ToString("0.00");
+            lbltablenumber.Text = table.TableID.ToString();
+            lblserver.Text = employee.FirstName.ToString() +" " + employee.LastName.ToString();
+            lbltotalprice.Text = ItemTotalPrice.ToString("0.00");
             lblvat.Text = vatvalue.ToString("0.00");
 
             lbltotalamount.Text = totalamount.ToString("0.00");

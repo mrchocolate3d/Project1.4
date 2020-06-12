@@ -160,15 +160,45 @@ UPDATE menuItem SET itemName = 'HomemadeSoupOfTheDay' WHERE menuItemID=139;
 Delete from menuItem where menuItemID between 13 AND 138;
 
 select * from menuItem;
+select * from tables;
+
+select itemName, price, quantity, orders.orderID from Order_MenuItem
+inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID
+inner join orders on Order_MenuItem.orderID = orders.orderID
+inner join [tables] on [tables].tableID = orders.tableID
+where orders.tableID = 2 AND orderComplete = 0;
+
+
+
+
+select itemName, price, quantity, orders.orderID from Order_MenuItem inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID inner join orders on Order_MenuItem.orderID = orders.orderID inner join[tables] on[tables].tableID = orders.tableID where orders.tableID = 1 AND orderComplete = 0;
+
+
+
+
+
+
+
+
+
+select * from Order_MenuItem;
+
+select m.itemName, m.price, om.quantity, o.orderID
+from Order_MenuItem as om
+join menuItem as m on m.menuItemID = om.MenuItemID
+join orders as o on o.orderID = om.orderID 
+where o.orderID = 1
 
 SELECT menuItemID, price FROM menuItem WHERE itemName = 'TortillaChips';
 
 
-UPDATE menuItem SET amount = 0 WHERE itemName='OnionSoup';
+UPDATE orders SET orderComplete = 0 WHERE orderComplete=  NULL;
 UPDATE menuItem SET amount = 0 WHERE itemName='QuicheOfTheDay';
 UPDATE menuItem SET amount = 3 WHERE itemName='HomemadeSoup';
 
 select * from orders;
+
+
 
 /* Sharelyn's DINNER statements*/
 INSERT INTO menuItem (categoryID,price,amount,itemName,timeApproximate) VALUES (4,6.95,15,'HomemadeSoup',9.00);
@@ -189,7 +219,7 @@ INSERT INTO menuItem (categoryID,price,amount,itemName,timeApproximate) VALUES (
 
 INSERT INTO orders (tableID,employeeID,orderComplete) VALUES (2,1,0);
 
-select * from orders;
+select * from Order_MenuItem;
 /*
 insert into categories
 values (7, 'Drinks', 'Soft Drinks'),
@@ -198,7 +228,7 @@ values (7, 'Drinks', 'Soft Drinks'),
 (10, 'Drinks', 'Wines')
 */
 select * from login;
-Delete from orders where orderID = 12;
+Delete from orders where orderID = 15;
 
 SELECT orderID FROM orders WHERE tableID = 2 AND employeeID = 1 AND orderComplete = 0;
 

@@ -15,8 +15,12 @@ namespace ChapeauUI
 {
     public partial class OrdersList : Form
     {
-        public OrdersList()
+        Employee employee;
+        Table table;
+        public OrdersList(Employee employee, Table table)
         {
+            this.employee = employee;
+            this.table = table;
             InitializeComponent();
             PrintOrders();
         }
@@ -46,12 +50,23 @@ namespace ChapeauUI
             PrintOrders();
         }
 
-        private void listOrders_ItemActivate(object sender, EventArgs e)
+
+
+        private void listOrders_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            OrderView OrderPage = new OrderView();
-            OrderPage.ShowDialog();
-            this.Close();
+            if (listOrders.SelectedItems.Count > 0)
+            {
+                ListViewItem item = listOrders.SelectedItems[0];
+                 Order order = new Order()
+                {
+                    OrderID = int.Parse(item.SubItems[1].Text)
+                };
+                this.Hide();
+                OrderView OrderPage = new OrderView(employee, table, order);
+                OrderPage.ShowDialog();
+                this.Close();
+            }
+
         }
     }
 }

@@ -67,6 +67,7 @@
             this.tableID,
             this.orderID});
             this.listOrders.ForeColor = System.Drawing.Color.White;
+            this.listOrders.FullRowSelect = true;
             this.listOrders.HideSelection = false;
             this.listOrders.Location = new System.Drawing.Point(111, 205);
             this.listOrders.Name = "listOrders";
@@ -74,7 +75,7 @@
             this.listOrders.TabIndex = 3;
             this.listOrders.UseCompatibleStateImageBehavior = false;
             this.listOrders.View = System.Windows.Forms.View.Details;
-            this.listOrders.ItemActivate += new System.EventHandler(this.listOrders_ItemActivate);
+            this.listOrders.SelectedIndexChanged += new System.EventHandler(this.listOrders_SelectedIndexChanged);
             // 
             // tableID
             // 

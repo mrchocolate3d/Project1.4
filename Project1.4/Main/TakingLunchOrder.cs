@@ -77,6 +77,7 @@ namespace ChapeauUI
             gridV_Lunch.Rows.Clear();
         }
 
+
         private void btn_Confirm_Click(object sender, EventArgs e)
         {
             orderMenuItems.Clear();

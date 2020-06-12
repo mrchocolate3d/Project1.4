@@ -20,6 +20,7 @@ namespace ChapeauUI
         public LoginPage()
         {
             InitializeComponent();
+            LoginBox.PasswordChar = '*';
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace ChapeauUI
         {
             if (input.ToLower() == "delete")
             {
+                
                 LoginBox.Text = LoginBox.Text.Substring(0, (LoginBox.TextLength - 1));  
             }
             else

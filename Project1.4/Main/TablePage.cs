@@ -70,11 +70,19 @@ namespace ChapeauUI
             }
             else if (button.BackColor == Color.Blue)
             {
-                
+                DialogResult dialog = MessageBox.Show("Reserved Customers have arrived", "Cancel Reservation", MessageBoxButtons.YesNo);
             }
             else
             {
-                
+                DialogResult dialog = MessageBox.Show("View Order", "View", MessageBoxButtons.YesNo);
+                if(dialog == DialogResult.Yes)
+                {
+                    Table table = new Table(int.Parse(button.Text));
+                    this.Hide();
+                    Payment viewOrder = new Payment(employee,table);
+                    viewOrder.ShowDialog();
+                    this.Close();
+                }
             }
         }
     }
