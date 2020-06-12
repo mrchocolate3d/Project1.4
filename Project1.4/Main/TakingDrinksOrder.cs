@@ -121,5 +121,13 @@ namespace ChapeauUI
 
             
         }
+
+        private void btn_CancelOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TablePage orderSelect = new TablePage(employee);
+            orderSelect.ShowDialog();
+            this.Close();
+        }
     }
 }

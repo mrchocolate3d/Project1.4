@@ -54,6 +54,9 @@
             this.ButcherSteak = new System.Windows.Forms.NumericUpDown();
             this.TenderloinBlackAngus = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Cheese = new System.Windows.Forms.NumericUpDown();
             this.DameBlanche = new System.Windows.Forms.NumericUpDown();
@@ -74,9 +77,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GotaCheese)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Escargots)).BeginInit();
@@ -364,6 +365,33 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DESSERTS";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 108);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(44, 13);
+            this.label19.TabIndex = 30;
+            this.label19.Text = "Cheese";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 77);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Dame Blanche";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(105, 13);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Chocolate Crumble";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -465,7 +493,7 @@
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(164, 34);
             this.btn_cancel.TabIndex = 16;
-            this.btn_cancel.Text = "Cancel Order";
+            this.btn_cancel.Text = "Clear List";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -515,6 +543,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.btn_CancelOrder);
             this.panel1.Controls.Add(this.txt_tablenumber);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
@@ -573,32 +602,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "DINNER";
             // 
-            // label8
+            // btn_CancelOrder
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 77);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 13);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Dame Blanche";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 49);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 13);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Chocolate Crumble";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 108);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 13);
-            this.label19.TabIndex = 30;
-            this.label19.Text = "Cheese";
+            this.btn_CancelOrder.Location = new System.Drawing.Point(699, 3);
+            this.btn_CancelOrder.Name = "btn_CancelOrder";
+            this.btn_CancelOrder.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelOrder.TabIndex = 34;
+            this.btn_CancelOrder.Text = "CancelOrder";
+            this.btn_CancelOrder.UseVisualStyleBackColor = true;
             // 
             // TakingDinnerOrder
             // 
@@ -698,5 +709,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btn_CancelOrder;
     }
 }

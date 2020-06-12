@@ -57,7 +57,7 @@ namespace ChapeauUI
         {
             ShowPanel();
 
-            double VAT = 0.21;
+
             float tipvalue;
             //let user enter a tip amount first
             if (txttip.Text.Length > 0)
@@ -68,17 +68,6 @@ namespace ChapeauUI
             {
                 tipvalue = 0;
             }
-            
-
-            double vatvalue = VAT * ItemTotalPrice;
-
-            double totalamount = ItemTotalPrice+ vatvalue + tipvalue;
-
-            // displays the values on the screen
-            
-            lbltotalprice.Text = ItemTotalPrice.ToString("0.00");
-            lblvat.Text = vatvalue.ToString("0.00");
-            lbltotalamount.Text = totalamount.ToString("0.00");
         }
 
 
@@ -98,6 +87,14 @@ namespace ChapeauUI
             {
                 MessageBox.Show(text: "Choose an option");
             }
+        }
+
+        private void btn_Resturant_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TablePage orderSelect = new TablePage(employee);
+            orderSelect.ShowDialog();
+            this.Close();
         }
     }
 }

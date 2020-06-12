@@ -86,6 +86,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LiptonIcedTea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GingerAle)).BeginInit();
@@ -548,7 +549,7 @@
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(164, 34);
             this.btn_cancel.TabIndex = 22;
-            this.btn_cancel.Text = "Cancel Order";
+            this.btn_cancel.Text = "Clear List";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -644,6 +645,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.btn_CancelOrder);
             this.panel1.Controls.Add(this.txt_tablenumber);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
@@ -701,6 +703,16 @@
             this.label1.Size = new System.Drawing.Size(169, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "DRINKS";
+            // 
+            // btn_CancelOrder
+            // 
+            this.btn_CancelOrder.Location = new System.Drawing.Point(699, 3);
+            this.btn_CancelOrder.Name = "btn_CancelOrder";
+            this.btn_CancelOrder.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelOrder.TabIndex = 35;
+            this.btn_CancelOrder.Text = "CancelOrder";
+            this.btn_CancelOrder.UseVisualStyleBackColor = true;
+            this.btn_CancelOrder.Click += new System.EventHandler(this.btn_CancelOrder_Click);
             // 
             // TakingDrinksOrder
             // 
@@ -812,5 +824,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_CancelOrder;
     }
 }

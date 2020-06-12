@@ -48,6 +48,12 @@ namespace ChapeauUI
             this.Close();
         }
 
- 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TablePage orderSelect = new TablePage(employee);
+            orderSelect.ShowDialog();
+            this.Close();
+        }
     }
 }

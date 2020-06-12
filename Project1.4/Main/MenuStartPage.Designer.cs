@@ -35,6 +35,7 @@
             this.btn_Lunch = new System.Windows.Forms.Button();
             this.btn_Dinner = new System.Windows.Forms.Button();
             this.btn_Drinks = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
+            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -125,6 +127,16 @@
             this.btn_Drinks.UseVisualStyleBackColor = false;
             this.btn_Drinks.Click += new System.EventHandler(this.btn_Drinks_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(869, 3);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 3;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // MenuStartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Dinner;
         private System.Windows.Forms.Button btn_Drinks;
+        private System.Windows.Forms.Button btn_back;
     }
 }

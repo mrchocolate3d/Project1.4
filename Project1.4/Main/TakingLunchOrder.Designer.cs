@@ -71,6 +71,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_Confirm = new System.Windows.Forms.Button();
+            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.LunchMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SaladeNicoise)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FrenchOmlette)).BeginInit();
@@ -461,6 +462,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.btn_CancelOrder);
             this.panel1.Controls.Add(this.txt_tablenumber);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
@@ -529,7 +531,7 @@
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(164, 34);
             this.btn_cancel.TabIndex = 27;
-            this.btn_cancel.Text = "Cancel Order";
+            this.btn_cancel.Text = "Clear List";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -546,6 +548,16 @@
             this.btn_Confirm.Text = "Choose Drinks";
             this.btn_Confirm.UseVisualStyleBackColor = false;
             this.btn_Confirm.Click += new System.EventHandler(this.btn_Confirm_Click);
+            // 
+            // btn_CancelOrder
+            // 
+            this.btn_CancelOrder.Location = new System.Drawing.Point(707, 3);
+            this.btn_CancelOrder.Name = "btn_CancelOrder";
+            this.btn_CancelOrder.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelOrder.TabIndex = 35;
+            this.btn_CancelOrder.Text = "CancelOrder";
+            this.btn_CancelOrder.UseVisualStyleBackColor = true;
+            this.btn_CancelOrder.Click += new System.EventHandler(this.btn_CancelOrder_Click);
             // 
             // TakingLunchOrder
             // 
@@ -636,5 +648,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.Button btn_CancelOrder;
     }
 }

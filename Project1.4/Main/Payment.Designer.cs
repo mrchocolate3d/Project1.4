@@ -51,6 +51,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnprintrecipt = new System.Windows.Forms.Button();
+            this.btn_Resturant = new System.Windows.Forms.Button();
             this.pnlpayment.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -289,11 +290,22 @@
             this.btnprintrecipt.UseVisualStyleBackColor = true;
             this.btnprintrecipt.Click += new System.EventHandler(this.btnprintrecipt_Click);
             // 
+            // btn_Resturant
+            // 
+            this.btn_Resturant.Location = new System.Drawing.Point(523, 7);
+            this.btn_Resturant.Name = "btn_Resturant";
+            this.btn_Resturant.Size = new System.Drawing.Size(75, 23);
+            this.btn_Resturant.TabIndex = 3;
+            this.btn_Resturant.Text = "Resturant View";
+            this.btn_Resturant.UseVisualStyleBackColor = true;
+            this.btn_Resturant.Click += new System.EventHandler(this.btn_Resturant_Click);
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 577);
+            this.Controls.Add(this.btn_Resturant);
             this.Controls.Add(this.btnprintrecipt);
             this.Controls.Add(this.pnlpayment);
             this.Controls.Add(this.label1);
@@ -332,5 +344,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblvat;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_Resturant;
     }
 }
