@@ -89,7 +89,6 @@ namespace ChapeauUI
                 };
                 orderMenuItems.Add(item);
             }
-
             this.Hide();
             TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table,orderMenuItems);
             waiterPage.ShowDialog();
