@@ -43,6 +43,7 @@
             this.btn_table2 = new ChapeauUI.RoundButton();
             this.btn_table1 = new ChapeauUI.RoundButton();
             this.lbl_employeeName = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,6 +89,7 @@
             this.btn_table10.Name = "btn_table10";
             this.btn_table10.Size = new System.Drawing.Size(54, 56);
             this.btn_table10.TabIndex = 9;
+            this.btn_table10.Tag = "j";
             this.btn_table10.Text = "10";
             this.btn_table10.UseVisualStyleBackColor = true;
             this.btn_table10.Click += new System.EventHandler(this.TableOrder);
@@ -99,6 +101,7 @@
             this.btn_table9.Name = "btn_table9";
             this.btn_table9.Size = new System.Drawing.Size(54, 56);
             this.btn_table9.TabIndex = 8;
+            this.btn_table9.Tag = "i";
             this.btn_table9.Text = "9";
             this.btn_table9.UseVisualStyleBackColor = true;
             this.btn_table9.Click += new System.EventHandler(this.TableOrder);
@@ -110,6 +113,7 @@
             this.btn_table8.Name = "btn_table8";
             this.btn_table8.Size = new System.Drawing.Size(54, 56);
             this.btn_table8.TabIndex = 7;
+            this.btn_table8.Tag = "h";
             this.btn_table8.Text = "8";
             this.btn_table8.UseVisualStyleBackColor = true;
             this.btn_table8.Click += new System.EventHandler(this.TableOrder);
@@ -121,6 +125,7 @@
             this.btn_table7.Name = "btn_table7";
             this.btn_table7.Size = new System.Drawing.Size(54, 56);
             this.btn_table7.TabIndex = 6;
+            this.btn_table7.Tag = "g";
             this.btn_table7.Text = "7";
             this.btn_table7.UseVisualStyleBackColor = true;
             this.btn_table7.Click += new System.EventHandler(this.TableOrder);
@@ -132,6 +137,7 @@
             this.btn_table6.Name = "btn_table6";
             this.btn_table6.Size = new System.Drawing.Size(54, 56);
             this.btn_table6.TabIndex = 5;
+            this.btn_table6.Tag = "f";
             this.btn_table6.Text = "6";
             this.btn_table6.UseVisualStyleBackColor = true;
             this.btn_table6.Click += new System.EventHandler(this.TableOrder);
@@ -143,6 +149,7 @@
             this.btn_table5.Name = "btn_table5";
             this.btn_table5.Size = new System.Drawing.Size(54, 56);
             this.btn_table5.TabIndex = 4;
+            this.btn_table5.Tag = "e";
             this.btn_table5.Text = "5";
             this.btn_table5.UseVisualStyleBackColor = true;
             this.btn_table5.Click += new System.EventHandler(this.TableOrder);
@@ -154,6 +161,7 @@
             this.btn_table4.Name = "btn_table4";
             this.btn_table4.Size = new System.Drawing.Size(54, 56);
             this.btn_table4.TabIndex = 3;
+            this.btn_table4.Tag = "d";
             this.btn_table4.Text = "4";
             this.btn_table4.UseVisualStyleBackColor = true;
             this.btn_table4.Click += new System.EventHandler(this.TableOrder);
@@ -165,6 +173,7 @@
             this.btn_table3.Name = "btn_table3";
             this.btn_table3.Size = new System.Drawing.Size(54, 56);
             this.btn_table3.TabIndex = 2;
+            this.btn_table3.Tag = "c";
             this.btn_table3.Text = "3";
             this.btn_table3.UseVisualStyleBackColor = true;
             this.btn_table3.Click += new System.EventHandler(this.TableOrder);
@@ -176,6 +185,7 @@
             this.btn_table2.Name = "btn_table2";
             this.btn_table2.Size = new System.Drawing.Size(54, 56);
             this.btn_table2.TabIndex = 1;
+            this.btn_table2.Tag = "b";
             this.btn_table2.Text = "2";
             this.btn_table2.UseVisualStyleBackColor = true;
             this.btn_table2.Click += new System.EventHandler(this.TableOrder);
@@ -187,6 +197,7 @@
             this.btn_table1.Name = "btn_table1";
             this.btn_table1.Size = new System.Drawing.Size(54, 56);
             this.btn_table1.TabIndex = 0;
+            this.btn_table1.Tag = "a";
             this.btn_table1.Text = "1";
             this.btn_table1.UseVisualStyleBackColor = true;
             this.btn_table1.Click += new System.EventHandler(this.TableOrder);
@@ -200,11 +211,21 @@
             this.lbl_employeeName.TabIndex = 14;
             this.lbl_employeeName.Text = ".........";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(36, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // TablePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_employeeName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -245,5 +266,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_employeeName;
+        private System.Windows.Forms.Button button1;
     }
 }

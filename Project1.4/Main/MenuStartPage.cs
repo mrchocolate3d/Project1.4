@@ -15,6 +15,8 @@ namespace ChapeauUI
     {
         readonly Employee employee;
         readonly Table table;
+        List<OrderMenuItems> orderMenuItems = new List<OrderMenuItems>();
+
         public MenuStartPage(Employee employee,Table table)
         {
             this.employee = employee;
@@ -41,7 +43,7 @@ namespace ChapeauUI
         private void btn_Drinks_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TakingDrinksOrder orderSelect = new TakingDrinksOrder(employee, table);
+            TakingDrinksOrder orderSelect = new TakingDrinksOrder(employee, table, orderMenuItems);
             orderSelect.ShowDialog();
             this.Close();
         }

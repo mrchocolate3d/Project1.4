@@ -16,20 +16,31 @@ namespace ChapeauUI
     {
         readonly Employee employee;
         readonly Table table;
-        List<NumericUpDown> x = new List<NumericUpDown>();
+        List<NumericUpDown> ItemCount = new List<NumericUpDown>();
+        ChapeauLogic.OrderService orderServices = new ChapeauLogic.OrderService();
+        List<OrderMenuItems> orderMenuItems = new List<OrderMenuItems>();
+        OrderMenuItems newItem;
+
         public TakingDinnerOrder(Employee employee, Table table)
         {
             this.employee = employee;
             this.table = table;
+
             InitializeComponent();
+
+            txt_tablenumber.Text = table.TableID.ToString();
+
         }
 
         private void AddItem_lunch_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            foreach (NumericUpDown item in x)
+            grisV_Dinner.Rows.Clear();
+            foreach (NumericUpDown item in ItemCount)
             {
-                dataGridView1.Rows.Add(item.Name, item.Value);
+
+                newItem = orderServices.getItem(item.Name);
+                int count = Convert.ToInt32(item.Value);
+                grisV_Dinner.Rows.Add(newItem.menuItemID.ToString(), item.Name, (newItem.price * count).ToString(), item.Value);
             }
         }
 
@@ -40,34 +51,37 @@ namespace ChapeauUI
 
         private void CheckAmount(NumericUpDown lunch)
         {
-            if (lunch.Value >= 1 && !(x.Contains(lunch)))
+            if (lunch.Value >= 1 && !(ItemCount.Contains(lunch)))
             {
-                x.Add(lunch);
+                ItemCount.Add(lunch);
             }
-            else if (x.Contains(lunch))
+            else if (ItemCount.Contains(lunch))
             {
-                x.Remove(lunch);
-                x.Add(lunch);
+                ItemCount.Remove(lunch);
+                ItemCount.Add(lunch);
             }
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            grisV_Dinner.Rows.Clear();
         }
 
         private void btn_chooseDrinks_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table);
-            waiterPage.ShowDialog();
-            this.Close();
-        }
+            for (int i = 0; i < grisV_Dinner.Rows.Count; i++)
+            {
+                OrderMenuItems item = new OrderMenuItems()
+                {
+                    menuItemID = int.Parse(grisV_Dinner.Rows[i].Cells[0].Value.ToString()),
+                    price = double.Parse(grisV_Dinner.Rows[i].Cells[2].Value.ToString()),
+                    quantity = int.Parse(grisV_Dinner.Rows[i].Cells[3].Value.ToString()),
+                };
+                orderMenuItems.Add(item);
+            }
 
-        private void btn_backLunch_Click(object sender, EventArgs e)
-        {
             this.Hide();
-            TakingLunchOrder waiterPage = new TakingLunchOrder(employee, table);
+            TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table,orderMenuItems);
             waiterPage.ShowDialog();
             this.Close();
         }

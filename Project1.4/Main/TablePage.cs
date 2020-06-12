@@ -33,47 +33,8 @@ namespace ChapeauUI
         
         private void tableStatusCheck(int tableNumber, string status)
         {
-            if (tableNumber == 1)
-            {
-                statusCheck(status, btn_table1);
-
-            }
-            if (tableNumber == 2)
-            {
-                statusCheck(status,btn_table2);
-            }
-            if (tableNumber == 3)
-            {
-                statusCheck(status, btn_table3);
-            }
-            if (tableNumber == 4)
-            {
-                statusCheck(status, btn_table4);
-            }
-            if (tableNumber == 5)
-            {
-                statusCheck(status, btn_table5);
-            }
-            if (tableNumber == 6)
-            {
-                statusCheck(status, btn_table6);
-            }
-            if (tableNumber == 7)
-            {
-                statusCheck(status, btn_table7);
-            }
-            if (tableNumber == 8)
-            {
-                statusCheck(status, btn_table8);
-            }
-            if (tableNumber == 9)
-            {
-                statusCheck(status, btn_table9);
-            }
-            if (tableNumber == 10)
-            {
-                statusCheck(status, btn_table10);
-            }
+            List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
+            statusCheck(status, ControlList[tableNumber - 1]);
         }
 
         private void statusCheck(string status, Button button)

@@ -30,62 +30,59 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TakingDrinksOrder));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.LiptonIcedTea = new System.Windows.Forms.NumericUpDown();
             this.GingerAle = new System.Windows.Forms.NumericUpDown();
-            this.lblgingerAle = new System.Windows.Forms.CheckBox();
-            this.liptonIT = new System.Windows.Forms.CheckBox();
             this.Tonic = new System.Windows.Forms.NumericUpDown();
             this.BitterLemon = new System.Windows.Forms.NumericUpDown();
             this.FantaOrange = new System.Windows.Forms.NumericUpDown();
             this.Sprite = new System.Windows.Forms.NumericUpDown();
             this.CocaCola = new System.Windows.Forms.NumericUpDown();
-            this.lbltonic = new System.Windows.Forms.CheckBox();
-            this.lblbitterLem = new System.Windows.Forms.CheckBox();
-            this.lblfantaOr = new System.Windows.Forms.CheckBox();
-            this.lblSprite = new System.Windows.Forms.CheckBox();
-            this.lblcoke = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.Cappuccino = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.Espresso = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
             this.FreshMintTea = new System.Windows.Forms.NumericUpDown();
             this.Tea = new System.Windows.Forms.NumericUpDown();
             this.Coffee = new System.Windows.Forms.NumericUpDown();
-            this.cappu = new System.Windows.Forms.CheckBox();
-            this.lblespresso = new System.Windows.Forms.CheckBox();
-            this.freshMT = new System.Windows.Forms.CheckBox();
-            this.lbltea = new System.Windows.Forms.CheckBox();
-            this.lblcoffee = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.RoseGlass = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
             this.RoseBottle = new System.Windows.Forms.NumericUpDown();
             this.MerlotGlass = new System.Windows.Forms.NumericUpDown();
             this.MerlotBottle = new System.Windows.Forms.NumericUpDown();
             this.SauvignonGlass = new System.Windows.Forms.NumericUpDown();
             this.SauvignonBottle = new System.Windows.Forms.NumericUpDown();
-            this.rose_glass = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.merlot_glass = new System.Windows.Forms.CheckBox();
-            this.merlot_bottle = new System.Windows.Forms.CheckBox();
-            this.suavBlanc_glass = new System.Windows.Forms.CheckBox();
-            this.suavBlanc_bottle = new System.Windows.Forms.CheckBox();
-            this.rose = new System.Windows.Forms.CheckBox();
-            this.merlot = new System.Windows.Forms.CheckBox();
-            this.suavBlanc = new System.Windows.Forms.CheckBox();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_Confirm = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.commentBox = new System.Windows.Forms.TextBox();
             this.btnAddOrder = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_backDinner = new System.Windows.Forms.Button();
+            this.gridV_Drinks = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tablenr = new System.Windows.Forms.Label();
+            this.txt_tablenumber = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -110,41 +107,95 @@
             ((System.ComponentModel.ISupportInitialize)(this.MerlotBottle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SauvignonGlass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SauvignonBottle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridV_Drinks)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.LiptonIcedTea);
             this.groupBox2.Controls.Add(this.GingerAle);
-            this.groupBox2.Controls.Add(this.lblgingerAle);
-            this.groupBox2.Controls.Add(this.liptonIT);
             this.groupBox2.Controls.Add(this.Tonic);
             this.groupBox2.Controls.Add(this.BitterLemon);
             this.groupBox2.Controls.Add(this.FantaOrange);
             this.groupBox2.Controls.Add(this.Sprite);
             this.groupBox2.Controls.Add(this.CocaCola);
-            this.groupBox2.Controls.Add(this.lbltonic);
-            this.groupBox2.Controls.Add(this.lblbitterLem);
-            this.groupBox2.Controls.Add(this.lblfantaOr);
-            this.groupBox2.Controls.Add(this.lblSprite);
-            this.groupBox2.Controls.Add(this.lblcoke);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(26, 128);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(215, 219);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "SOFT DRINKS";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 184);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(84, 13);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Lipton Iced Tea";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(7, 156);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 13);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "Ginger Ale";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(7, 129);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(34, 13);
+            this.label18.TabIndex = 39;
+            this.label18.Text = "Tonic";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(7, 103);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(71, 13);
+            this.label19.TabIndex = 40;
+            this.label19.Text = "Bitter Lemon";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(7, 78);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(78, 13);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "Fanta Orange";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 50);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(37, 13);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "Sprite";
+            // 
             // LiptonIcedTea
             // 
             this.LiptonIcedTea.Location = new System.Drawing.Point(137, 183);
-            this.LiptonIcedTea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LiptonIcedTea.Margin = new System.Windows.Forms.Padding(2);
             this.LiptonIcedTea.Name = "LiptonIcedTea";
             this.LiptonIcedTea.Size = new System.Drawing.Size(60, 21);
             this.LiptonIcedTea.TabIndex = 13;
@@ -153,38 +204,16 @@
             // GingerAle
             // 
             this.GingerAle.Location = new System.Drawing.Point(137, 155);
-            this.GingerAle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GingerAle.Margin = new System.Windows.Forms.Padding(2);
             this.GingerAle.Name = "GingerAle";
             this.GingerAle.Size = new System.Drawing.Size(60, 21);
             this.GingerAle.TabIndex = 12;
             this.GingerAle.ValueChanged += new System.EventHandler(this.DrinksCount);
             // 
-            // lblgingerAle
-            // 
-            this.lblgingerAle.AutoSize = true;
-            this.lblgingerAle.Location = new System.Drawing.Point(10, 155);
-            this.lblgingerAle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblgingerAle.Name = "lblgingerAle";
-            this.lblgingerAle.Size = new System.Drawing.Size(80, 17);
-            this.lblgingerAle.TabIndex = 11;
-            this.lblgingerAle.Text = "Ginger Ale";
-            this.lblgingerAle.UseVisualStyleBackColor = true;
-            // 
-            // liptonIT
-            // 
-            this.liptonIT.AutoSize = true;
-            this.liptonIT.Location = new System.Drawing.Point(10, 183);
-            this.liptonIT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.liptonIT.Name = "liptonIT";
-            this.liptonIT.Size = new System.Drawing.Size(103, 17);
-            this.liptonIT.TabIndex = 10;
-            this.liptonIT.Text = "Lipton Iced Tea";
-            this.liptonIT.UseVisualStyleBackColor = true;
-            // 
             // Tonic
             // 
             this.Tonic.Location = new System.Drawing.Point(137, 128);
-            this.Tonic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tonic.Margin = new System.Windows.Forms.Padding(2);
             this.Tonic.Name = "Tonic";
             this.Tonic.Size = new System.Drawing.Size(60, 21);
             this.Tonic.TabIndex = 9;
@@ -193,7 +222,7 @@
             // BitterLemon
             // 
             this.BitterLemon.Location = new System.Drawing.Point(137, 102);
-            this.BitterLemon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BitterLemon.Margin = new System.Windows.Forms.Padding(2);
             this.BitterLemon.Name = "BitterLemon";
             this.BitterLemon.Size = new System.Drawing.Size(60, 21);
             this.BitterLemon.TabIndex = 8;
@@ -202,7 +231,7 @@
             // FantaOrange
             // 
             this.FantaOrange.Location = new System.Drawing.Point(137, 76);
-            this.FantaOrange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FantaOrange.Margin = new System.Windows.Forms.Padding(2);
             this.FantaOrange.Name = "FantaOrange";
             this.FantaOrange.Size = new System.Drawing.Size(60, 21);
             this.FantaOrange.TabIndex = 7;
@@ -211,7 +240,7 @@
             // Sprite
             // 
             this.Sprite.Location = new System.Drawing.Point(137, 49);
-            this.Sprite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sprite.Margin = new System.Windows.Forms.Padding(2);
             this.Sprite.Name = "Sprite";
             this.Sprite.Size = new System.Drawing.Size(60, 21);
             this.Sprite.TabIndex = 6;
@@ -220,111 +249,110 @@
             // CocaCola
             // 
             this.CocaCola.Location = new System.Drawing.Point(137, 23);
-            this.CocaCola.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CocaCola.Margin = new System.Windows.Forms.Padding(2);
             this.CocaCola.Name = "CocaCola";
             this.CocaCola.Size = new System.Drawing.Size(60, 21);
             this.CocaCola.TabIndex = 5;
             this.CocaCola.ValueChanged += new System.EventHandler(this.DrinksCount);
             // 
-            // lbltonic
+            // label2
             // 
-            this.lbltonic.AutoSize = true;
-            this.lbltonic.Location = new System.Drawing.Point(10, 128);
-            this.lbltonic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lbltonic.Name = "lbltonic";
-            this.lbltonic.Size = new System.Drawing.Size(53, 17);
-            this.lbltonic.TabIndex = 4;
-            this.lbltonic.Text = "Tonic";
-            this.lbltonic.UseVisualStyleBackColor = true;
-            // 
-            // lblbitterLem
-            // 
-            this.lblbitterLem.AutoSize = true;
-            this.lblbitterLem.Location = new System.Drawing.Point(10, 102);
-            this.lblbitterLem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblbitterLem.Name = "lblbitterLem";
-            this.lblbitterLem.Size = new System.Drawing.Size(90, 17);
-            this.lblbitterLem.TabIndex = 3;
-            this.lblbitterLem.Text = "Bitter Lemon";
-            this.lblbitterLem.UseVisualStyleBackColor = true;
-            // 
-            // lblfantaOr
-            // 
-            this.lblfantaOr.AutoSize = true;
-            this.lblfantaOr.Location = new System.Drawing.Point(10, 76);
-            this.lblfantaOr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblfantaOr.Name = "lblfantaOr";
-            this.lblfantaOr.Size = new System.Drawing.Size(97, 17);
-            this.lblfantaOr.TabIndex = 2;
-            this.lblfantaOr.Text = "Fanta Orange";
-            this.lblfantaOr.UseVisualStyleBackColor = true;
-            // 
-            // lblSprite
-            // 
-            this.lblSprite.AutoSize = true;
-            this.lblSprite.Location = new System.Drawing.Point(10, 49);
-            this.lblSprite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblSprite.Name = "lblSprite";
-            this.lblSprite.Size = new System.Drawing.Size(56, 17);
-            this.lblSprite.TabIndex = 1;
-            this.lblSprite.Text = "Sprite";
-            this.lblSprite.UseVisualStyleBackColor = true;
-            // 
-            // lblcoke
-            // 
-            this.lblcoke.AutoSize = true;
-            this.lblcoke.Location = new System.Drawing.Point(10, 23);
-            this.lblcoke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblcoke.Name = "lblcoke";
-            this.lblcoke.Size = new System.Drawing.Size(78, 17);
-            this.lblcoke.TabIndex = 0;
-            this.lblcoke.Text = "Coca-Cola";
-            this.lblcoke.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Coca-Cola";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.Cappuccino);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.Espresso);
+            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.FreshMintTea);
             this.groupBox1.Controls.Add(this.Tea);
             this.groupBox1.Controls.Add(this.Coffee);
-            this.groupBox1.Controls.Add(this.cappu);
-            this.groupBox1.Controls.Add(this.lblespresso);
-            this.groupBox1.Controls.Add(this.freshMT);
-            this.groupBox1.Controls.Add(this.lbltea);
-            this.groupBox1.Controls.Add(this.lblcoffee);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(256, 135);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(205, 160);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "HOT DRINKS";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 77);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(82, 13);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "Fresh Mint Tea";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 51);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 13);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "Tea";
+            // 
             // Cappuccino
             // 
             this.Cappuccino.Location = new System.Drawing.Point(126, 128);
-            this.Cappuccino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cappuccino.Margin = new System.Windows.Forms.Padding(2);
             this.Cappuccino.Name = "Cappuccino";
             this.Cappuccino.Size = new System.Drawing.Size(60, 21);
             this.Cappuccino.TabIndex = 9;
             this.Cappuccino.ValueChanged += new System.EventHandler(this.DrinksCount);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Cappuccino";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Espresso";
+            // 
             // Espresso
             // 
             this.Espresso.Location = new System.Drawing.Point(126, 101);
-            this.Espresso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Espresso.Margin = new System.Windows.Forms.Padding(2);
             this.Espresso.Name = "Espresso";
             this.Espresso.Size = new System.Drawing.Size(60, 21);
             this.Espresso.TabIndex = 8;
             this.Espresso.ValueChanged += new System.EventHandler(this.DrinksCount);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(7, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Coffee";
+            // 
             // FreshMintTea
             // 
             this.FreshMintTea.Location = new System.Drawing.Point(126, 76);
-            this.FreshMintTea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FreshMintTea.Margin = new System.Windows.Forms.Padding(2);
             this.FreshMintTea.Name = "FreshMintTea";
             this.FreshMintTea.Size = new System.Drawing.Size(60, 21);
             this.FreshMintTea.TabIndex = 7;
@@ -333,7 +361,7 @@
             // Tea
             // 
             this.Tea.Location = new System.Drawing.Point(126, 49);
-            this.Tea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tea.Margin = new System.Windows.Forms.Padding(2);
             this.Tea.Name = "Tea";
             this.Tea.Size = new System.Drawing.Size(60, 21);
             this.Tea.TabIndex = 6;
@@ -342,107 +370,133 @@
             // Coffee
             // 
             this.Coffee.Location = new System.Drawing.Point(126, 23);
-            this.Coffee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Coffee.Margin = new System.Windows.Forms.Padding(2);
             this.Coffee.Name = "Coffee";
             this.Coffee.Size = new System.Drawing.Size(60, 21);
             this.Coffee.TabIndex = 5;
             this.Coffee.ValueChanged += new System.EventHandler(this.DrinksCount);
             // 
-            // cappu
-            // 
-            this.cappu.AutoSize = true;
-            this.cappu.Location = new System.Drawing.Point(10, 128);
-            this.cappu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cappu.Name = "cappu";
-            this.cappu.Size = new System.Drawing.Size(87, 17);
-            this.cappu.TabIndex = 4;
-            this.cappu.Text = "Cappuccino";
-            this.cappu.UseVisualStyleBackColor = true;
-            // 
-            // lblespresso
-            // 
-            this.lblespresso.AutoSize = true;
-            this.lblespresso.Location = new System.Drawing.Point(10, 102);
-            this.lblespresso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblespresso.Name = "lblespresso";
-            this.lblespresso.Size = new System.Drawing.Size(71, 17);
-            this.lblespresso.TabIndex = 3;
-            this.lblespresso.Text = "Espresso";
-            this.lblespresso.UseVisualStyleBackColor = true;
-            // 
-            // freshMT
-            // 
-            this.freshMT.AutoSize = true;
-            this.freshMT.Location = new System.Drawing.Point(10, 76);
-            this.freshMT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.freshMT.Name = "freshMT";
-            this.freshMT.Size = new System.Drawing.Size(101, 17);
-            this.freshMT.TabIndex = 2;
-            this.freshMT.Text = "Fresh Mint Tea";
-            this.freshMT.UseVisualStyleBackColor = true;
-            // 
-            // lbltea
-            // 
-            this.lbltea.AutoSize = true;
-            this.lbltea.Location = new System.Drawing.Point(10, 49);
-            this.lbltea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lbltea.Name = "lbltea";
-            this.lbltea.Size = new System.Drawing.Size(43, 17);
-            this.lbltea.TabIndex = 1;
-            this.lbltea.Text = "Tea";
-            this.lbltea.UseVisualStyleBackColor = true;
-            // 
-            // lblcoffee
-            // 
-            this.lblcoffee.AutoSize = true;
-            this.lblcoffee.Location = new System.Drawing.Point(10, 23);
-            this.lblcoffee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblcoffee.Name = "lblcoffee";
-            this.lblcoffee.Size = new System.Drawing.Size(60, 17);
-            this.lblcoffee.TabIndex = 0;
-            this.lblcoffee.Text = "Coffee";
-            this.lblcoffee.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.RoseGlass);
+            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.RoseBottle);
             this.groupBox3.Controls.Add(this.MerlotGlass);
             this.groupBox3.Controls.Add(this.MerlotBottle);
             this.groupBox3.Controls.Add(this.SauvignonGlass);
             this.groupBox3.Controls.Add(this.SauvignonBottle);
-            this.groupBox3.Controls.Add(this.rose_glass);
-            this.groupBox3.Controls.Add(this.checkBox15);
-            this.groupBox3.Controls.Add(this.merlot_glass);
-            this.groupBox3.Controls.Add(this.merlot_bottle);
-            this.groupBox3.Controls.Add(this.suavBlanc_glass);
-            this.groupBox3.Controls.Add(this.suavBlanc_bottle);
-            this.groupBox3.Controls.Add(this.rose);
-            this.groupBox3.Controls.Add(this.merlot);
-            this.groupBox3.Controls.Add(this.suavBlanc);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(494, 138);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(252, 268);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "WINES";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(10, 193);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(32, 13);
+            this.label22.TabIndex = 29;
+            this.label22.Text = "Rosé";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(10, 106);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 30;
+            this.label23.Text = "Merlot";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(10, 28);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(92, 13);
+            this.label24.TabIndex = 31;
+            this.label24.Text = "Suavignon Blanc";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(29, 240);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Glass";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(32, 156);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Glass";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(29, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Bottle";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(32, 130);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 13);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "Bottle";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(35, 48);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Bottle";
+            // 
             // RoseGlass
             // 
             this.RoseGlass.Location = new System.Drawing.Point(144, 239);
-            this.RoseGlass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoseGlass.Margin = new System.Windows.Forms.Padding(2);
             this.RoseGlass.Name = "RoseGlass";
             this.RoseGlass.Size = new System.Drawing.Size(60, 21);
             this.RoseGlass.TabIndex = 14;
             this.RoseGlass.SystemColorsChanged += new System.EventHandler(this.DrinksCount);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(38, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Glass";
+            // 
             // RoseBottle
             // 
             this.RoseBottle.Location = new System.Drawing.Point(144, 212);
-            this.RoseBottle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoseBottle.Margin = new System.Windows.Forms.Padding(2);
             this.RoseBottle.Name = "RoseBottle";
             this.RoseBottle.Size = new System.Drawing.Size(60, 21);
             this.RoseBottle.TabIndex = 13;
@@ -451,7 +505,7 @@
             // MerlotGlass
             // 
             this.MerlotGlass.Location = new System.Drawing.Point(144, 155);
-            this.MerlotGlass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MerlotGlass.Margin = new System.Windows.Forms.Padding(2);
             this.MerlotGlass.Name = "MerlotGlass";
             this.MerlotGlass.Size = new System.Drawing.Size(60, 21);
             this.MerlotGlass.TabIndex = 12;
@@ -460,7 +514,7 @@
             // MerlotBottle
             // 
             this.MerlotBottle.Location = new System.Drawing.Point(144, 129);
-            this.MerlotBottle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MerlotBottle.Margin = new System.Windows.Forms.Padding(2);
             this.MerlotBottle.Name = "MerlotBottle";
             this.MerlotBottle.Size = new System.Drawing.Size(60, 21);
             this.MerlotBottle.TabIndex = 11;
@@ -469,7 +523,7 @@
             // SauvignonGlass
             // 
             this.SauvignonGlass.Location = new System.Drawing.Point(144, 74);
-            this.SauvignonGlass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SauvignonGlass.Margin = new System.Windows.Forms.Padding(2);
             this.SauvignonGlass.Name = "SauvignonGlass";
             this.SauvignonGlass.Size = new System.Drawing.Size(60, 21);
             this.SauvignonGlass.TabIndex = 10;
@@ -478,118 +532,19 @@
             // SauvignonBottle
             // 
             this.SauvignonBottle.Location = new System.Drawing.Point(144, 47);
-            this.SauvignonBottle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SauvignonBottle.Margin = new System.Windows.Forms.Padding(2);
             this.SauvignonBottle.Name = "SauvignonBottle";
             this.SauvignonBottle.Size = new System.Drawing.Size(60, 21);
             this.SauvignonBottle.TabIndex = 9;
             this.SauvignonBottle.ValueChanged += new System.EventHandler(this.DrinksCount);
-            // 
-            // rose_glass
-            // 
-            this.rose_glass.AutoSize = true;
-            this.rose_glass.Location = new System.Drawing.Point(38, 240);
-            this.rose_glass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rose_glass.Name = "rose_glass";
-            this.rose_glass.Size = new System.Drawing.Size(53, 17);
-            this.rose_glass.TabIndex = 8;
-            this.rose_glass.Text = "Glass";
-            this.rose_glass.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(38, 212);
-            this.checkBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(56, 17);
-            this.checkBox15.TabIndex = 7;
-            this.checkBox15.Text = "Bottle";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // merlot_glass
-            // 
-            this.merlot_glass.AutoSize = true;
-            this.merlot_glass.Location = new System.Drawing.Point(38, 156);
-            this.merlot_glass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.merlot_glass.Name = "merlot_glass";
-            this.merlot_glass.Size = new System.Drawing.Size(53, 17);
-            this.merlot_glass.TabIndex = 6;
-            this.merlot_glass.Text = "Glass";
-            this.merlot_glass.UseVisualStyleBackColor = true;
-            // 
-            // merlot_bottle
-            // 
-            this.merlot_bottle.AutoSize = true;
-            this.merlot_bottle.Location = new System.Drawing.Point(38, 130);
-            this.merlot_bottle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.merlot_bottle.Name = "merlot_bottle";
-            this.merlot_bottle.Size = new System.Drawing.Size(56, 17);
-            this.merlot_bottle.TabIndex = 5;
-            this.merlot_bottle.Text = "Bottle";
-            this.merlot_bottle.UseVisualStyleBackColor = true;
-            // 
-            // suavBlanc_glass
-            // 
-            this.suavBlanc_glass.AutoSize = true;
-            this.suavBlanc_glass.Location = new System.Drawing.Point(38, 74);
-            this.suavBlanc_glass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.suavBlanc_glass.Name = "suavBlanc_glass";
-            this.suavBlanc_glass.Size = new System.Drawing.Size(53, 17);
-            this.suavBlanc_glass.TabIndex = 4;
-            this.suavBlanc_glass.Text = "Glass";
-            this.suavBlanc_glass.UseVisualStyleBackColor = true;
-            // 
-            // suavBlanc_bottle
-            // 
-            this.suavBlanc_bottle.AutoSize = true;
-            this.suavBlanc_bottle.Location = new System.Drawing.Point(38, 47);
-            this.suavBlanc_bottle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.suavBlanc_bottle.Name = "suavBlanc_bottle";
-            this.suavBlanc_bottle.Size = new System.Drawing.Size(56, 17);
-            this.suavBlanc_bottle.TabIndex = 3;
-            this.suavBlanc_bottle.Text = "Bottle";
-            this.suavBlanc_bottle.UseVisualStyleBackColor = true;
-            // 
-            // rose
-            // 
-            this.rose.AutoSize = true;
-            this.rose.Location = new System.Drawing.Point(13, 191);
-            this.rose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rose.Name = "rose";
-            this.rose.Size = new System.Drawing.Size(51, 17);
-            this.rose.TabIndex = 2;
-            this.rose.Text = "Rosé";
-            this.rose.UseVisualStyleBackColor = true;
-            // 
-            // merlot
-            // 
-            this.merlot.AutoSize = true;
-            this.merlot.Location = new System.Drawing.Point(13, 109);
-            this.merlot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.merlot.Name = "merlot";
-            this.merlot.Size = new System.Drawing.Size(60, 17);
-            this.merlot.TabIndex = 1;
-            this.merlot.Text = "Merlot";
-            this.merlot.UseVisualStyleBackColor = true;
-            // 
-            // suavBlanc
-            // 
-            this.suavBlanc.AutoSize = true;
-            this.suavBlanc.Location = new System.Drawing.Point(13, 21);
-            this.suavBlanc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.suavBlanc.Name = "suavBlanc";
-            this.suavBlanc.Size = new System.Drawing.Size(111, 17);
-            this.suavBlanc.TabIndex = 0;
-            this.suavBlanc.Text = "Suavignon Blanc";
-            this.suavBlanc.UseVisualStyleBackColor = true;
             // 
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.Red;
             this.btn_cancel.Font = new System.Drawing.Font("Segoe UI Black", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_cancel.Location = new System.Drawing.Point(306, 703);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancel.Location = new System.Drawing.Point(130, 675);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(164, 34);
             this.btn_cancel.TabIndex = 22;
@@ -602,13 +557,14 @@
             this.btn_Confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_Confirm.Font = new System.Drawing.Font("Segoe UI Black", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Confirm.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_Confirm.Location = new System.Drawing.Point(528, 703);
-            this.btn_Confirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Confirm.Location = new System.Drawing.Point(449, 675);
+            this.btn_Confirm.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Confirm.Name = "btn_Confirm";
             this.btn_Confirm.Size = new System.Drawing.Size(190, 34);
             this.btn_Confirm.TabIndex = 21;
             this.btn_Confirm.Text = "Confirm Order";
             this.btn_Confirm.UseVisualStyleBackColor = false;
+            this.btn_Confirm.Click += new System.EventHandler(this.btn_Confirm_Click);
             // 
             // label4
             // 
@@ -624,7 +580,7 @@
             // commentBox
             // 
             this.commentBox.Location = new System.Drawing.Point(28, 386);
-            this.commentBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.commentBox.Margin = new System.Windows.Forms.Padding(2);
             this.commentBox.Multiline = true;
             this.commentBox.Name = "commentBox";
             this.commentBox.Size = new System.Drawing.Size(256, 75);
@@ -634,117 +590,88 @@
             // 
             this.btnAddOrder.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddOrder.Location = new System.Drawing.Point(292, 331);
-            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddOrder.Name = "btnAddOrder";
             this.btnAddOrder.Size = new System.Drawing.Size(186, 49);
             this.btnAddOrder.TabIndex = 18;
             this.btnAddOrder.Text = "Add to order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
+            this.btnAddOrder.Click += new System.EventHandler(this.AddItem_Drink_Click);
             // 
-            // dataGridView1
+            // gridV_Drinks
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(76, 476);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(641, 206);
-            this.dataGridView1.TabIndex = 17;
+            this.gridV_Drinks.AllowUserToAddRows = false;
+            this.gridV_Drinks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridV_Drinks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.ItemName,
+            this.Price,
+            this.Quantity});
+            this.gridV_Drinks.Location = new System.Drawing.Point(130, 465);
+            this.gridV_Drinks.Margin = new System.Windows.Forms.Padding(2);
+            this.gridV_Drinks.Name = "gridV_Drinks";
+            this.gridV_Drinks.RowHeadersVisible = false;
+            this.gridV_Drinks.RowHeadersWidth = 82;
+            this.gridV_Drinks.RowTemplate.Height = 33;
+            this.gridV_Drinks.Size = new System.Drawing.Size(509, 206);
+            this.gridV_Drinks.TabIndex = 17;
             // 
-            // Column1
+            // ID
             // 
-            this.Column1.HeaderText = "Item_ID";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 200;
+            this.ID.HeaderText = "Item_ID";
+            this.ID.MinimumWidth = 10;
+            this.ID.Name = "ID";
             // 
-            // Column2
+            // ItemName
             // 
-            this.Column2.HeaderText = "Item ";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
+            this.ItemName.HeaderText = "Item ";
+            this.ItemName.MinimumWidth = 10;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Width = 200;
             // 
-            // Column3
+            // Price
             // 
-            this.Column3.HeaderText = "Price";
-            this.Column3.MinimumWidth = 10;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 10;
+            this.Price.Name = "Price";
             // 
-            // Column4
+            // Quantity
             // 
-            this.Column4.HeaderText = "qty.";
-            this.Column4.MinimumWidth = 10;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Total";
-            this.Column5.MinimumWidth = 10;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 200;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Comment";
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 200;
-            // 
-            // btn_backDinner
-            // 
-            this.btn_backDinner.BackColor = System.Drawing.Color.Yellow;
-            this.btn_backDinner.Font = new System.Drawing.Font("Segoe UI Black", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_backDinner.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_backDinner.Location = new System.Drawing.Point(76, 703);
-            this.btn_backDinner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_backDinner.Name = "btn_backDinner";
-            this.btn_backDinner.Size = new System.Drawing.Size(164, 34);
-            this.btn_backDinner.TabIndex = 23;
-            this.btn_backDinner.Text = "Back to Dinner";
-            this.btn_backDinner.UseVisualStyleBackColor = false;
+            this.Quantity.HeaderText = "qty.";
+            this.Quantity.MinimumWidth = 10;
+            this.Quantity.Name = "Quantity";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel1.Controls.Add(this.tablenr);
+            this.panel1.Controls.Add(this.txt_tablenumber);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 99);
+            this.panel1.Size = new System.Drawing.Size(777, 99);
             this.panel1.TabIndex = 24;
             // 
-            // tablenr
+            // txt_tablenumber
             // 
-            this.tablenr.AutoSize = true;
-            this.tablenr.BackColor = System.Drawing.Color.LightCyan;
-            this.tablenr.Font = new System.Drawing.Font("Segoe UI Black", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tablenr.Location = new System.Drawing.Point(704, 73);
-            this.tablenr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tablenr.Name = "tablenr";
-            this.tablenr.Size = new System.Drawing.Size(39, 19);
-            this.tablenr.TabIndex = 33;
-            this.tablenr.Text = "_____";
+            this.txt_tablenumber.AutoSize = true;
+            this.txt_tablenumber.BackColor = System.Drawing.Color.LightCyan;
+            this.txt_tablenumber.Font = new System.Drawing.Font("Segoe UI Black", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tablenumber.Location = new System.Drawing.Point(704, 73);
+            this.txt_tablenumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txt_tablenumber.Name = "txt_tablenumber";
+            this.txt_tablenumber.Size = new System.Drawing.Size(39, 19);
+            this.txt_tablenumber.TabIndex = 33;
+            this.txt_tablenumber.Text = "_____";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, -8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -780,19 +707,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(783, 751);
+            this.ClientSize = new System.Drawing.Size(777, 735);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_backDinner);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_Confirm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.commentBox);
             this.Controls.Add(this.btnAddOrder);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridV_Drinks);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TakingDrinksOrder";
             this.Text = "TakingDrinksOrder";
             this.groupBox2.ResumeLayout(false);
@@ -819,7 +745,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MerlotBottle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SauvignonGlass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SauvignonBottle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridV_Drinks)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -835,26 +761,14 @@
         private System.Windows.Forms.NumericUpDown FantaOrange;
         private System.Windows.Forms.NumericUpDown Sprite;
         private System.Windows.Forms.NumericUpDown CocaCola;
-        private System.Windows.Forms.CheckBox lbltonic;
-        private System.Windows.Forms.CheckBox lblbitterLem;
-        private System.Windows.Forms.CheckBox lblfantaOr;
-        private System.Windows.Forms.CheckBox lblSprite;
-        private System.Windows.Forms.CheckBox lblcoke;
         private System.Windows.Forms.NumericUpDown LiptonIcedTea;
         private System.Windows.Forms.NumericUpDown GingerAle;
-        private System.Windows.Forms.CheckBox lblgingerAle;
-        private System.Windows.Forms.CheckBox liptonIT;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.NumericUpDown Cappuccino;
         private System.Windows.Forms.NumericUpDown Espresso;
         private System.Windows.Forms.NumericUpDown FreshMintTea;
         private System.Windows.Forms.NumericUpDown Tea;
         private System.Windows.Forms.NumericUpDown Coffee;
-        private System.Windows.Forms.CheckBox cappu;
-        private System.Windows.Forms.CheckBox lblespresso;
-        private System.Windows.Forms.CheckBox freshMT;
-        private System.Windows.Forms.CheckBox lbltea;
-        private System.Windows.Forms.CheckBox lblcoffee;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown RoseGlass;
         private System.Windows.Forms.NumericUpDown RoseBottle;
@@ -862,32 +776,41 @@
         private System.Windows.Forms.NumericUpDown MerlotBottle;
         private System.Windows.Forms.NumericUpDown SauvignonGlass;
         private System.Windows.Forms.NumericUpDown SauvignonBottle;
-        private System.Windows.Forms.CheckBox rose_glass;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox merlot_glass;
-        private System.Windows.Forms.CheckBox merlot_bottle;
-        private System.Windows.Forms.CheckBox suavBlanc_glass;
-        private System.Windows.Forms.CheckBox suavBlanc_bottle;
-        private System.Windows.Forms.CheckBox rose;
-        private System.Windows.Forms.CheckBox merlot;
-        private System.Windows.Forms.CheckBox suavBlanc;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_Confirm;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox commentBox;
         private System.Windows.Forms.Button btnAddOrder;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button btn_backDinner;
+        private System.Windows.Forms.DataGridView gridV_Drinks;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label tablenr;
+        private System.Windows.Forms.Label txt_tablenumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label7;
     }
 }

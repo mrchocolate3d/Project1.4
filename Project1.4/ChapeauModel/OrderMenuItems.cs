@@ -18,6 +18,10 @@ namespace ChapeauModel
 
         public string itemName { get; set; }
         public int status { get; set; }
+        public int StockAmount { get; set; }
+
+
+        public double price { get; set; }
 
 
     }

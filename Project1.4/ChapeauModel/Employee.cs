@@ -14,5 +14,13 @@ namespace ChapeauModel
         public string LastName { get; set; }
 
         public login password;
+
+        public Employee()
+        {
+        }
+        public Employee(int EmployeeId)
+        {
+            this.EmployeeId = EmployeeId;
+        }
     }
 }

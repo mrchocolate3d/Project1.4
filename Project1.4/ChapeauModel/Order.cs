@@ -10,10 +10,9 @@ namespace ChapeauModel
     {
         public int OrderID { get; set; }
         public Table TableID { get; set; }
-        public int EmployeeID { get; set; }
-        public int OrderDate { get; set; }
+        public Employee EmployeeID { get; set; }
+        public DateTime  OrderDate { get { return DateTime.Now; } }
         public string feedback { get; set; }
-        public DateTime dateOrder { get; set; }
 
     }
 }

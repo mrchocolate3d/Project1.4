@@ -14,10 +14,11 @@ namespace ChapeauDAL
     {
         public Employee GetUserLoginInfo(login loginCode)
         {
-            string query = $"SELECT [login].loginCode,firstName,lastName,roles.roleDescription " +
+            string query = $"SELECT [login].loginCode,firstName,lastName,roles.roleDescription,[login].employeeID " +
                 $"FROM (([login] inner join employees ON [login].employeeID = employees.employeeID) " +
-                $"INNER JOIN [roles] ON roles.roleID = employees.roleID) WHERE [login].loginCode = {loginCode.loginCode}";
-            SqlParameter[] sqlParameters = new SqlParameter[0];
+                $"INNER JOIN [roles] ON roles.roleID = employees.roleID) WHERE [login].loginCode = @loginCode";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@loginCode", loginCode.loginCode);
             return GetEmployee(ExecuteSelectQuery(query, sqlParameters));
         }
 
@@ -28,6 +29,7 @@ namespace ChapeauDAL
                 Employee employee = new Employee()
                 {
                     password = new login((int)dr["loginCode"]),
+                    EmployeeId = (int)dr["employeeID"],
                     FirstName = (string)(dr["firstName"]),
                     LastName = (string)(dr["lastName"]),
                     role = (string)(dr["roleDescription"])

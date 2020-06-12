@@ -163,7 +163,6 @@
             this.btnOrder.TabIndex = 5;
             this.btnOrder.Text = "Show Order";
             this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // OrderView
             // 
