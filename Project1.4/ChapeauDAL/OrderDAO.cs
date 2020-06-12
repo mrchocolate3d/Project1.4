@@ -13,17 +13,6 @@ namespace ChapeauDAL
 {
     public class OrderDAO : Base
     {
-        private const string Format = "yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss";
-
-        public List<Order> Db_Get_Order_Info()
-        {
-            string query = "SELECT os.orderID, m.itemName, o.quantity, os.tableID, e.employeeID" +
-                "FROM menuItem AS m" + "JOIN Order_MenuItem AS o ON m.menuItemID = o.MenuItemID" +
-                "JOIN orders AS os ON o.orderID = os.orderID" + "JOIN employees AS e ON os.employeeID = e.employeeID" +
-                "WHERE os.orderID = 2";
-            SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
-        }
         public OrderMenuItems getNewOrderInfo(string name)
         {
             string query = "SELECT menuItemID, price, amount FROM menuItem WHERE itemName = '" + name + "'";
@@ -33,11 +22,13 @@ namespace ChapeauDAL
 
         public void NewOrder(Table table,Employee employee)
         {
-            string query = $"INSERT INTO orders (tableID,employeeID,orderComplete) VALUES (@tableId,@employeeID,@orderComplete)";
-            SqlParameter[] sqlParameters = new SqlParameter[3];
+            string query = $"INSERT INTO orders (tableID,employeeID,orderComplete,paidOrders) VALUES (@tableId,@employeeID,@orderComplete,@paidOrders)";
+            SqlParameter[] sqlParameters = new SqlParameter[4];
             sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
             sqlParameters[1] = new SqlParameter("@employeeID", employee.EmployeeId);
             sqlParameters[2] = new SqlParameter("@orderComplete", false);
+            sqlParameters[3] = new SqlParameter("@paidOrders", false);
+
             ExecuteEditQuery(query, sqlParameters);
         }
 
@@ -52,12 +43,11 @@ namespace ChapeauDAL
 
         public void InsertMenuItem(OrderMenuItems menuItems,int id)
         {
-            string query = "INSERT INTO Order_MenuItem (orderID,MenuItemID,quantity,status) VALUES (@orderID,@MenuItemID,@quantity,@status)";
-            SqlParameter[] sqlParameters = new SqlParameter[4];
+            string query = "INSERT INTO Order_MenuItem (orderID,MenuItemID,quantity) VALUES (@orderID,@MenuItemID,@quantity)";
+            SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@orderID", id);
             sqlParameters[1] = new SqlParameter("@MenuItemID", menuItems.menuItemID);
             sqlParameters[2] = new SqlParameter("@quantity", menuItems.quantity);
-            sqlParameters[3] = new SqlParameter("@status", 0);
             ExecuteEditQuery(query, sqlParameters);
         }
 

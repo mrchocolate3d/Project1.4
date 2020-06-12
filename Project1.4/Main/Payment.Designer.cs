@@ -84,7 +84,7 @@
             this.pnlpayment.Controls.Add(this.radiobtnpin);
             this.pnlpayment.Controls.Add(this.listViewrecipt);
             this.pnlpayment.Location = new System.Drawing.Point(9, 67);
-            this.pnlpayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlpayment.Margin = new System.Windows.Forms.Padding(2);
             this.pnlpayment.Name = "pnlpayment";
             this.pnlpayment.Size = new System.Drawing.Size(589, 500);
             this.pnlpayment.TabIndex = 1;
@@ -112,7 +112,7 @@
             // txttip
             // 
             this.txttip.Location = new System.Drawing.Point(441, 313);
-            this.txttip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttip.Margin = new System.Windows.Forms.Padding(2);
             this.txttip.Name = "txttip";
             this.txttip.Size = new System.Drawing.Size(46, 20);
             this.txttip.TabIndex = 14;
@@ -150,7 +150,7 @@
             // btnpay
             // 
             this.btnpay.Location = new System.Drawing.Point(160, 433);
-            this.btnpay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnpay.Margin = new System.Windows.Forms.Padding(2);
             this.btnpay.Name = "btnpay";
             this.btnpay.Size = new System.Drawing.Size(226, 43);
             this.btnpay.TabIndex = 10;
@@ -222,7 +222,7 @@
             // 
             this.radiobtncash.AutoSize = true;
             this.radiobtncash.Location = new System.Drawing.Point(390, 387);
-            this.radiobtncash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiobtncash.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtncash.Name = "radiobtncash";
             this.radiobtncash.Size = new System.Drawing.Size(84, 17);
             this.radiobtncash.TabIndex = 2;
@@ -234,7 +234,7 @@
             // 
             this.radiobtnpin.AutoSize = true;
             this.radiobtnpin.Location = new System.Drawing.Point(45, 387);
-            this.radiobtnpin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiobtnpin.Margin = new System.Windows.Forms.Padding(2);
             this.radiobtnpin.Name = "radiobtnpin";
             this.radiobtnpin.Size = new System.Drawing.Size(75, 17);
             this.radiobtnpin.TabIndex = 1;
@@ -251,7 +251,7 @@
             this.columnHeader4});
             this.listViewrecipt.HideSelection = false;
             this.listViewrecipt.Location = new System.Drawing.Point(82, 76);
-            this.listViewrecipt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listViewrecipt.Margin = new System.Windows.Forms.Padding(2);
             this.listViewrecipt.Name = "listViewrecipt";
             this.listViewrecipt.Size = new System.Drawing.Size(390, 167);
             this.listViewrecipt.TabIndex = 0;
@@ -281,7 +281,7 @@
             // btnprintrecipt
             // 
             this.btnprintrecipt.Location = new System.Drawing.Point(28, 28);
-            this.btnprintrecipt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprintrecipt.Margin = new System.Windows.Forms.Padding(2);
             this.btnprintrecipt.Name = "btnprintrecipt";
             this.btnprintrecipt.Size = new System.Drawing.Size(109, 24);
             this.btnprintrecipt.TabIndex = 2;
@@ -297,7 +297,7 @@
             this.Controls.Add(this.btnprintrecipt);
             this.Controls.Add(this.pnlpayment);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Payment";
             this.Text = "Payment";
             this.pnlpayment.ResumeLayout(false);

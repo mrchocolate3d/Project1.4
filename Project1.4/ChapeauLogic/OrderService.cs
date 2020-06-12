@@ -13,20 +13,6 @@ namespace ChapeauLogic
     public class OrderService
     {
         OrderDAO order_db = new OrderDAO();
-
-        public List<Order> GetOrders()
-        {
-            try
-            {
-                List<Order> order = order_db.Db_Get_Order_Info();
-                return order;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return null;
-            }
-        }
         
         public OrderMenuItems getItem(string name)
         {

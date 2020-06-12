@@ -25,11 +25,8 @@ namespace ChapeauUI
         {
             this.employee = employee;
             this.table = table;
-
             InitializeComponent();
-
             txt_tablenumber.Text = table.TableID.ToString();
-
         }
 
         private void AddItem_lunch_Click(object sender, EventArgs e)
@@ -37,10 +34,23 @@ namespace ChapeauUI
             grisV_Dinner.Rows.Clear();
             foreach (NumericUpDown item in ItemCount)
             {
-
                 newItem = orderServices.getItem(item.Name);
                 int count = Convert.ToInt32(item.Value);
-                grisV_Dinner.Rows.Add(newItem.menuItemID.ToString(), item.Name, (newItem.price * count).ToString(), item.Value);
+                if (count > 0)
+                {
+                    if (newItem.StockAmount < count && newItem.StockAmount > 0)
+                    {
+                        MessageBox.Show(text: newItem.StockAmount + " left in stock.");
+                    }
+                    else if (newItem.StockAmount == 0)
+                    {
+                        MessageBox.Show(text: "Out of stock");
+                    }
+                    else
+                    {
+                        grisV_Dinner.Rows.Add(newItem.menuItemID.ToString(), item.Name, (newItem.price * count).ToString(), item.Value);
+                    }
+                }
             }
         }
 

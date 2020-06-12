@@ -23,6 +23,7 @@ namespace ChapeauUI
             this.table = table;
             this.employee = employee;
             InitializeComponent();
+            ShowPanel();
         }
         double ItemTotalPrice = 0;
         public void ShowPanel()
@@ -38,8 +39,18 @@ namespace ChapeauUI
                     list.SubItems.Add(item.quantity.ToString());
                     list.SubItems.Add(item.orderID.ToString());
                     listViewrecipt.Items.Add(list);
-                    ItemTotalPrice += item.price;
+                    ItemTotalPrice += item.price * item.quantity;
                 }
+            lbltablenumber.Text = table.TableID.ToString();
+            lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
+
+            double VAT = 0.21;
+            double vatvalue = VAT * ItemTotalPrice;
+            double totalamount = ItemTotalPrice + vatvalue;
+            lbltotalprice.Text = ItemTotalPrice.ToString("0.00");
+            lblvat.Text = vatvalue.ToString("0.00");
+            lbltotalamount.Text = totalamount.ToString("0.00");
+
         }
 
         private void btnprintrecipt_Click(object sender, EventArgs e)
@@ -64,13 +75,12 @@ namespace ChapeauUI
             double totalamount = ItemTotalPrice+ vatvalue + tipvalue;
 
             // displays the values on the screen
-            lbltablenumber.Text = table.TableID.ToString();
-            lblserver.Text = employee.FirstName.ToString() +" " + employee.LastName.ToString();
+            
             lbltotalprice.Text = ItemTotalPrice.ToString("0.00");
             lblvat.Text = vatvalue.ToString("0.00");
-
             lbltotalamount.Text = totalamount.ToString("0.00");
         }
+
 
         private void btnpay_Click(object sender, EventArgs e)
         {
