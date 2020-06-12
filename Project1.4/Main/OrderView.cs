@@ -15,30 +15,37 @@ namespace ChapeauUI
     public partial class OrderView : Form
     {
         Employee employee;
-        Table table;
         Order order;
-        public OrderView(Employee employee,Table table, Order order)
+        MenuItemService details = new MenuItemService();
+        private Timer timer1;
+
+        public OrderView(Employee employee,Order order)
         {
             this.employee = employee;
-            this.table = table;
             this.order = order;
             InitializeComponent();
-            ViewOrder(2);
+            ViewOrder();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void InitTimer()
         {
-            Payment payment = new Payment(employee,table);
-            payment.Show();
+            timer1 = new Timer();
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Interval = 10000; // in miliseconds
+            timer1.Start();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
         }
 
-        void ViewOrder(int orderno)
+        void ViewOrder()
         {
-            lblTable.Text = table.TableID.ToString();
-            //lblOrder.Text = "Order #2";
+            lblTable.Text = order.TableID.TableID.ToString();
+            lblOrder.Text = order.OrderID.ToString();
             lblWaiter.Text = employee.FirstName;
 
-            MenuItemService details = new MenuItemService();
+            
             List<OrderMenuItems> detail = details.GetMenuItems(order.OrderID);
 
             listOrder.Items.Clear();
@@ -52,7 +59,19 @@ namespace ChapeauUI
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            OrdersList OrderPage = new OrdersList(employee);
+            OrderPage.ShowDialog();
+            this.Close();
+        }
 
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            details.Update(order);
+            this.Hide();
+            OrdersList OrderPage = new OrdersList(employee);
+            OrderPage.ShowDialog();
+            this.Close();
         }
     }
 }

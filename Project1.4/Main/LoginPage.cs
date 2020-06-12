@@ -56,14 +56,14 @@ namespace ChapeauUI
                         tablepage.ShowDialog();
                         this.Close(); 
                     }
-                    else if(role == "Chef")
+                    else if(role == "Chef" || role == "Bar")
                     {
-
+                        this.Hide();
+                        OrdersList tablepage = new OrdersList(employee);
+                        tablepage.ShowDialog();
+                        this.Close();
                     }
-                    else if(role == "Bar")
-                    {
 
-                    }
                 }
                 else
                 {

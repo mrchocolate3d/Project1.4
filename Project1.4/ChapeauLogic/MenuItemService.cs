@@ -13,18 +13,9 @@ namespace ChapeauLogic
     {
         MenuItemsDAO menuItem_db = new MenuItemsDAO();
 
-        public List<OrderMenuItems> GetMenuItems()
+        public void Update(Order order)
         {
-            try
-            {
-                List<OrderMenuItems> order = menuItem_db.db_Get_MenuItems();
-                return order;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return null;
-            }
+            menuItem_db.UpdateState(order);
         }
 
         public List<OrderMenuItems> GetMenuItems(int orderno)

@@ -13,11 +13,11 @@ namespace ChapeauLogic
     public class OrdersListService
     {
         OrdersListDAO orders_db = new OrdersListDAO();
-        public List<OrdersList> GetOrders()
+        public List<OrdersList> GetOrders(bool complete)
         {
             try
             {
-                List<OrdersList> orders = orders_db.GetAllOrdersInfo();
+                List<OrdersList> orders = orders_db.GetAllOrdersInfo(complete);
                 return orders;
             }
             catch (Exception ex)

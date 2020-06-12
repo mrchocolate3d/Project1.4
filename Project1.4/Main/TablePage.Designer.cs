@@ -43,7 +43,7 @@
             this.btn_table2 = new ChapeauUI.RoundButton();
             this.btn_table1 = new ChapeauUI.RoundButton();
             this.lbl_employeeName = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -211,21 +211,22 @@
             this.lbl_employeeName.TabIndex = 14;
             this.lbl_employeeName.Text = ".........";
             // 
-            // button1
+            // btn_logout
             // 
-            this.button1.Location = new System.Drawing.Point(36, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_logout.Location = new System.Drawing.Point(36, 25);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(75, 23);
+            this.btn_logout.TabIndex = 15;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // TablePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 520);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.lbl_employeeName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -266,6 +267,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_employeeName;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_logout;
     }
 }

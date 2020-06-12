@@ -12,11 +12,13 @@ namespace ChapeauDAL
 {
     public class MenuItemsDAO : Base
     {
-        public List<OrderMenuItems> db_Get_MenuItems()
+        public void UpdateState(Order order)
         {
-            string query = "SELECT orderID, MenuItemID, quantity, [status], comment FROM Order_MenuItem";
-            SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
+            string query = "UPDATE orders SET orderComplete = @orderComplete WHERE orderid = @id";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = new SqlParameter("@orderComplete", true);
+            sqlParameters[1] = new SqlParameter("@id", order.OrderID);
+            ExecuteEditQuery(query, sqlParameters);
         }
 
         public List<OrderMenuItems> db_Get_MenuItems(int orderno)

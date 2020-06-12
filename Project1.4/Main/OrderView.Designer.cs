@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.btnDone = new System.Windows.Forms.Button();
             this.listOrder = new System.Windows.Forms.ListView();
             this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,27 +43,16 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(307, 543);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Go To Payment.";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnDone
             // 
             this.btnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnDone.Location = new System.Drawing.Point(100, 544);
+            this.btnDone.Location = new System.Drawing.Point(202, 558);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(173, 54);
             this.btnDone.TabIndex = 1;
             this.btnDone.Text = "DONE";
             this.btnDone.UseVisualStyleBackColor = false;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // listOrder
             // 
@@ -161,7 +149,7 @@
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(86, 100);
             this.btnOrder.TabIndex = 5;
-            this.btnOrder.Text = "Show Order";
+            this.btnOrder.Text = "OrderList";
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
@@ -176,7 +164,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listOrder);
             this.Controls.Add(this.btnDone);
-            this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OrderView";
             this.Text = "OrderView";
@@ -189,8 +176,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDone;
         private System.Windows.Forms.ListView listOrder;
         private System.Windows.Forms.ColumnHeader item;
