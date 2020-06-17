@@ -13,7 +13,7 @@ namespace ChapeauUI
 {
     public partial class TablePage : Form
     {
-        Employee employee;
+        private Employee employee;
 
         public TablePage(Employee employee)
         {
@@ -23,41 +23,39 @@ namespace ChapeauUI
         private void TablePage_Load(object sender, EventArgs e)
         {
             ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
-            List<Table> tableList = tableServices.getTables();
-            List<Order> orderStatusList = tableServices.getStatus();
+            List<Table> tableList = tableServices.GetTables();
+            List<Order> orders = tableServices.GetOrders();
             foreach (Table table in tableList)
             {
-                tableStatusCheck(table.TableID, table.status);
+                tableStatusCheck(table);
             }
-            foreach (Order OrderStatus in orderStatusList)
+            foreach (Order order in orders)
             {
-                UpdateStausPage(OrderStatus.TableID.TableID, OrderStatus.orderComplete,OrderStatus.paidOrders);
+                UpdateStausPage(order);
             }
             lbl_employeeName.Text = employee.FirstName + employee.LastName;
         }
-
-        private void UpdateStausPage(int id, bool orderComplete,bool paidOrders)
+        private void UpdateStausPage(Order order)
         {
             List<Label> control = Controls.OfType<Label>().ToList();
             foreach(Label label in control)
             {
-                if (int.Parse(label.Tag.ToString()) == id)
+                if (int.Parse(label.Tag.ToString()) == order.Table.TableID)
                 {
                     label.Show();
-                    AssignLabelStatus(orderComplete, paidOrders, label);
+                    AssignLabelStatus(order, label);
                 }
 
             }
-            //statusCheck(status, ControlList[tableNumber - 1]);
         }
 
-        private void AssignLabelStatus(bool orderComplete,bool paidOrders, Label label)
+        private void AssignLabelStatus(Order order, Label label)
         {
-            if (orderComplete == true && paidOrders == false)
+            if (order.orderComplete == true && order.paidOrders == false)
             {
                 label.Text = "Ready";
             }
-            else if (orderComplete == false && paidOrders == false)
+            else if (order.orderComplete == false && order.paidOrders == false)
             {
                 label.Text = "Preparing";
             }
@@ -69,14 +67,15 @@ namespace ChapeauUI
 
 
         
-        private void tableStatusCheck(int tableNumber, string status)
+        private void tableStatusCheck(Table table)
         {
             List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
-            statusCheck(status, ControlList[tableNumber - 1]);
+            StatusCheck(table.status, ControlList[table.TableID - 1]);
         }
 
-        private void statusCheck(string status, Button button)
+        private void StatusCheck(string status, Button button)
         {
+            
             if (status == "free")
             {
                 button.BackColor = Color.Green;
@@ -93,6 +92,11 @@ namespace ChapeauUI
 
         private void TableOrder(object sender, EventArgs e)
         {
+            List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
+
+            ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
+            List<Table> tableList = tableServices.GetTables();
+
             newTableOrder((Button)sender);
         }
         private void newTableOrder(Button button)

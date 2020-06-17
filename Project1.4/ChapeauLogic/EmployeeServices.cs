@@ -16,15 +16,8 @@ namespace ChapeauLogic
 
         public Employee GetEmployees(login loginCode)
         {
-            try
-            {
-                Employee employee = employee_db.GetUserLoginInfo(loginCode);
-                return employee;
-            }
-            catch
-            {
-                return null;
-            }
+            Employee employee = employee_db.GetUserLoginInfo(loginCode);
+            return employee;
         }
     }
 }

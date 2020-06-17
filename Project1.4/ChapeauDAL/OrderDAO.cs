@@ -101,7 +101,7 @@ namespace ChapeauDAL
                 Order order = new Order()
                 {
                     OrderID = (int)dr["orderID"],
-                    TableID = new Table((int)dr["tableID"]),
+                    Table = new Table((int)dr["tableID"]),
                     EmployeeID = new Employee((int)dr["employeeID"])
                 };
                 orders.Add(order);

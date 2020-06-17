@@ -25,7 +25,14 @@ namespace ChapeauDAL
 
         private Employee GetEmployee(DataTable loginTable)
         {
-            DataRow dr = loginTable.Rows[0];
+            
+            if (loginTable.Rows.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                DataRow dr = loginTable.Rows[0];
                 Employee employee = new Employee()
                 {
                     password = new login((int)dr["loginCode"]),
@@ -34,7 +41,9 @@ namespace ChapeauDAL
                     LastName = (string)(dr["lastName"]),
                     role = (string)(dr["roleDescription"])
                 };
-            return employee;
+                return employee;
+            }
+                
         }
     }
 }

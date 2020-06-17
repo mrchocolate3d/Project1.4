@@ -51,7 +51,7 @@ namespace ChapeauDAL
             {
                 Order order = new Order()
                 {
-                    TableID = new Table((int)dr["tableID"]),
+                    Table = new Table((int)dr["tableID"]),
                     orderComplete = (bool)(dr["orderComplete"]),
                     paidOrders = (bool)(dr["paidOrders"])
                 };

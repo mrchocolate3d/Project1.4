@@ -14,7 +14,7 @@ namespace ChapeauLogic
     {
         TableDAO table_db = new TableDAO();
 
-        public List<Table> getTables()
+        public List<Table> GetTables()
         {
             try
             {
@@ -27,7 +27,7 @@ namespace ChapeauLogic
                 return null;
             }
         }
-        public List<Order> getStatus()
+        public List<Order> GetOrders()
         {
                 List<Order> orders = table_db.getOrderStatus();
                 return orders;
