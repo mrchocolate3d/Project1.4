@@ -14,7 +14,6 @@ namespace ChapeauUI
 
     public partial class LoginPage : Form
     {
-        private string role;
         private const int maxValue = 4;
 
         public LoginPage()
@@ -23,7 +22,7 @@ namespace ChapeauUI
             LoginBox.PasswordChar = '*';
         }
 
-        private void btn_Click(object sender, EventArgs e)
+        private void Btn_Click(object sender, EventArgs e)
         {
             if (((Button)sender).Text == "Delete")
             {
@@ -31,12 +30,12 @@ namespace ChapeauUI
             }
             else
             {
-                checkPasswod(((Button)sender).Text);
+                CheckPasswod(((Button)sender).Text);
             }
             
         }
 
-        private void checkPasswod(string input)
+        private void CheckPasswod(string input)
         {
             LoginBox.AppendText(input);
             PinCheck();
@@ -73,11 +72,11 @@ namespace ChapeauUI
             }
         }
 
-        ChapeauLogic.EmployeeServices employeeServices = new ChapeauLogic.EmployeeServices();
+        ChapeauLogic.EmployeeServices EmployeeServices = new ChapeauLogic.EmployeeServices();
         private Employee employee;
         private Employee CheckLogin(login password)
         {
-            employee = employeeServices.GetEmployees(password);
+            employee = EmployeeServices.GetEmployees(password);
             return employee;
         }
     }

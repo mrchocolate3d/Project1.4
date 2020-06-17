@@ -13,29 +13,30 @@ namespace ChapeauUI
 {
     public partial class TablePage : Form
     {
-        private Employee employee;
+        private Employee Employee;
+        ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
+
 
         public TablePage(Employee employee)
         {
             InitializeComponent();
-            this.employee = employee;
+            this.Employee = employee;
         }
         private void TablePage_Load(object sender, EventArgs e)
         {
-            ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
             List<Table> tableList = tableServices.GetTables();
             List<Order> orders = tableServices.GetOrders();
             foreach (Table table in tableList)
             {
-                tableStatusCheck(table);
+                TableStatusCheck(table);
             }
             foreach (Order order in orders)
             {
-                UpdateStausPage(order);
+                UpdateOrder(order);
             }
-            lbl_employeeName.Text = employee.FirstName + employee.LastName;
+            lbl_employeeName.Text = Employee.FirstName + Employee.LastName;
         }
-        private void UpdateStausPage(Order order)
+        private void UpdateOrder(Order order)
         {
             List<Label> control = Controls.OfType<Label>().ToList();
             foreach(Label label in control)
@@ -67,7 +68,7 @@ namespace ChapeauUI
 
 
         
-        private void tableStatusCheck(Table table)
+        private void TableStatusCheck(Table table)
         {
             List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
             StatusCheck(table.status, ControlList[table.TableID - 1]);
@@ -92,24 +93,26 @@ namespace ChapeauUI
 
         private void TableOrder(object sender, EventArgs e)
         {
-            List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
-
-            ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
             List<Table> tableList = tableServices.GetTables();
-
-            newTableOrder((Button)sender);
-        }
-        private void newTableOrder(Button button)
-        {
-            if(button.BackColor == Color.Green)
+            foreach(Table table in tableList)
             {
-                Table table = new Table(int.Parse(button.Text));
+                if( int.Parse(((Button)sender).Text) == table.TableID)
+                {
+                    NewTableOrder(table);
+                    break;
+                }
+            }
+        }
+        private void NewTableOrder(Table table)
+        {
+            if(table.status == "free")
+            {
                 this.Hide();
-                MenuStartPage orderSelect = new MenuStartPage(employee,table);
+                MenuStartPage orderSelect = new MenuStartPage(Employee,table);
                 orderSelect.ShowDialog();
                 this.Close();
             }
-            else if (button.BackColor == Color.Blue)
+            else if (table.status == "reserved")
             {
                 DialogResult dialog = MessageBox.Show("Reserved Customers have arrived", "Cancel Reservation", MessageBoxButtons.YesNo);
             }
@@ -118,16 +121,15 @@ namespace ChapeauUI
                 DialogResult dialog = MessageBox.Show("View Order", "View", MessageBoxButtons.YesNo);
                 if(dialog == DialogResult.Yes)
                 {
-                    Table table = new Table(int.Parse(button.Text));
                     this.Hide();
-                    Payment viewOrder = new Payment(employee,table);
+                    Payment viewOrder = new Payment(Employee,table);
                     viewOrder.ShowDialog();
                     this.Close();
                 }
             }
         }
 
-        private void btn_logout_Click(object sender, EventArgs e)
+        private void Btn_logout_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginPage loginPage = new LoginPage();
