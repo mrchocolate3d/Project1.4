@@ -45,6 +45,7 @@ namespace ChapeauUI
                 {
                     label.Show();
                     AssignLabelStatus(order, label);
+                    break;
                 }
 
             }
@@ -71,21 +72,21 @@ namespace ChapeauUI
         private void TableStatusCheck(Table table)
         {
             List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
-            StatusCheck(table.status, ControlList[table.TableID - 1]);
+            StatusCheck(table, ControlList[table.TableID - 1]);
         }
 
-        private void StatusCheck(string status, Button button)
+        private void StatusCheck(Table table, Button button)
         {
             
-            if (status == "free")
+            if (table.status == "free")
             {
                 button.BackColor = Color.Green;
             }
-            else if (status == "reserved")
+            else if (table.status == "reserved")
             {
                 button.BackColor = Color.Blue;
             }
-            else if (status == "occupied")
+            else if (table.status == "occupied")
             {
                 button.BackColor = Color.Red;
             }

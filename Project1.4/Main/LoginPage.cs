@@ -14,7 +14,8 @@ namespace ChapeauUI
 
     public partial class LoginPage : Form
     {
-        private const int maxValue = 4;
+        private const int MaxValue = 4;
+        ChapeauLogic.EmployeeServices EmployeeServices = new ChapeauLogic.EmployeeServices();
 
         public LoginPage()
         {
@@ -22,62 +23,49 @@ namespace ChapeauUI
             LoginBox.PasswordChar = '*';
         }
 
-        private void Btn_Click(object sender, EventArgs e)
+        private void Keypad_Btn_Click(object sender, EventArgs e)
         {
-            if (((Button)sender).Text == "Delete")
+            string buttonText = ((Button)sender).Text;
+            if (buttonText == "Delete")
             {
                 LoginBox.Text = LoginBox.Text.Substring(0, (LoginBox.TextLength - 1));
             }
             else
             {
-                CheckPasswod(((Button)sender).Text);
+                LoginBox.AppendText(buttonText);
+                if (LoginBox.TextLength == MaxValue)
+                {
+                    LoginEmployee();
+                }
             }
-            
         }
 
-        private void CheckPasswod(string input)
+        private void LoginEmployee()
         {
-            LoginBox.AppendText(input);
-            PinCheck();
-        }
-
-        private void PinCheck()
-        {
-            if (LoginBox.TextLength == maxValue)
+            login loginCode = new login(int.Parse(LoginBox.Text));
+            Employee employee = EmployeeServices.GetEmployee(loginCode);
+            if (employee != null)
             {
-                login loginCode = new login(int.Parse(LoginBox.Text));
-                Employee employee = CheckLogin(loginCode);
-                if (employee != null)
+                if (employee.role == "Waiter")
                 {
-                    if(employee.role == "Waiter")
-                    {
-                        this.Hide();
-                        TablePage tablepage = new TablePage(employee);
-                        tablepage.ShowDialog();
-                        this.Close(); 
-                    }
-                    else if(employee.role == "Chef" || employee.role == "Bar")
-                    {
-                        this.Hide();
-                        OrdersList tablepage = new OrdersList(employee);
-                        tablepage.ShowDialog();
-                        this.Close();
-                    }
+                    this.Hide();
+                    TablePage tablepage = new TablePage(employee);
+                    tablepage.ShowDialog();
+                    this.Close();
                 }
-                else
+                else if (employee.role == "Chef" || employee.role == "Bar")
                 {
-                    LoginBox.Text = "";
-                    MessageBox.Show("Incorrect Password");
+                    this.Hide();
+                    OrdersList tablepage = new OrdersList(employee);
+                    tablepage.ShowDialog();
+                    this.Close();
                 }
             }
-        }
-
-        ChapeauLogic.EmployeeServices EmployeeServices = new ChapeauLogic.EmployeeServices();
-        private Employee employee;
-        private Employee CheckLogin(login password)
-        {
-            employee = EmployeeServices.GetEmployees(password);
-            return employee;
+            else
+            {
+                LoginBox.Text = "";
+                MessageBox.Show("Incorrect Password");
+            }
         }
     }
 }

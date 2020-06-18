@@ -18,7 +18,7 @@ namespace ChapeauLogic
         {
             try
             {
-                List<Table> tables = table_db.getAllTables();
+                List<Table> tables = table_db.GetAllTables();
                 return tables;
             }
             catch (Exception ex)
@@ -29,7 +29,7 @@ namespace ChapeauLogic
         }
         public List<Order> GetOrders()
         {
-                List<Order> orders = table_db.getOrderStatus();
+                List<Order> orders = table_db.GetRunningOrders();
                 return orders;
         }
     }
