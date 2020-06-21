@@ -13,7 +13,7 @@ namespace ChapeauDAL
 {
     public class TableDAO : Base
     {
-        public List<Table> getAllTables()
+        public List<Table> GetAllTables()
         {
             string query = "Select * FROM [tables]";
             SqlParameter[] sqlParameters = new SqlParameter[0];
@@ -36,24 +36,26 @@ namespace ChapeauDAL
             return tables;
         }
 
-        public List<Order> getOrderStatus()
+        public List<Order> GetRunningOrders()
         {
-            string query = "SELECT tableID,orderComplete,paidOrders FROM orders WHERE paidOrders = @paidOrder";
+            string query = "SELECT * FROM orders WHERE paidOrders = @paidOrder";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@paidOrder", false);
-            return ReadStatus(ExecuteSelectQuery(query, sqlParameters));
+            return CreateOrders(ExecuteSelectQuery(query, sqlParameters));
         }
-        private List<Order> ReadStatus(DataTable resturantTables)
+        private List<Order> CreateOrders(DataTable orderData)
         {
             List<Order> orders = new List<Order>();
 
-            foreach (DataRow dr in resturantTables.Rows)
+            foreach (DataRow dr in orderData.Rows)
             {
                 Order order = new Order()
                 {
-                    TableID = new Table((int)dr["tableID"]),
+                    Table = new Table((int)dr["tableID"]),
                     orderComplete = (bool)(dr["orderComplete"]),
-                    paidOrders = (bool)(dr["paidOrders"])
+                    paidOrders = (bool)(dr["paidOrders"]),
+                    OrderID = (int)(dr["orderID"]),
+                    EmployeeID = new Employee((int)dr["employeeID"])
                 };
                 orders.Add(order);
             }

@@ -14,11 +14,11 @@ namespace ChapeauLogic
     {
         TableDAO table_db = new TableDAO();
 
-        public List<Table> getTables()
+        public List<Table> GetTables()
         {
             try
             {
-                List<Table> tables = table_db.getAllTables();
+                List<Table> tables = table_db.GetAllTables();
                 return tables;
             }
             catch (Exception ex)
@@ -27,9 +27,9 @@ namespace ChapeauLogic
                 return null;
             }
         }
-        public List<Order> getStatus()
+        public List<Order> GetOrders()
         {
-                List<Order> orders = table_db.getOrderStatus();
+                List<Order> orders = table_db.GetRunningOrders();
                 return orders;
         }
     }

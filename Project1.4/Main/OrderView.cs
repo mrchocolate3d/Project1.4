@@ -29,7 +29,7 @@ namespace ChapeauUI
 
         void ViewOrder()
         {
-            lblTable.Text = order.TableID.TableID.ToString();
+            lblTable.Text = order.Table.TableID.ToString();
             lblOrder.Text = order.OrderID.ToString();
             lblWaiter.Text = employee.FirstName;
 

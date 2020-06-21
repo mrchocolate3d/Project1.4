@@ -71,7 +71,7 @@ namespace ChapeauUI
                 ListViewItem item = listOrders.SelectedItems[0];
                 Order order = new Order()
                 {
-                    TableID = new Table(int.Parse(item.SubItems[0].Text)),
+                    Table = new Table(int.Parse(item.SubItems[0].Text)),
                     OrderID = int.Parse(item.SubItems[1].Text)
                 };
                 this.Hide();

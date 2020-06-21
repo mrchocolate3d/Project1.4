@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using ChapeauModel;
 using System.Data;
-using System.Collections.ObjectModel;
-using ChapeauModel;
+using System.Data.SqlClient;
 
 namespace ChapeauDAL
 {
     public class EmployeeDAO : Base
     {
-        public Employee GetUserLoginInfo(login loginCode)
+        public Employee GetEmployeeInfo(login loginCode)
         {
             string query = $"SELECT [login].loginCode,firstName,lastName,roles.roleDescription,[login].employeeID " +
                 $"FROM (([login] inner join employees ON [login].employeeID = employees.employeeID) " +
@@ -25,7 +19,14 @@ namespace ChapeauDAL
 
         private Employee GetEmployee(DataTable loginTable)
         {
-            DataRow dr = loginTable.Rows[0];
+            
+            if (loginTable.Rows.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                DataRow dr = loginTable.Rows[0];
                 Employee employee = new Employee()
                 {
                     password = new login((int)dr["loginCode"]),
@@ -34,7 +35,9 @@ namespace ChapeauDAL
                     LastName = (string)(dr["lastName"]),
                     role = (string)(dr["roleDescription"])
                 };
-            return employee;
+                return employee;
+            }
+                
         }
     }
 }

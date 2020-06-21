@@ -13,51 +13,51 @@ namespace ChapeauUI
 {
     public partial class TablePage : Form
     {
-        Employee employee;
+        private Employee Employee;
+        ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
+
 
         public TablePage(Employee employee)
         {
             InitializeComponent();
-            this.employee = employee;
+            this.Employee = employee;
         }
         private void TablePage_Load(object sender, EventArgs e)
         {
-            ChapeauLogic.TableServices tableServices = new ChapeauLogic.TableServices();
-            List<Table> tableList = tableServices.getTables();
-            List<Order> orderStatusList = tableServices.getStatus();
+            List<Table> tableList = tableServices.GetTables();
+            List<Order> orders = tableServices.GetOrders();
             foreach (Table table in tableList)
             {
-                tableStatusCheck(table.TableID, table.status);
+                TableStatusCheck(table);
             }
-            foreach (Order OrderStatus in orderStatusList)
+            foreach (Order order in orders)
             {
-                UpdateStausPage(OrderStatus.TableID.TableID, OrderStatus.orderComplete,OrderStatus.paidOrders);
+                UpdateOrder(order);
             }
-            lbl_employeeName.Text = employee.FirstName + employee.LastName;
+            lbl_employeeName.Text = Employee.FirstName + Employee.LastName;
         }
-
-        private void UpdateStausPage(int id, bool orderComplete,bool paidOrders)
+        private void UpdateOrder(Order order)
         {
             List<Label> control = Controls.OfType<Label>().ToList();
             foreach(Label label in control)
             {
-                if (int.Parse(label.Tag.ToString()) == id)
+                if (int.Parse(label.Tag.ToString()) == order.Table.TableID)
                 {
                     label.Show();
-                    AssignLabelStatus(orderComplete, paidOrders, label);
+                    AssignLabelStatus(order, label);
+                    break;
                 }
 
             }
-            //statusCheck(status, ControlList[tableNumber - 1]);
         }
 
-        private void AssignLabelStatus(bool orderComplete,bool paidOrders, Label label)
+        private void AssignLabelStatus(Order order, Label label)
         {
-            if (orderComplete == true && paidOrders == false)
+            if (order.orderComplete == true && order.paidOrders == false)
             {
                 label.Text = "Ready";
             }
-            else if (orderComplete == false && paidOrders == false)
+            else if (order.orderComplete == false && order.paidOrders == false)
             {
                 label.Text = "Preparing";
             }
@@ -69,23 +69,24 @@ namespace ChapeauUI
 
 
         
-        private void tableStatusCheck(int tableNumber, string status)
+        private void TableStatusCheck(Table table)
         {
             List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
-            statusCheck(status, ControlList[tableNumber - 1]);
+            StatusCheck(table, ControlList[table.TableID - 1]);
         }
 
-        private void statusCheck(string status, Button button)
+        private void StatusCheck(Table table, Button button)
         {
-            if (status == "free")
+            
+            if (table.status == "free")
             {
                 button.BackColor = Color.Green;
             }
-            else if (status == "reserved")
+            else if (table.status == "reserved")
             {
                 button.BackColor = Color.Blue;
             }
-            else if (status == "occupied")
+            else if (table.status == "occupied")
             {
                 button.BackColor = Color.Red;
             }
@@ -93,19 +94,26 @@ namespace ChapeauUI
 
         private void TableOrder(object sender, EventArgs e)
         {
-            newTableOrder((Button)sender);
-        }
-        private void newTableOrder(Button button)
-        {
-            if(button.BackColor == Color.Green)
+            List<Table> tableList = tableServices.GetTables();
+            foreach(Table table in tableList)
             {
-                Table table = new Table(int.Parse(button.Text));
+                if( int.Parse(((Button)sender).Text) == table.TableID)
+                {
+                    NewTableOrder(table);
+                    break;
+                }
+            }
+        }
+        private void NewTableOrder(Table table)
+        {
+            if(table.status == "free")
+            {
                 this.Hide();
-                MenuStartPage orderSelect = new MenuStartPage(employee,table);
+                MenuStartPage orderSelect = new MenuStartPage(Employee,table);
                 orderSelect.ShowDialog();
                 this.Close();
             }
-            else if (button.BackColor == Color.Blue)
+            else if (table.status == "reserved")
             {
                 DialogResult dialog = MessageBox.Show("Reserved Customers have arrived", "Cancel Reservation", MessageBoxButtons.YesNo);
             }
@@ -114,16 +122,15 @@ namespace ChapeauUI
                 DialogResult dialog = MessageBox.Show("View Order", "View", MessageBoxButtons.YesNo);
                 if(dialog == DialogResult.Yes)
                 {
-                    Table table = new Table(int.Parse(button.Text));
                     this.Hide();
-                    Payment viewOrder = new Payment(employee,table);
+                    Payment viewOrder = new Payment(Employee,table);
                     viewOrder.ShowDialog();
                     this.Close();
                 }
             }
         }
 
-        private void btn_logout_Click(object sender, EventArgs e)
+        private void Btn_logout_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginPage loginPage = new LoginPage();
