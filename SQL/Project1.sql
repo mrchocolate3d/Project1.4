@@ -171,7 +171,7 @@ where orders.tableID = 2 AND orderComplete = 0;
 
 
 
-select itemName, price, quantity, orders.orderID from Order_MenuItem inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID inner join orders on Order_MenuItem.orderID = orders.orderID inner join[tables] on[tables].tableID = orders.tableID where orders.tableID = 1 AND orderComplete = 0;
+select itemName, price, quantity, orders.orderID from Order_MenuItem inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID inner join orders on Order_MenuItem.orderID = orders.orderID inner join[tables] on[tables].tableID = orders.tableID where orders.tableID = 3 AND orderComplete = 0;
 
 
 
@@ -196,8 +196,24 @@ UPDATE orders SET orderComplete = 0 WHERE orderComplete=  NULL;
 UPDATE menuItem SET amount = 0 WHERE itemName='QuicheOfTheDay';
 UPDATE menuItem SET amount = 3 WHERE itemName='HomemadeSoup';
 
-select * from orders;
+UPDATE menuItem SET amount = amount + 2 WHERE menuItemID = 8;
 
+delete table 
+select * from orders;
+SELECT * FROM roles;
+select * from employees;
+select * from login;
+
+INSERT INTO [login](loginCode,employeeID) VALUES(9999,2);
+INSERT INTO [login](loginCode,employeeID) VALUES(9090,3);
+INSERT INTO [login](loginCode,employeeID) VALUES(4200,4);
+
+INSERT INTO employees(employeeID,roleID,firstName,lastName,email,phoneNumber) VALUES (2,3,'John','Macove','johhnyMac@gmail.com',0673644536);
+INSERT INTO employees(employeeID,roleID,firstName,lastName,email,phoneNumber) VALUES (3,4,'Sam','Sammino','sammini@gmail.com',0633748312);
+INSERT INTO employees(employeeID,roleID,firstName,lastName,email,phoneNumber) VALUES (4,2,'Breat','Bracove','breatavorve@gmail.com',0677384639);
+
+Alter table orders add paidOrders bit;
+SELECT orderComplete,paidOrders FROM orders WHERE paidOrders = 0;
 
 
 /* Sharelyn's DINNER statements*/
