@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(287, 73);
+            this.label1.Location = new System.Drawing.Point(211, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 10;
@@ -119,7 +119,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(140, 143);
+            this.label5.Location = new System.Drawing.Point(61, 151);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(10, 13);
             this.label5.TabIndex = 16;
@@ -129,7 +129,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(342, 139);
+            this.label6.Location = new System.Drawing.Point(263, 147);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(10, 13);
             this.label6.TabIndex = 17;
@@ -139,7 +139,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(445, 278);
+            this.label7.Location = new System.Drawing.Point(366, 286);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(10, 13);
             this.label7.TabIndex = 18;
@@ -149,7 +149,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(453, 143);
+            this.label8.Location = new System.Drawing.Point(374, 151);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(10, 13);
             this.label8.TabIndex = 19;
@@ -159,7 +159,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(245, 141);
+            this.label9.Location = new System.Drawing.Point(166, 149);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(10, 13);
             this.label9.TabIndex = 20;
@@ -169,7 +169,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(340, 281);
+            this.label10.Location = new System.Drawing.Point(261, 289);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(10, 13);
             this.label10.TabIndex = 21;
@@ -179,7 +179,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(241, 281);
+            this.label11.Location = new System.Drawing.Point(162, 289);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 13);
             this.label11.TabIndex = 22;
@@ -189,7 +189,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(138, 281);
+            this.label12.Location = new System.Drawing.Point(59, 289);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(10, 13);
             this.label12.TabIndex = 23;
@@ -199,7 +199,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(239, 402);
+            this.label13.Location = new System.Drawing.Point(160, 410);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(10, 13);
             this.label13.TabIndex = 24;
@@ -209,7 +209,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(138, 404);
+            this.label14.Location = new System.Drawing.Point(59, 412);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(10, 13);
             this.label14.TabIndex = 25;
@@ -220,7 +220,7 @@
             // 
             this.btn_table10.FlatAppearance.BorderSize = 0;
             this.btn_table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table10.Location = new System.Drawing.Point(241, 417);
+            this.btn_table10.Location = new System.Drawing.Point(162, 425);
             this.btn_table10.Name = "btn_table10";
             this.btn_table10.Size = new System.Drawing.Size(54, 56);
             this.btn_table10.TabIndex = 9;
@@ -233,7 +233,7 @@
             // 
             this.btn_table9.FlatAppearance.BorderSize = 0;
             this.btn_table9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table9.Location = new System.Drawing.Point(139, 420);
+            this.btn_table9.Location = new System.Drawing.Point(60, 428);
             this.btn_table9.Name = "btn_table9";
             this.btn_table9.Size = new System.Drawing.Size(54, 56);
             this.btn_table9.TabIndex = 8;
@@ -246,7 +246,7 @@
             // 
             this.btn_table8.FlatAppearance.BorderSize = 0;
             this.btn_table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table8.Location = new System.Drawing.Point(451, 296);
+            this.btn_table8.Location = new System.Drawing.Point(372, 304);
             this.btn_table8.Name = "btn_table8";
             this.btn_table8.Size = new System.Drawing.Size(54, 56);
             this.btn_table8.TabIndex = 7;
@@ -259,7 +259,7 @@
             // 
             this.btn_table7.FlatAppearance.BorderSize = 0;
             this.btn_table7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table7.Location = new System.Drawing.Point(340, 295);
+            this.btn_table7.Location = new System.Drawing.Point(261, 303);
             this.btn_table7.Name = "btn_table7";
             this.btn_table7.Size = new System.Drawing.Size(54, 56);
             this.btn_table7.TabIndex = 6;
@@ -272,7 +272,7 @@
             // 
             this.btn_table6.FlatAppearance.BorderSize = 0;
             this.btn_table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table6.Location = new System.Drawing.Point(241, 295);
+            this.btn_table6.Location = new System.Drawing.Point(162, 303);
             this.btn_table6.Name = "btn_table6";
             this.btn_table6.Size = new System.Drawing.Size(54, 56);
             this.btn_table6.TabIndex = 5;
@@ -285,7 +285,7 @@
             // 
             this.btn_table5.FlatAppearance.BorderSize = 0;
             this.btn_table5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table5.Location = new System.Drawing.Point(139, 295);
+            this.btn_table5.Location = new System.Drawing.Point(60, 303);
             this.btn_table5.Name = "btn_table5";
             this.btn_table5.Size = new System.Drawing.Size(54, 56);
             this.btn_table5.TabIndex = 4;
@@ -298,7 +298,7 @@
             // 
             this.btn_table4.FlatAppearance.BorderSize = 0;
             this.btn_table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table4.Location = new System.Drawing.Point(451, 167);
+            this.btn_table4.Location = new System.Drawing.Point(372, 175);
             this.btn_table4.Name = "btn_table4";
             this.btn_table4.Size = new System.Drawing.Size(54, 56);
             this.btn_table4.TabIndex = 3;
@@ -311,7 +311,7 @@
             // 
             this.btn_table3.FlatAppearance.BorderSize = 0;
             this.btn_table3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table3.Location = new System.Drawing.Point(340, 167);
+            this.btn_table3.Location = new System.Drawing.Point(261, 175);
             this.btn_table3.Name = "btn_table3";
             this.btn_table3.Size = new System.Drawing.Size(54, 56);
             this.btn_table3.TabIndex = 2;
@@ -324,7 +324,7 @@
             // 
             this.btn_table2.FlatAppearance.BorderSize = 0;
             this.btn_table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table2.Location = new System.Drawing.Point(241, 167);
+            this.btn_table2.Location = new System.Drawing.Point(162, 175);
             this.btn_table2.Name = "btn_table2";
             this.btn_table2.Size = new System.Drawing.Size(54, 56);
             this.btn_table2.TabIndex = 1;
@@ -337,7 +337,7 @@
             // 
             this.btn_table1.FlatAppearance.BorderSize = 0;
             this.btn_table1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_table1.Location = new System.Drawing.Point(139, 167);
+            this.btn_table1.Location = new System.Drawing.Point(60, 175);
             this.btn_table1.Name = "btn_table1";
             this.btn_table1.Size = new System.Drawing.Size(54, 56);
             this.btn_table1.TabIndex = 0;
@@ -350,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 520);
+            this.ClientSize = new System.Drawing.Size(448, 501);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
