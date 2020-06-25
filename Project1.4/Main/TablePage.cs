@@ -34,7 +34,7 @@ namespace ChapeauUI
             {
                 UpdateOrder(order);
             }
-            lbl_employeeName.Text = Employee.FirstName + Employee.LastName;
+            lbl_employeeName.Text = Employee.role +": " +Employee.FirstName +" "+ Employee.LastName;
         }
         private void UpdateOrder(Order order)
         {
@@ -55,11 +55,11 @@ namespace ChapeauUI
         {
             if (order.orderComplete == true && order.paidOrders == false)
             {
-                label.Text = "Ready";
+                label.Text = "Order ready to serve";
             }
             else if (order.orderComplete == false && order.paidOrders == false)
             {
-                label.Text = "Preparing";
+                label.Text = "Order Placed";
             }
             else
             {
@@ -84,7 +84,7 @@ namespace ChapeauUI
             }
             else if (table.status == "reserved")
             {
-                button.BackColor = Color.Blue;
+                button.BackColor = Color.Yellow;
             }
             else if (table.status == "occupied")
             {
