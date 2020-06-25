@@ -73,11 +73,11 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.txt_tablenumber = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GotaCheese)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Escargots)).BeginInit();
@@ -555,6 +555,15 @@
             this.panel1.Size = new System.Drawing.Size(777, 99);
             this.panel1.TabIndex = 25;
             // 
+            // btn_CancelOrder
+            // 
+            this.btn_CancelOrder.Location = new System.Drawing.Point(699, 3);
+            this.btn_CancelOrder.Name = "btn_CancelOrder";
+            this.btn_CancelOrder.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelOrder.TabIndex = 34;
+            this.btn_CancelOrder.Text = "CancelOrder";
+            this.btn_CancelOrder.UseVisualStyleBackColor = true;
+            // 
             // txt_tablenumber
             // 
             this.txt_tablenumber.AutoSize = true;
@@ -570,7 +579,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, -8);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 107);
@@ -601,15 +610,6 @@
             this.label1.Size = new System.Drawing.Size(173, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "DINNER";
-            // 
-            // btn_CancelOrder
-            // 
-            this.btn_CancelOrder.Location = new System.Drawing.Point(699, 3);
-            this.btn_CancelOrder.Name = "btn_CancelOrder";
-            this.btn_CancelOrder.Size = new System.Drawing.Size(75, 23);
-            this.btn_CancelOrder.TabIndex = 34;
-            this.btn_CancelOrder.Text = "CancelOrder";
-            this.btn_CancelOrder.UseVisualStyleBackColor = true;
             // 
             // TakingDinnerOrder
             // 
