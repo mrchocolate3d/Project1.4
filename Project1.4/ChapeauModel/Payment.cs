@@ -12,6 +12,6 @@ namespace ChapeauModel
         public double price { get; set; }
         public int quantity { get; set; }
         public int orderID { get; set; }
-
+        
     }
 }
