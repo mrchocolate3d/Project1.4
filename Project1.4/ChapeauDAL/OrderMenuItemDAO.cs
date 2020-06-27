@@ -27,6 +27,18 @@ namespace ChapeauDAL
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadItem(ExecuteSelectQuery(query, sqlParameters));
         }
+        public List<OrderMenuItem> db_Get_MenuItems_Dishes(int orderno)
+        {
+            string query = $"SELECT m.itemName, om.quantity, om.comment FROM Order_MenuItem AS om JOIN menuItem as m on om.MenuItemID = m.menuItemID WHERE om.orderID = {orderno} AND categoryID < 7";
+            SqlParameter[] sqlParameters = new SqlParameter[0];
+            return ReadItem(ExecuteSelectQuery(query, sqlParameters));
+        }
+        public List<OrderMenuItem> db_Get_MenuItems_Drinks(int orderno)
+        {
+            string query = $"SELECT m.itemName, om.quantity, om.comment FROM Order_MenuItem AS om JOIN menuItem as m on om.MenuItemID = m.menuItemID WHERE om.orderID = {orderno} AND categoryID > 6";
+            SqlParameter[] sqlParameters = new SqlParameter[0];
+            return ReadItem(ExecuteSelectQuery(query, sqlParameters));
+        }
 
         private List<OrderMenuItem> ReadItem(DataTable dataTable)
         {
