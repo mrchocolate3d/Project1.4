@@ -60,9 +60,9 @@
             // 
             this.btnOngoing.BackColor = System.Drawing.Color.Orange;
             this.btnOngoing.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOngoing.Location = new System.Drawing.Point(12, 134);
+            this.btnOngoing.Location = new System.Drawing.Point(12, 144);
             this.btnOngoing.Name = "btnOngoing";
-            this.btnOngoing.Size = new System.Drawing.Size(359, 84);
+            this.btnOngoing.Size = new System.Drawing.Size(359, 106);
             this.btnOngoing.TabIndex = 0;
             this.btnOngoing.Text = "Ongoing Orders";
             this.btnOngoing.UseVisualStyleBackColor = false;
@@ -72,9 +72,9 @@
             // 
             this.btnComplete.BackColor = System.Drawing.Color.BurlyWood;
             this.btnComplete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComplete.Location = new System.Drawing.Point(381, 133);
+            this.btnComplete.Location = new System.Drawing.Point(381, 143);
             this.btnComplete.Name = "btnComplete";
-            this.btnComplete.Size = new System.Drawing.Size(359, 85);
+            this.btnComplete.Size = new System.Drawing.Size(359, 107);
             this.btnComplete.TabIndex = 2;
             this.btnComplete.Text = "Completed Orders";
             this.btnComplete.UseVisualStyleBackColor = false;
@@ -85,13 +85,14 @@
             this.listOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.listOrders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.tableID});
-            this.listOrders.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listOrders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listOrders.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listOrders.ForeColor = System.Drawing.Color.Black;
             this.listOrders.FullRowSelect = true;
             this.listOrders.HideSelection = false;
-            this.listOrders.Location = new System.Drawing.Point(12, 474);
+            this.listOrders.Location = new System.Drawing.Point(12, 580);
             this.listOrders.Name = "listOrders";
-            this.listOrders.Size = new System.Drawing.Size(113, 318);
+            this.listOrders.Size = new System.Drawing.Size(113, 393);
             this.listOrders.TabIndex = 3;
             this.listOrders.UseCompatibleStateImageBehavior = false;
             this.listOrders.View = System.Windows.Forms.View.Details;
@@ -100,37 +101,37 @@
             // tableID
             // 
             this.tableID.Text = "Table #";
-            this.tableID.Width = 81;
+            this.tableID.Width = 87;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.panel2.Controls.Add(this.lblOrdr);
             this.panel2.Controls.Add(this.lblWaitr);
-            this.panel2.Location = new System.Drawing.Point(260, 307);
+            this.panel2.Location = new System.Drawing.Point(260, 344);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 143);
+            this.panel2.Size = new System.Drawing.Size(315, 215);
             this.panel2.TabIndex = 5;
             // 
             // lblOrdr
             // 
             this.lblOrdr.AutoSize = true;
-            this.lblOrdr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrdr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrdr.ForeColor = System.Drawing.Color.Black;
-            this.lblOrdr.Location = new System.Drawing.Point(10, 28);
+            this.lblOrdr.Location = new System.Drawing.Point(10, 47);
             this.lblOrdr.Name = "lblOrdr";
-            this.lblOrdr.Size = new System.Drawing.Size(79, 22);
+            this.lblOrdr.Size = new System.Drawing.Size(101, 28);
             this.lblOrdr.TabIndex = 3;
             this.lblOrdr.Text = "Order #";
             // 
             // lblWaitr
             // 
             this.lblWaitr.AutoSize = true;
-            this.lblWaitr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWaitr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWaitr.ForeColor = System.Drawing.Color.Black;
-            this.lblWaitr.Location = new System.Drawing.Point(10, 84);
+            this.lblWaitr.Location = new System.Drawing.Point(10, 148);
             this.lblWaitr.Name = "lblWaitr";
-            this.lblWaitr.Size = new System.Drawing.Size(81, 22);
+            this.lblWaitr.Size = new System.Drawing.Size(103, 28);
             this.lblWaitr.TabIndex = 2;
             this.lblWaitr.Text = "Waiter: ";
             // 
@@ -139,9 +140,9 @@
             this.btnDone.BackColor = System.Drawing.Color.YellowGreen;
             this.btnDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDone.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(581, 307);
+            this.btnDone.Location = new System.Drawing.Point(581, 344);
             this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(159, 143);
+            this.btnDone.Size = new System.Drawing.Size(159, 215);
             this.btnDone.TabIndex = 8;
             this.btnDone.Text = "Mark as Ready";
             this.btnDone.UseVisualStyleBackColor = false;
@@ -200,13 +201,13 @@
             this.item,
             this.qty,
             this.comment});
-            this.listOrdr.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listOrdr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listOrdr.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.listOrdr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listOrdr.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listOrdr.HideSelection = false;
-            this.listOrdr.Location = new System.Drawing.Point(131, 475);
+            this.listOrdr.Location = new System.Drawing.Point(131, 581);
             this.listOrdr.Name = "listOrdr";
-            this.listOrdr.Size = new System.Drawing.Size(609, 317);
+            this.listOrdr.Size = new System.Drawing.Size(609, 392);
             this.listOrdr.TabIndex = 10;
             this.listOrdr.UseCompatibleStateImageBehavior = false;
             this.listOrdr.View = System.Windows.Forms.View.Details;
@@ -224,25 +225,25 @@
             // comment
             // 
             this.comment.Text = "Comment";
-            this.comment.Width = 254;
+            this.comment.Width = 245;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.panel3.Controls.Add(this.lblTableNr);
             this.panel3.Controls.Add(this.lblTabl);
-            this.panel3.Location = new System.Drawing.Point(12, 307);
+            this.panel3.Location = new System.Drawing.Point(12, 344);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(242, 143);
+            this.panel3.Size = new System.Drawing.Size(242, 215);
             this.panel3.TabIndex = 11;
             // 
             // lblTableNr
             // 
             this.lblTableNr.AutoSize = true;
-            this.lblTableNr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTableNr.Location = new System.Drawing.Point(121, 31);
+            this.lblTableNr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTableNr.Location = new System.Drawing.Point(44, 84);
             this.lblTableNr.Name = "lblTableNr";
-            this.lblTableNr.Size = new System.Drawing.Size(96, 75);
+            this.lblTableNr.Size = new System.Drawing.Size(143, 111);
             this.lblTableNr.TabIndex = 12;
             this.lblTableNr.Text = "__";
             // 
@@ -250,7 +251,7 @@
             // 
             this.lblTabl.AutoSize = true;
             this.lblTabl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTabl.Location = new System.Drawing.Point(3, 20);
+            this.lblTabl.Location = new System.Drawing.Point(57, 18);
             this.lblTabl.Name = "lblTabl";
             this.lblTabl.Size = new System.Drawing.Size(110, 32);
             this.lblTabl.TabIndex = 11;
@@ -260,9 +261,9 @@
             // 
             this.btnKitchen.BackColor = System.Drawing.Color.BurlyWood;
             this.btnKitchen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKitchen.Location = new System.Drawing.Point(12, 234);
+            this.btnKitchen.Location = new System.Drawing.Point(12, 266);
             this.btnKitchen.Name = "btnKitchen";
-            this.btnKitchen.Size = new System.Drawing.Size(359, 48);
+            this.btnKitchen.Size = new System.Drawing.Size(359, 56);
             this.btnKitchen.TabIndex = 12;
             this.btnKitchen.Text = "Kitchen Orders";
             this.btnKitchen.UseVisualStyleBackColor = false;
@@ -272,9 +273,9 @@
             // 
             this.btnBar.BackColor = System.Drawing.Color.BurlyWood;
             this.btnBar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBar.Location = new System.Drawing.Point(381, 233);
+            this.btnBar.Location = new System.Drawing.Point(381, 266);
             this.btnBar.Name = "btnBar";
-            this.btnBar.Size = new System.Drawing.Size(359, 49);
+            this.btnBar.Size = new System.Drawing.Size(359, 57);
             this.btnBar.TabIndex = 13;
             this.btnBar.Text = "Bar Orders";
             this.btnBar.UseVisualStyleBackColor = false;
