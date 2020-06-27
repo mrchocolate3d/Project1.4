@@ -15,7 +15,7 @@ namespace ChapeauUI
     {
         readonly Employee employee;
         readonly Table table;
-        List<OrderMenuItems> orderMenuItems = new List<OrderMenuItems>();
+        List<OrderMenuItem> orderMenuItems = new List<OrderMenuItem>();
 
         public MenuStartPage(Employee employee,Table table)
         {

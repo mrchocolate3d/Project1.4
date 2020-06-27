@@ -49,7 +49,7 @@
     <Compile Include="CardPayement.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="login.cs" />
-    <Compile Include="OrderMenuItems.cs" />
+    <Compile Include="OrderMenuItem.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrdersList.cs" />
     <Compile Include="Payment.cs" />

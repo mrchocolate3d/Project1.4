@@ -21,36 +21,37 @@ namespace ChapeauDAL
             ExecuteEditQuery(query, sqlParameters);
         }
 
-        public List<OrderMenuItems> db_Get_MenuItems(int orderno)
+        public List<OrderMenuItem> db_Get_MenuItems(int orderno)
         {
-            string query = $"SELECT m.itemName, om.quantity FROM Order_MenuItem AS om JOIN menuItem as m on om.MenuItemID = m.menuItemID WHERE om.orderID = {orderno}";
+            string query = $"SELECT m.itemName, om.quantity, om.comment FROM Order_MenuItem AS om JOIN menuItem as m on om.MenuItemID = m.menuItemID WHERE om.orderID = {orderno}";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadItem(ExecuteSelectQuery(query, sqlParameters));
         }
 
-        private List<OrderMenuItems> ReadItem(DataTable dataTable)
+        private List<OrderMenuItem> ReadItem(DataTable dataTable)
         {
-            List<OrderMenuItems> order = new List<OrderMenuItems>();
+            List<OrderMenuItem> order = new List<OrderMenuItem>();
 
             foreach (DataRow dr in dataTable.Rows)
             {
-                OrderMenuItems item = new OrderMenuItems()
+                OrderMenuItem item = new OrderMenuItem()
                 {
                     itemName = (string)dr["itemName"],
-                    quantity = (int)dr["quantity"]
+                    quantity = (int)dr["quantity"],
+                    comments = (string)dr["comment"],
                 };
                 order.Add(item);
             }
             return order;
         }
 
-        private List<OrderMenuItems> ReadTables(DataTable dataTable)
+        private List<OrderMenuItem> ReadTables(DataTable dataTable)
         {
-            List<OrderMenuItems> menu = new List<OrderMenuItems>();
+            List<OrderMenuItem> menu = new List<OrderMenuItem>();
 
             foreach (DataRow dr in dataTable.Rows)
             {
-                OrderMenuItems item = new OrderMenuItems()
+                OrderMenuItem item = new OrderMenuItem()
                 {
                     OrderId = (int)dr["orderID"],
                     menuItemID = (int)dr["MenuItemID"],

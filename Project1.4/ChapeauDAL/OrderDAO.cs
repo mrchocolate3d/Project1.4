@@ -13,7 +13,7 @@ namespace ChapeauDAL
 {
     public class OrderDAO : Base
     {
-        public OrderMenuItems getNewOrderInfo(string name)
+        public OrderMenuItem getNewOrderInfo(string name)
         {
             string query = "SELECT menuItemID, price, amount FROM menuItem WHERE itemName = '" + name + "'";
             SqlParameter[] sqlParameters = new SqlParameter[0];
@@ -41,7 +41,7 @@ namespace ChapeauDAL
             return GetOrder(ExecuteSelectQuery(query, sqlParameters));
         }
 
-        public void InsertMenuItem(OrderMenuItems menuItems,int id)
+        public void InsertMenuItem(OrderMenuItem menuItems,int id)
         {
             string query = "INSERT INTO Order_MenuItem (orderID,MenuItemID,quantity) VALUES (@orderID,@MenuItemID,@quantity)";
             SqlParameter[] sqlParameters = new SqlParameter[3];
@@ -59,7 +59,7 @@ namespace ChapeauDAL
             ExecuteEditQuery(query, sqlParameters);
         }
 
-        public void UpdateStock(OrderMenuItems menuItem)
+        public void UpdateStock(OrderMenuItem menuItem)
         {
             string query = "UPDATE menuItem SET amount = amount - @quantity WHERE menuItemID = @id";
             SqlParameter[] sqlParameters = new SqlParameter[2];
@@ -79,10 +79,10 @@ namespace ChapeauDAL
             };
             return id;
         }
-        private OrderMenuItems SelectMenuItem(DataTable dataTable)
+        private OrderMenuItem SelectMenuItem(DataTable dataTable)
         {
             DataRow dr = dataTable.Rows[0];
-            OrderMenuItems menuItem = new OrderMenuItems()
+            OrderMenuItem menuItem = new OrderMenuItem()
             {
                 menuItemID = (int)(dr["menuItemID"]),
                 price = (double)(dr["price"]),

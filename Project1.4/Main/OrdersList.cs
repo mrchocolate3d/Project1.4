@@ -17,6 +17,7 @@ namespace ChapeauUI
     {
         Employee employee;
         private Timer timer1;
+        OrderMenuItemService details = new OrderMenuItemService();
 
         public OrdersList(Employee employee)
         {
@@ -40,7 +41,16 @@ namespace ChapeauUI
         {
             InitTimer();
             PrintOrders(false);
-
+            btnOngoing.BackColor = Color.Orange;
+            btnComplete.BackColor = Color.BurlyWood;
+            btnKitchen.Enabled = true;
+            btnKitchen.BackColor = Color.BurlyWood;
+            btnBar.Enabled = true;
+            btnBar.BackColor = Color.BurlyWood;
+            listOrdr.Items.Clear();
+            lblWaitr.Text = "Waiter: ";
+            lblTableNr.Text = "";
+            lblOrdr.Text = "Order #";
         }
 
         void PrintOrders(bool comp)
@@ -62,6 +72,10 @@ namespace ChapeauUI
         {
             timer1.Stop();
             PrintOrders(true);
+            btnOngoing.BackColor = Color.BurlyWood;
+            btnComplete.BackColor = Color.Orange;
+            btnKitchen.Enabled = false;
+            btnBar.Enabled = false;
         }
 
         private void listOrders_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,10 +88,29 @@ namespace ChapeauUI
                     Table = new Table(int.Parse(item.SubItems[0].Text)),
                     OrderID = int.Parse(item.SubItems[1].Text)
                 };
-                this.Hide();
-                OrderView OrderPage = new OrderView(employee, order);
-                OrderPage.ShowDialog();
-                this.Close();
+
+                lblWaitr.Text = "Waiter: " + employee.FirstName;
+                lblTableNr.Text = order.Table.TableID.ToString();
+                lblOrdr.Text = "Order #" + order.OrderID.ToString();
+
+                List<OrderMenuItem> detail = details.GetMenuItems(order.OrderID);
+
+                listOrdr.Items.Clear();
+                foreach (OrderMenuItem om in detail)
+                {
+                    ListViewItem li = new ListViewItem(om.itemName);
+                    li.SubItems.Add(om.quantity.ToString());
+                    li.SubItems.Add(om.comments);
+                    /*if (om.comments != null)
+                    {
+                        li.SubItems.Add(om.comments);
+                    }
+                    else
+                    {
+                        li.SubItems.Add("");
+                    }*/
+                    listOrdr.Items.Add(li);
+                }
             }
 
         }
@@ -88,6 +121,23 @@ namespace ChapeauUI
             LoginPage loginPage = new LoginPage();
             loginPage.ShowDialog();
             this.Close();
+        }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKitchen_Click(object sender, EventArgs e)
+        {
+            btnKitchen.BackColor = Color.Orange;
+            btnBar.BackColor = Color.BurlyWood;
+        }
+
+        private void btnBar_Click(object sender, EventArgs e)
+        {
+            btnBar.BackColor = Color.Orange;
+            btnKitchen.BackColor = Color.BurlyWood;
         }
     }
 }

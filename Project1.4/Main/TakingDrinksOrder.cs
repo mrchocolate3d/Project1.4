@@ -19,10 +19,10 @@ namespace ChapeauUI
         readonly Table table;
         List<NumericUpDown> ItemCount = new List<NumericUpDown>();
         ChapeauLogic.OrderService orderServices = new ChapeauLogic.OrderService();
-        List<OrderMenuItems> orderMenuItems;
-        OrderMenuItems newItem;
+        List<OrderMenuItem> orderMenuItems;
+        OrderMenuItem newItem;
 
-        public TakingDrinksOrder(Employee employee, Table table,List<OrderMenuItems> orderMenuItems)
+        public TakingDrinksOrder(Employee employee, Table table,List<OrderMenuItem> orderMenuItems)
         {
             this.employee = employee;
             this.table = table;
@@ -86,11 +86,12 @@ namespace ChapeauUI
 
             for (int i = 0; i < gridV_Drinks.Rows.Count; i++)
             {
-                OrderMenuItems item = new OrderMenuItems()
+                OrderMenuItem item = new OrderMenuItem()
                 {
                     menuItemID = int.Parse(gridV_Drinks.Rows[i].Cells[0].Value.ToString()),
                     price = double.Parse(gridV_Drinks.Rows[i].Cells[2].Value.ToString()),
                     quantity = int.Parse(gridV_Drinks.Rows[i].Cells[3].Value.ToString()),
+                    comments = "No comment",
                 };
                 orderMenuItems.Add(item);
             }
@@ -101,7 +102,7 @@ namespace ChapeauUI
                 orderServices.UpdateTable(table);
 
                 Order order = orderServices.getId(table, employee);
-                foreach (OrderMenuItems menuItems in orderMenuItems)
+                foreach (OrderMenuItem menuItems in orderMenuItems)
                 {
                     orderServices.InsertMenu(menuItems, order.OrderID);
                     orderServices.UpdateStock(menuItems);

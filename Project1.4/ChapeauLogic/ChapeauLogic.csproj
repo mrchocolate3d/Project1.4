@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeServices.cs" />
-    <Compile Include="MenuItemService.cs" />
+    <Compile Include="OrderMenuItemService.cs" />
     <Compile Include="OrderService.cs" />
     <Compile Include="OrdersListService.cs" />
     <Compile Include="PaymentService.cs" />

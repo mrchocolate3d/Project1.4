@@ -14,9 +14,9 @@ namespace ChapeauLogic
     {
         OrderDAO order_db = new OrderDAO();
         
-        public OrderMenuItems getItem(string name)
+        public OrderMenuItem getItem(string name)
         {
-            OrderMenuItems item = order_db.getNewOrderInfo(name);
+            OrderMenuItem item = order_db.getNewOrderInfo(name);
             return item;
         }
 
@@ -38,7 +38,7 @@ namespace ChapeauLogic
             }
         }
 
-        public void InsertMenu(OrderMenuItems items , int id)
+        public void InsertMenu(OrderMenuItem items , int id)
         {
             order_db.InsertMenuItem(items,id);
         }
@@ -48,7 +48,7 @@ namespace ChapeauLogic
             order_db.UpdateTabe(table);
         }
 
-        public void UpdateStock(OrderMenuItems menuItem)
+        public void UpdateStock(OrderMenuItem menuItem)
         {
             order_db.UpdateStock(menuItem);
         }
