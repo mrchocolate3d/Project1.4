@@ -18,6 +18,7 @@ namespace ChapeauUI
         Employee employee;
         private Timer timer1;
         OrderMenuItemService details = new OrderMenuItemService();
+        Order ord = new Order();
 
         public OrdersList(Employee employee)
         {
@@ -74,7 +75,9 @@ namespace ChapeauUI
             PrintOrders(true);
             btnOngoing.BackColor = Color.BurlyWood;
             btnComplete.BackColor = Color.Orange;
+            btnKitchen.BackColor = Color.LightGray;
             btnKitchen.Enabled = false;
+            btnBar.BackColor = Color.LightGray;
             btnBar.Enabled = false;
         }
 
@@ -89,6 +92,8 @@ namespace ChapeauUI
                     OrderID = int.Parse(item.SubItems[1].Text)
                 };
 
+                ord.OrderID = order.OrderID;
+
                 lblWaitr.Text = "Waiter: " + employee.FirstName;
                 lblTableNr.Text = order.Table.TableID.ToString();
                 lblOrdr.Text = "Order #" + order.OrderID.ToString();
@@ -101,43 +106,56 @@ namespace ChapeauUI
                     ListViewItem li = new ListViewItem(om.itemName);
                     li.SubItems.Add(om.quantity.ToString());
                     li.SubItems.Add(om.comments);
-                    /*if (om.comments != null)
-                    {
-                        li.SubItems.Add(om.comments);
-                    }
-                    else
-                    {
-                        li.SubItems.Add("");
-                    }*/
                     listOrdr.Items.Add(li);
                 }
             }
 
         }
 
-        private void btn_logout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LoginPage loginPage = new LoginPage();
-            loginPage.ShowDialog();
-            this.Close();
-        }
-
         private void btnDone_Click(object sender, EventArgs e)
         {
-
+            details.Update(ord);
         }
 
         private void btnKitchen_Click(object sender, EventArgs e)
         {
+            List<OrderMenuItem> detail = details.GetMenuItemsDishes(ord.OrderID);
+
+            listOrdr.Items.Clear();
+            foreach (OrderMenuItem om in detail)
+            {
+                ListViewItem li = new ListViewItem(om.itemName);
+                li.SubItems.Add(om.quantity.ToString());
+                li.SubItems.Add(om.comments);
+                listOrdr.Items.Add(li);
+            }
             btnKitchen.BackColor = Color.Orange;
             btnBar.BackColor = Color.BurlyWood;
         }
 
         private void btnBar_Click(object sender, EventArgs e)
         {
+
+            List<OrderMenuItem> detail = details.GetMenuItemsDrinks(ord.OrderID);
+
+            listOrdr.Items.Clear();
+            foreach (OrderMenuItem om in detail)
+            {
+                ListViewItem li = new ListViewItem(om.itemName);
+                li.SubItems.Add(om.quantity.ToString());
+                li.SubItems.Add(om.comments);
+                listOrdr.Items.Add(li);
+            }
             btnBar.BackColor = Color.Orange;
             btnKitchen.BackColor = Color.BurlyWood;
+        }
+
+        private void btn_logout_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -91,7 +91,7 @@
             this.listOrders.HideSelection = false;
             this.listOrders.Location = new System.Drawing.Point(12, 474);
             this.listOrders.Name = "listOrders";
-            this.listOrders.Size = new System.Drawing.Size(88, 318);
+            this.listOrders.Size = new System.Drawing.Size(113, 318);
             this.listOrders.TabIndex = 3;
             this.listOrders.UseCompatibleStateImageBehavior = false;
             this.listOrders.View = System.Windows.Forms.View.Details;
@@ -180,6 +180,7 @@
             this.btn_logout.TabIndex = 1;
             this.btn_logout.Text = "Logout";
             this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // label1
             // 
@@ -203,9 +204,9 @@
             this.listOrdr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listOrdr.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listOrdr.HideSelection = false;
-            this.listOrdr.Location = new System.Drawing.Point(106, 475);
+            this.listOrdr.Location = new System.Drawing.Point(131, 475);
             this.listOrdr.Name = "listOrdr";
-            this.listOrdr.Size = new System.Drawing.Size(634, 317);
+            this.listOrdr.Size = new System.Drawing.Size(609, 317);
             this.listOrdr.TabIndex = 10;
             this.listOrdr.UseCompatibleStateImageBehavior = false;
             this.listOrdr.View = System.Windows.Forms.View.Details;
@@ -213,7 +214,7 @@
             // item
             // 
             this.item.Text = "Order Item";
-            this.item.Width = 264;
+            this.item.Width = 254;
             // 
             // qty
             // 
@@ -223,7 +224,7 @@
             // comment
             // 
             this.comment.Text = "Comment";
-            this.comment.Width = 264;
+            this.comment.Width = 254;
             // 
             // panel3
             // 
