@@ -10,7 +10,7 @@ namespace ChapeauModel
     {
         public int OrderID { get; set; }
         public Table Table { get; set; }
-        public Employee EmployeeID { get; set; }
+        public Employee Employee { get; set; }
         public bool orderComplete { get; set; }
         public bool paidOrders { get; set; }
 

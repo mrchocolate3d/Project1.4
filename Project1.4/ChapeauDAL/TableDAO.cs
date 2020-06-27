@@ -55,8 +55,8 @@ namespace ChapeauDAL
                     orderComplete = (bool)(dr["orderComplete"]),
                     paidOrders = (bool)(dr["paidOrders"]),
                     OrderID = (int)(dr["orderID"]),
-                    EmployeeID = new Employee((int)dr["employeeID"])
-                    //EmployeeID = employeeDAO.GetOne((int)dr["employeeID"])
+                    //EmployeeID = new Employee((int)dr["employeeID"])
+                    Employee = employeeDAO.GetEmployee((int)dr["employeeID"])
                 };
                 orders.Add(order);
             }

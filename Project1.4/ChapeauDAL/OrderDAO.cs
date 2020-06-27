@@ -102,7 +102,7 @@ namespace ChapeauDAL
                 {
                     OrderID = (int)dr["orderID"],
                     Table = new Table((int)dr["tableID"]),
-                    EmployeeID = new Employee((int)dr["employeeID"])
+                    Employee = new Employee((int)dr["employeeID"])
                 };
                 orders.Add(order);
             }
