@@ -44,6 +44,7 @@ namespace ChapeauUI
         {
             login loginCode = new login(int.Parse(LoginBox.Text));
             Employee employee = EmployeeServices.GetEmployee(loginCode);
+
             if (employee != null)
             {
                 if (employee.role == "Waiter")

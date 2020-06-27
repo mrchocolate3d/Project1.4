@@ -16,7 +16,7 @@ namespace ChapeauUI
     {
         Table table;
         Employee employee;
-        ChapeauLogic.PaymentService paymentService = new ChapeauLogic.PaymentService();
+        ChapeauLogic.OrderMenuItemService paymentService = new ChapeauLogic.OrderMenuItemService();
 
         public Payment(Employee employee,Table table)
         {
@@ -28,18 +28,25 @@ namespace ChapeauUI
         double ItemTotalPrice = 0;
         public void ShowPanel()
         {
-                List<ChapeauModel.Payment> payments = paymentService.GetPayments(table);
+            double TotalItemPrice = 0.00;
+
+            List<ChapeauModel.OrderMenuItem> payments = paymentService.GetAllInfoForPayments(table);
 
                 listViewrecipt.Items.Clear();
 
-                foreach (ChapeauModel.Payment item in payments)
+                foreach (ChapeauModel.OrderMenuItem item in payments)
                 {
-                    ListViewItem list = new ListViewItem(item.itemName);
-                    list.SubItems.Add(item.price.ToString());
-                    list.SubItems.Add(item.quantity.ToString());
-                    list.SubItems.Add(item.orderID.ToString());
+                    ListViewItem list = new ListViewItem(item.OrderId.ToString());
+                    list.SubItems.Add(item.itemName);
+                    list.SubItems.Add(item.quantity.ToString() + "x");
+                    list.SubItems.Add(item.price.ToString("€0.00"));
+                    list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
                     listViewrecipt.Items.Add(list);
+
+                    // calculates the total price of all the items bought
                     ItemTotalPrice += item.price * item.quantity;
+                     // Calculates the number of quantities the item is bought multiply by its price per item.
+                    TotalItemPrice = item.price * item.quantity;
                 }
             lbltablenumber.Text = table.TableID.ToString();
             lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
@@ -47,13 +54,13 @@ namespace ChapeauUI
             double VAT = 0.21;
             double vatvalue = VAT * ItemTotalPrice;
             double totalamount = ItemTotalPrice + vatvalue;
-            lbltotalprice.Text = ItemTotalPrice.ToString("0.00");
-            lblvat.Text = vatvalue.ToString("0.00");
-            lbltotalamount.Text = totalamount.ToString("0.00");
+            lbltotalprice.Text = ItemTotalPrice.ToString("€0.00");
+            lblvat.Text = vatvalue.ToString("€0.00");
+            lbltotalamount.Text = totalamount.ToString("€0.00");
 
         }
 
-        private void btnprintrecipt_Click(object sender, EventArgs e)
+        private void btnupdateamount_Click(object sender, EventArgs e)
         {
             ShowPanel();
 
@@ -73,9 +80,9 @@ namespace ChapeauUI
 
         private void btnpay_Click(object sender, EventArgs e)
         {
-            if (radiobtnpin.Checked || radiobtncash.Checked || radioButton1.Checked)
+            if (radiobtnpin.Checked || radiobtncash.Checked || radiobtnmastercard.Checked)
             {
-                paymentService.Update(table);
+                paymentService.UpdatePaidOrders(table);
                 paymentService.UpdateTable(table);
 
                 this.Hide();
