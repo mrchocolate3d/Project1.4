@@ -31,6 +31,32 @@ namespace ChapeauLogic
                 return null;
             }
         }
+        public List<OrderMenuItem> GetMenuItemsDishes(int orderno)
+        {
+            try
+            {
+                List<OrderMenuItem> order = menuItem_db.db_Get_MenuItems_Dishes(orderno);
+                return order;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+        public List<OrderMenuItem> GetMenuItemsDrinks(int orderno)
+        {
+            try
+            {
+                List<OrderMenuItem> order = menuItem_db.db_Get_MenuItems_Drinks(orderno);
+                return order;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
         public List<OrderMenuItem> GetAllInfoForPayments(Table table)
         {
             try
