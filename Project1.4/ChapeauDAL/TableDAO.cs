@@ -46,7 +46,7 @@ namespace ChapeauDAL
         private List<Order> CreateOrders(DataTable orderData)
         {
             List<Order> orders = new List<Order>();
-
+            EmployeeDAO employeeDAO = new EmployeeDAO();
             foreach (DataRow dr in orderData.Rows)
             {
                 Order order = new Order()
@@ -56,6 +56,7 @@ namespace ChapeauDAL
                     paidOrders = (bool)(dr["paidOrders"]),
                     OrderID = (int)(dr["orderID"]),
                     EmployeeID = new Employee((int)dr["employeeID"])
+                    //EmployeeID = employeeDAO.GetOne((int)dr["employeeID"])
                 };
                 orders.Add(order);
             }

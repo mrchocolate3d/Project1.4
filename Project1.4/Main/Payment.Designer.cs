@@ -68,7 +68,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(392, 49);
+            this.label1.Location = new System.Drawing.Point(294, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 29);
             this.label1.TabIndex = 0;
@@ -95,17 +96,18 @@
             this.pnlpayment.Controls.Add(this.radiobtncash);
             this.pnlpayment.Controls.Add(this.radiobtnpin);
             this.pnlpayment.Controls.Add(this.listViewrecipt);
-            this.pnlpayment.Location = new System.Drawing.Point(3, 178);
-            this.pnlpayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlpayment.Location = new System.Drawing.Point(2, 145);
+            this.pnlpayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlpayment.Name = "pnlpayment";
-            this.pnlpayment.Size = new System.Drawing.Size(746, 796);
+            this.pnlpayment.Size = new System.Drawing.Size(560, 647);
             this.pnlpayment.TabIndex = 1;
             // 
             // radiobtnmastercard
             // 
             this.radiobtnmastercard.AutoSize = true;
             this.radiobtnmastercard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnmastercard.Location = new System.Drawing.Point(288, 668);
+            this.radiobtnmastercard.Location = new System.Drawing.Point(216, 543);
+            this.radiobtnmastercard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiobtnmastercard.Name = "radiobtnmastercard";
             this.radiobtnmastercard.Size = new System.Drawing.Size(199, 24);
             this.radiobtnmastercard.TabIndex = 18;
@@ -117,8 +119,8 @@
             // 
             this.radiobtnpaybycredit.AutoSize = true;
             this.radiobtnpaybycredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnpaybycredit.Location = new System.Drawing.Point(313, 614);
-            this.radiobtnpaybycredit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radiobtnpaybycredit.Location = new System.Drawing.Point(235, 499);
+            this.radiobtnpaybycredit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiobtnpaybycredit.Name = "radiobtnpaybycredit";
             this.radiobtnpaybycredit.Size = new System.Drawing.Size(119, 24);
             this.radiobtnpaybycredit.TabIndex = 17;
@@ -130,7 +132,8 @@
             // 
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalamount.Location = new System.Drawing.Point(452, 515);
+            this.lbltotalamount.Location = new System.Drawing.Point(339, 418);
+            this.lbltotalamount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(44, 20);
             this.lbltotalamount.TabIndex = 16;
@@ -139,10 +142,10 @@
             // btnupdateamount
             // 
             this.btnupdateamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdateamount.Location = new System.Drawing.Point(529, 515);
-            this.btnupdateamount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnupdateamount.Location = new System.Drawing.Point(397, 418);
+            this.btnupdateamount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnupdateamount.Name = "btnupdateamount";
-            this.btnupdateamount.Size = new System.Drawing.Size(193, 43);
+            this.btnupdateamount.Size = new System.Drawing.Size(145, 35);
             this.btnupdateamount.TabIndex = 2;
             this.btnupdateamount.Text = "Update Amount";
             this.btnupdateamount.UseVisualStyleBackColor = true;
@@ -152,7 +155,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(161, 515);
+            this.label7.Location = new System.Drawing.Point(121, 418);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(254, 20);
             this.label7.TabIndex = 15;
@@ -160,17 +164,18 @@
             // 
             // txttip
             // 
-            this.txttip.Location = new System.Drawing.Point(456, 471);
-            this.txttip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txttip.Location = new System.Drawing.Point(342, 383);
+            this.txttip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttip.Name = "txttip";
-            this.txttip.Size = new System.Drawing.Size(60, 22);
+            this.txttip.Size = new System.Drawing.Size(46, 20);
             this.txttip.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(284, 471);
+            this.label6.Location = new System.Drawing.Point(213, 383);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 20);
             this.label6.TabIndex = 13;
@@ -180,7 +185,8 @@
             // 
             this.lblvat.AutoSize = true;
             this.lblvat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvat.Location = new System.Drawing.Point(452, 426);
+            this.lblvat.Location = new System.Drawing.Point(339, 346);
+            this.lblvat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblvat.Name = "lblvat";
             this.lblvat.Size = new System.Drawing.Size(44, 20);
             this.lblvat.TabIndex = 12;
@@ -190,7 +196,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(329, 426);
+            this.label5.Location = new System.Drawing.Point(247, 346);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 11;
@@ -199,10 +206,10 @@
             // btnpay
             // 
             this.btnpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpay.Location = new System.Drawing.Point(194, 722);
-            this.btnpay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnpay.Location = new System.Drawing.Point(146, 587);
+            this.btnpay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnpay.Name = "btnpay";
-            this.btnpay.Size = new System.Drawing.Size(341, 59);
+            this.btnpay.Size = new System.Drawing.Size(256, 48);
             this.btnpay.TabIndex = 10;
             this.btnpay.Text = "Pay";
             this.btnpay.UseVisualStyleBackColor = true;
@@ -212,7 +219,8 @@
             // 
             this.lbltotalprice.AutoSize = true;
             this.lbltotalprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalprice.Location = new System.Drawing.Point(457, 374);
+            this.lbltotalprice.Location = new System.Drawing.Point(343, 304);
+            this.lbltotalprice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltotalprice.Name = "lbltotalprice";
             this.lbltotalprice.Size = new System.Drawing.Size(39, 20);
             this.lbltotalprice.TabIndex = 9;
@@ -222,7 +230,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(328, 374);
+            this.label3.Location = new System.Drawing.Point(246, 304);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 8;
@@ -232,7 +241,8 @@
             // 
             this.lblserver.AutoSize = true;
             this.lblserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblserver.Location = new System.Drawing.Point(543, 11);
+            this.lblserver.Location = new System.Drawing.Point(407, 9);
+            this.lblserver.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblserver.Name = "lblserver";
             this.lblserver.Size = new System.Drawing.Size(44, 20);
             this.lblserver.TabIndex = 7;
@@ -242,7 +252,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(415, 11);
+            this.label4.Location = new System.Drawing.Point(311, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 20);
             this.label4.TabIndex = 6;
@@ -252,7 +263,8 @@
             // 
             this.lbltablenumber.AutoSize = true;
             this.lbltablenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltablenumber.Location = new System.Drawing.Point(161, 11);
+            this.lbltablenumber.Location = new System.Drawing.Point(121, 9);
+            this.lbltablenumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltablenumber.Name = "lbltablenumber";
             this.lbltablenumber.Size = new System.Drawing.Size(44, 20);
             this.lbltablenumber.TabIndex = 5;
@@ -262,7 +274,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 11);
+            this.label2.Location = new System.Drawing.Point(16, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 4;
@@ -272,8 +285,8 @@
             // 
             this.radiobtncash.AutoSize = true;
             this.radiobtncash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtncash.Location = new System.Drawing.Point(580, 614);
-            this.radiobtncash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radiobtncash.Location = new System.Drawing.Point(435, 499);
+            this.radiobtncash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiobtncash.Name = "radiobtncash";
             this.radiobtncash.Size = new System.Drawing.Size(114, 24);
             this.radiobtncash.TabIndex = 2;
@@ -285,8 +298,8 @@
             // 
             this.radiobtnpin.AutoSize = true;
             this.radiobtnpin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnpin.Location = new System.Drawing.Point(25, 614);
-            this.radiobtnpin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radiobtnpin.Location = new System.Drawing.Point(19, 499);
+            this.radiobtnpin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiobtnpin.Name = "radiobtnpin";
             this.radiobtnpin.Size = new System.Drawing.Size(157, 24);
             this.radiobtnpin.TabIndex = 1;
@@ -304,11 +317,11 @@
             this.columnHeader5});
             this.listViewrecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewrecipt.HideSelection = false;
-            this.listViewrecipt.Location = new System.Drawing.Point(3, 59);
-            this.listViewrecipt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listViewrecipt.Location = new System.Drawing.Point(2, 48);
+            this.listViewrecipt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewrecipt.Name = "listViewrecipt";
             this.listViewrecipt.Scrollable = false;
-            this.listViewrecipt.Size = new System.Drawing.Size(740, 295);
+            this.listViewrecipt.Size = new System.Drawing.Size(556, 240);
             this.listViewrecipt.TabIndex = 0;
             this.listViewrecipt.UseCompatibleStateImageBehavior = false;
             this.listViewrecipt.View = System.Windows.Forms.View.Details;
@@ -341,10 +354,9 @@
             // btn_Resturant
             // 
             this.btn_Resturant.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Resturant.Location = new System.Drawing.Point(567, 135);
-            this.btn_Resturant.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Resturant.Location = new System.Drawing.Point(425, 110);
             this.btn_Resturant.Name = "btn_Resturant";
-            this.btn_Resturant.Size = new System.Drawing.Size(158, 37);
+            this.btn_Resturant.Size = new System.Drawing.Size(118, 30);
             this.btn_Resturant.TabIndex = 3;
             this.btn_Resturant.Text = "Resturant View";
             this.btn_Resturant.UseVisualStyleBackColor = true;
@@ -355,32 +367,33 @@
             this.pnltitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.pnltitle.Controls.Add(this.pictureBox1);
             this.pnltitle.Controls.Add(this.label1);
-            this.pnltitle.Location = new System.Drawing.Point(3, 0);
-            this.pnltitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnltitle.Location = new System.Drawing.Point(2, 0);
+            this.pnltitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnltitle.Name = "pnltitle";
-            this.pnltitle.Size = new System.Drawing.Size(746, 129);
+            this.pnltitle.Size = new System.Drawing.Size(560, 105);
             this.pnltitle.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(274, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(206, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // Payment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 985);
+            this.ClientSize = new System.Drawing.Size(752, 985);
             this.Controls.Add(this.pnltitle);
             this.Controls.Add(this.btn_Resturant);
             this.Controls.Add(this.pnlpayment);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Payment";
             this.Text = "Payment";
             this.pnlpayment.ResumeLayout(false);

@@ -64,7 +64,7 @@ namespace ChapeauDAL
             return menu;
         }
         // Selects all the values required for the payment section
-        public List<OrderMenuItems> db_GetPayments(Table table)
+        public List<OrderMenuItem> db_GetPayments(Table table)
         {
             string query = "select itemName, price, quantity, orders.orderID from Order_MenuItem " +
                "inner join menuItem on menuItem.menuItemID = Order_MenuItem.MenuItemID " +
@@ -78,12 +78,12 @@ namespace ChapeauDAL
             return ReadInfoForPayments(ExecuteSelectQuery(query, sqlParameters));
         }
         // Reads all the information from the database required for payments
-        private List<OrderMenuItems> ReadInfoForPayments(DataTable dataTable)
+        private List<OrderMenuItem> ReadInfoForPayments(DataTable dataTable)
         {
-            List<OrderMenuItems> paymentItems = new List<OrderMenuItems>();
+            List<OrderMenuItem> paymentItems = new List<OrderMenuItem>();
             foreach (DataRow dataRow in dataTable.Rows)
             {
-                OrderMenuItems items = new OrderMenuItems()
+                OrderMenuItem items = new OrderMenuItem()
                 {
                     OrderId = (int)dataRow["orderID"],
                     itemName = (string)dataRow["itemName"],

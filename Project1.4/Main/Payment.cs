@@ -16,7 +16,7 @@ namespace ChapeauUI
     {
         Table table;
         Employee employee;
-        ChapeauLogic.MenuItemService paymentService = new ChapeauLogic.MenuItemService();
+        ChapeauLogic.OrderMenuItemService paymentService = new ChapeauLogic.OrderMenuItemService();
 
         public Payment(Employee employee,Table table)
         {
@@ -30,11 +30,11 @@ namespace ChapeauUI
         {
             double TotalItemPrice = 0.00;
 
-            List<ChapeauModel.OrderMenuItems> payments = paymentService.GetAllInfoForPayments(table);
+            List<ChapeauModel.OrderMenuItem> payments = paymentService.GetAllInfoForPayments(table);
 
                 listViewrecipt.Items.Clear();
 
-                foreach (ChapeauModel.OrderMenuItems item in payments)
+                foreach (ChapeauModel.OrderMenuItem item in payments)
                 {
                     ListViewItem list = new ListViewItem(item.OrderId.ToString());
                     list.SubItems.Add(item.itemName);

@@ -31,11 +31,11 @@ namespace ChapeauLogic
                 return null;
             }
         }
-        public List<OrderMenuItems> GetAllInfoForPayments(Table table)
+        public List<OrderMenuItem> GetAllInfoForPayments(Table table)
         {
             try
             {
-                List<OrderMenuItems> payments = menuItem_db.db_GetPayments(table);
+                List<OrderMenuItem> payments = menuItem_db.db_GetPayments(table);
                 return payments;
             }
             catch(Exception exception)
