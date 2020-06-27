@@ -31,5 +31,26 @@ namespace ChapeauLogic
                 return null;
             }
         }
+        public List<OrderMenuItems> GetAllInfoForPayments(Table table)
+        {
+            try
+            {
+                List<OrderMenuItems> payments = menuItem_db.db_GetPayments(table);
+                return payments;
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                return null;
+            }
+        }
+        public void UpdatePaidOrders(Table table)
+        {
+            menuItem_db.UpdatePaidOrders(table);
+        }
+        public void UpdateTable(Table table)
+        {
+            menuItem_db.UpdateTable(table);
+        }
     }
 }
