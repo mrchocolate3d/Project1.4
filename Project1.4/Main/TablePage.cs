@@ -78,15 +78,15 @@ namespace ChapeauUI
         private void StatusCheck(Table table, Button button)
         {
             
-            if (table.status == "free")
+            if (table.status == OrderStatus.free.ToString())
             {
                 button.BackColor = Color.Green;
             }
-            else if (table.status == "reserved")
+            else if (table.status == OrderStatus.reserved.ToString())
             {
                 button.BackColor = Color.Yellow;
             }
-            else if (table.status == "occupied")
+            else if (table.status == OrderStatus.occupied.ToString())
             {
                 button.BackColor = Color.Red;
             }
@@ -116,6 +116,13 @@ namespace ChapeauUI
             else if (table.status == "reserved")
             {
                 DialogResult dialog = MessageBox.Show("Reserved Customers have arrived", "Cancel Reservation", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    MenuStartPage orderSelect = new MenuStartPage(Employee, table);
+                    orderSelect.ShowDialog();
+                    this.Close();
+                }
             }
             else
             {

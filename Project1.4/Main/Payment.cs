@@ -73,7 +73,7 @@ namespace ChapeauUI
 
         private void btnpay_Click(object sender, EventArgs e)
         {
-            if (radiobtnpin.Checked || radiobtncash.Checked)
+            if (radiobtnpin.Checked || radiobtncash.Checked || radioButton1.Checked)
             {
                 paymentService.Update(table);
                 paymentService.UpdateTable(table);

@@ -88,6 +88,7 @@ namespace ChapeauUI
                     quantity = int.Parse(grisV_Dinner.Rows[i].Cells[3].Value.ToString()),
                 };
                 orderMenuItems.Add(item);
+                
             }
             this.Hide();
             TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table,orderMenuItems);
