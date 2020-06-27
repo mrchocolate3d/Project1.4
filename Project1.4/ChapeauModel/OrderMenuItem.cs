@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChapeauModel
 {
-    public class OrderMenuItems
+    public class OrderMenuItem
     {
         public int OrderId { get; set; }
 

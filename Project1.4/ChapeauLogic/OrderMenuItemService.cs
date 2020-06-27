@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ChapeauLogic
 {
-    public class MenuItemService
+    public class OrderMenuItemService
     {
         MenuItemsDAO menuItem_db = new MenuItemsDAO();
 
@@ -18,11 +18,11 @@ namespace ChapeauLogic
             menuItem_db.UpdateState(order);
         }
 
-        public List<OrderMenuItems> GetMenuItems(int orderno)
+        public List<OrderMenuItem> GetMenuItems(int orderno)
         {
             try
             {
-                List<OrderMenuItems> order = menuItem_db.db_Get_MenuItems(orderno);
+                List<OrderMenuItem> order = menuItem_db.db_Get_MenuItems(orderno);
                 return order;
             }
             catch (Exception ex)

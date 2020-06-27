@@ -18,8 +18,8 @@ namespace ChapeauUI
         readonly Table table;
         List<NumericUpDown> ItemCount = new List<NumericUpDown>();
         ChapeauLogic.OrderService orderServices = new ChapeauLogic.OrderService();
-        List<OrderMenuItems> orderMenuItems = new List<OrderMenuItems>();
-        OrderMenuItems newItem;
+        List<OrderMenuItem> orderMenuItems = new List<OrderMenuItem>();
+        OrderMenuItem newItem;
 
         public TakingDinnerOrder(Employee employee, Table table)
         {
@@ -81,13 +81,15 @@ namespace ChapeauUI
         {
             for (int i = 0; i < grisV_Dinner.Rows.Count; i++)
             {
-                OrderMenuItems item = new OrderMenuItems()
+                OrderMenuItem item = new OrderMenuItem()
                 {
                     menuItemID = int.Parse(grisV_Dinner.Rows[i].Cells[0].Value.ToString()),
                     price = double.Parse(grisV_Dinner.Rows[i].Cells[2].Value.ToString()),
                     quantity = int.Parse(grisV_Dinner.Rows[i].Cells[3].Value.ToString()),
+                    comments = "No comment",
                 };
                 orderMenuItems.Add(item);
+                
             }
             this.Hide();
             TakingDrinksOrder waiterPage = new TakingDrinksOrder(employee, table,orderMenuItems);
