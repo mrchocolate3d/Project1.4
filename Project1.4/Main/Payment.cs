@@ -36,20 +36,19 @@ namespace ChapeauUI
 
                 foreach (ChapeauModel.OrderMenuItem item in payments)
                 {
-                    ListViewItem list = new ListViewItem(item.OrderId.ToString());
-                    list.SubItems.Add(item.itemName);
+                    ListViewItem list = new ListViewItem(item.itemName);
                     list.SubItems.Add(item.quantity.ToString() + "x");
                     list.SubItems.Add(item.price.ToString("€0.00"));
-                    list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
                     listViewrecipt.Items.Add(list);
-
                     // calculates the total price of all the items bought
                     ItemTotalPrice += item.price * item.quantity;
                      // Calculates the number of quantities the item is bought multiply by its price per item.
                     TotalItemPrice = item.price * item.quantity;
+                     list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
                 }
-            lbltablenumber.Text = table.TableID.ToString();
-            lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
+                lbltablenumber.Text = table.TableID.ToString();
+                //lblorderid.Text = menuItem.OrderId.ToString();
+                lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
             double VAT = 0.21;
             double vatvalue = VAT * ItemTotalPrice;
