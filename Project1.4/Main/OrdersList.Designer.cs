@@ -59,6 +59,7 @@
             // btnOngoing
             // 
             this.btnOngoing.BackColor = System.Drawing.Color.Orange;
+            this.btnOngoing.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOngoing.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOngoing.Location = new System.Drawing.Point(12, 144);
             this.btnOngoing.Name = "btnOngoing";
@@ -71,6 +72,7 @@
             // btnComplete
             // 
             this.btnComplete.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnComplete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnComplete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComplete.Location = new System.Drawing.Point(381, 143);
             this.btnComplete.Name = "btnComplete";
@@ -260,6 +262,7 @@
             // btnKitchen
             // 
             this.btnKitchen.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnKitchen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKitchen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKitchen.Location = new System.Drawing.Point(12, 266);
             this.btnKitchen.Name = "btnKitchen";
@@ -272,6 +275,7 @@
             // btnBar
             // 
             this.btnBar.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBar.Location = new System.Drawing.Point(381, 266);
             this.btnBar.Name = "btnBar";

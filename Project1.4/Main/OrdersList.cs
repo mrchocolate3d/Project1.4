@@ -44,13 +44,10 @@ namespace ChapeauUI
             PrintOrders(false);
             btnOngoing.BackColor = Color.Orange;
             btnComplete.BackColor = Color.BurlyWood;
-            btnKitchen.Enabled = true;
-            btnKitchen.BackColor = Color.BurlyWood;
-            btnBar.Enabled = true;
-            btnBar.BackColor = Color.BurlyWood;
+            Enable_Buttons();
             listOrdr.Items.Clear();
             lblWaitr.Text = "Waiter: ";
-            lblTableNr.Text = "";
+            lblTableNr.Text = "__";
             lblOrdr.Text = "Order #";
         }
 
@@ -75,10 +72,7 @@ namespace ChapeauUI
             PrintOrders(true);
             btnOngoing.BackColor = Color.BurlyWood;
             btnComplete.BackColor = Color.Orange;
-            btnKitchen.BackColor = Color.LightGray;
-            btnKitchen.Enabled = false;
-            btnBar.BackColor = Color.LightGray;
-            btnBar.Enabled = false;
+            Disable_Buttons();
         }
 
         private void listOrders_SelectedIndexChanged(object sender, EventArgs e)
@@ -158,6 +152,26 @@ namespace ChapeauUI
             LoginPage loginPage = new LoginPage();
             loginPage.ShowDialog();
             this.Close();
+        }
+
+        private void Disable_Buttons()
+        {
+            btnKitchen.BackColor = Color.LightGray;
+            btnKitchen.Enabled = false;
+            btnBar.BackColor = Color.LightGray;
+            btnBar.Enabled = false;
+            btnDone.BackColor = Color.LightGreen;
+            btnDone.Enabled = false;
+        }
+
+        private void Enable_Buttons()
+        {
+            btnKitchen.Enabled = true;
+            btnKitchen.BackColor = Color.BurlyWood;
+            btnBar.Enabled = true;
+            btnBar.BackColor = Color.BurlyWood;
+            btnDone.Enabled = true;
+            btnDone.BackColor = Color.YellowGreen;
         }
     }
 }
