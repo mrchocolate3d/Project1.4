@@ -43,11 +43,12 @@ namespace ChapeauUI
                     // calculates the total price of all the items bought
                     ItemTotalPrice += item.price * item.quantity;
                      // Calculates the number of quantities the item is bought multiply by its price per item.
-                    TotalItemPrice = item.price * item.quantity;
+                     TotalItemPrice = item.price * item.quantity;
                      list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
+
+                     lblorderid.Text = item.OrderId.ToString();
                 }
                 lbltablenumber.Text = table.TableID.ToString();
-                //lblorderid.Text = menuItem.OrderId.ToString();
                 lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
             double VAT = 0.21;
