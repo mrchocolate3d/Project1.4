@@ -26,7 +26,7 @@ namespace ChapeauUI
             ShowPanel();
         }
         double ItemTotalPrice = 0;
-        public void ShowPanel()
+        private void ShowPanel()
         {
             double TotalItemPrice = 0.00;
 
@@ -40,20 +40,23 @@ namespace ChapeauUI
                     list.SubItems.Add(item.quantity.ToString() + "x");
                     list.SubItems.Add(item.price.ToString("€0.00"));
                     listViewrecipt.Items.Add(list);
-                    // calculates the total price of all the items bought
-                    ItemTotalPrice += item.price * item.quantity;
-                     // Calculates the number of quantities the item is bought multiply by its price per item.
-                     TotalItemPrice = item.price * item.quantity;
-                     list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
+                    
+                       // Calculates the number of quantities the item is bought multiply by its price per item.
+                       TotalItemPrice = item.price * item.quantity;
 
-                     lblorderid.Text = item.OrderId.ToString();
+                       // calculates the total price of all the items bought
+                       ItemTotalPrice += TotalItemPrice;
+                       list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
+
+                       lblorderid.Text = item.OrderId.ToString();
                 }
+
                 lbltablenumber.Text = table.TableID.ToString();
                 lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
             double VAT = 0.21;
             double vatvalue = VAT * ItemTotalPrice;
-            double totalamount = ItemTotalPrice + vatvalue;
+            double totalamount = ItemTotalPrice;
             lbltotalprice.Text = ItemTotalPrice.ToString("€0.00");
             lblvat.Text = vatvalue.ToString("€0.00");
             lbltotalamount.Text = totalamount.ToString("€0.00");
@@ -62,19 +65,19 @@ namespace ChapeauUI
 
         private void btnupdateamount_Click(object sender, EventArgs e)
         {
-            ShowPanel();
-
 
             float tipvalue;
             //let user enter a tip amount first
             if (txttip.Text.Length > 0)
             {
                 tipvalue = float.Parse(txttip.Text);
+                ItemTotalPrice += tipvalue;
             }
             else
             {
                 tipvalue = 0;
             }
+            lbltotalamount.Text = ItemTotalPrice.ToString("€0.00");
         }
 
 
@@ -84,6 +87,7 @@ namespace ChapeauUI
             {
                 paymentService.UpdatePaidOrders(table);
                 paymentService.UpdateTable(table);
+                //paymentService.SaveOrders();
 
                 this.Hide();
                 TablePage tablepage = new TablePage(employee);

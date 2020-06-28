@@ -78,5 +78,9 @@ namespace ChapeauLogic
         {
             menuItem_db.UpdateTable(table);
         }
+        public void SaveOrders(int paymentid, int orderid, int employeeID, string paymentmethod, double vat, int tip, double totalprice)
+        {
+            menuItem_db.SaveOrders(paymentid, orderid, employeeID, paymentmethod, vat, tip, totalprice);
+        }
     }
 }
