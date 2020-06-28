@@ -60,10 +60,6 @@ namespace ChapeauUI
             {
                 label.Text = "Order Placed";
             }
-            else
-            {
-                label.Text = "Empty";
-            }
         }
 
 
@@ -105,22 +101,40 @@ namespace ChapeauUI
         }
         private void NewTableOrder(Table table)
         {
-            if(table.status == "free")
+            ChapeauLogic.OrderService orderService = new ChapeauLogic.OrderService();
+            if (table.status == OrderStatus.free.ToString())
             {
-                this.Hide();
-                MenuStartPage orderSelect = new MenuStartPage(Employee,table);
-                orderSelect.ShowDialog();
-                this.Close();
+
+                DialogResult dialog = MessageBox.Show("Make Reservation", "Do you want to make a reservation?", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    table.status = OrderStatus.reserved.ToString();
+                    orderService.UpdateTable(table);
+                    TableStatusCheck(table);
+                }
+                else
+                {
+                    this.Hide();
+                    MenuStartPage orderSelect = new MenuStartPage(Employee, table);
+                    orderSelect.ShowDialog();
+                    this.Close();
+                }
             }
-            else if (table.status == "reserved")
+            else if (table.status == OrderStatus.reserved.ToString())
             {
-                DialogResult dialog = MessageBox.Show("Reserved Customers have arrived", "Cancel Reservation", MessageBoxButtons.YesNo);
+                DialogResult dialog = MessageBox.Show("Reservation", "Reservation has arrived?", MessageBoxButtons.YesNoCancel);
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
                     MenuStartPage orderSelect = new MenuStartPage(Employee, table);
                     orderSelect.ShowDialog();
                     this.Close();
+                }
+                else if (dialog == DialogResult.Cancel)
+                {
+                    table.status = OrderStatus.free.ToString();
+                    orderService.UpdateTable(table);
+                    TableStatusCheck(table);
                 }
             }
             else

@@ -53,9 +53,10 @@ namespace ChapeauDAL
 
         public void UpdateTabe(Table table)
         {
-            string query = "UPDATE tables SET status = 'occupied' WHERE tableID = @tableId";
-            SqlParameter[] sqlParameters = new SqlParameter[1];
+            string query = "UPDATE tables SET status = @status WHERE tableID = @tableId";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
             sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
+            sqlParameters[1] = new SqlParameter("@status", table.status);
             ExecuteEditQuery(query, sqlParameters);
         }
 

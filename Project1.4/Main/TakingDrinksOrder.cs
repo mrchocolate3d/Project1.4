@@ -99,6 +99,7 @@ namespace ChapeauUI
             try
             {
                 orderServices.NewOrder(table,employee);
+                table.status = OrderStatus.occupied.ToString();
                 orderServices.UpdateTable(table);
 
                 Order order = orderServices.getId(table, employee);

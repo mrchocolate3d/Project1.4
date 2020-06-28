@@ -87,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(287, 274);
+            this.label3.Location = new System.Drawing.Point(529, 274);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 12;
@@ -97,7 +97,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(493, 274);
+            this.label4.Location = new System.Drawing.Point(306, 274);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 13;
@@ -187,7 +187,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(528, 605);
+            this.label11.Location = new System.Drawing.Point(524, 605);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 13);
             this.label11.TabIndex = 22;
@@ -375,15 +375,15 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
-            this.panel2.Location = new System.Drawing.Point(373, 269);
+            this.panel2.Location = new System.Drawing.Point(615, 269);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(52, 28);
             this.panel2.TabIndex = 27;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Blue;
-            this.panel3.Location = new System.Drawing.Point(586, 267);
+            this.panel3.BackColor = System.Drawing.Color.Yellow;
+            this.panel3.Location = new System.Drawing.Point(399, 267);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(52, 28);
             this.panel3.TabIndex = 27;
