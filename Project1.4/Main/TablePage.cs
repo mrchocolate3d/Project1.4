@@ -47,7 +47,6 @@ namespace ChapeauUI
                     AssignLabelStatus(order, label);
                     break;
                 }
-
             }
         }
 
