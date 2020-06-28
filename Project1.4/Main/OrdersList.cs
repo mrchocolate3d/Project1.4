@@ -115,6 +115,8 @@ namespace ChapeauUI
         private void btnDone_Click(object sender, EventArgs e)
         {
             details.Update(ord);
+            listOrdr.Items.Clear();
+            ord.OrderID = 0;
         }
 
         private void btnKitchen_Click(object sender, EventArgs e)
