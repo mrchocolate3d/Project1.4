@@ -105,7 +105,7 @@ namespace ChapeauUI
             if (table.status == OrderStatus.free.ToString())
             {
 
-                DialogResult dialog = MessageBox.Show("Make Reservation", "Do you want to make a reservation?", MessageBoxButtons.YesNo);
+                DialogResult dialog = MessageBox.Show("Do you want to make a reservation?", "Reservation", MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes)
                 {
                     table.status = OrderStatus.reserved.ToString();
@@ -122,7 +122,7 @@ namespace ChapeauUI
             }
             else if (table.status == OrderStatus.reserved.ToString())
             {
-                DialogResult dialog = MessageBox.Show("Reservation", "Reservation has arrived?", MessageBoxButtons.YesNoCancel);
+                DialogResult dialog = MessageBox.Show("Has the reservation arrived or would you like to cancel?", "Reservation", MessageBoxButtons.YesNoCancel);
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
