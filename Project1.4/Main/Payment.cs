@@ -25,10 +25,15 @@ namespace ChapeauUI
             InitializeComponent();
             ShowPanel();
         }
-        double ItemTotalPrice = 0;
+        float ItemTotalPrice = 0;
+        float vatvalue = 0.00f;
+        int orderid = 0;
+        int employeeid = 0;
+        float totalamount;
         private void ShowPanel()
         {
-            double TotalItemPrice = 0.00;
+            float TotalItemPrice = 0.00f;
+            
 
             List<ChapeauModel.OrderMenuItem> payments = paymentService.GetAllInfoForPayments(table);
 
@@ -36,18 +41,20 @@ namespace ChapeauUI
 
                 foreach (ChapeauModel.OrderMenuItem item in payments)
                 {
-                    ListViewItem list = new ListViewItem(item.itemName);
-                    list.SubItems.Add(item.quantity.ToString() + "x");
-                    list.SubItems.Add(item.price.ToString("€0.00"));
-                    listViewrecipt.Items.Add(list);
+                       ListViewItem list = new ListViewItem(item.itemName);
+                       list.SubItems.Add(item.quantity.ToString() + "x");
+                       list.SubItems.Add(item.price.ToString("€0.00"));
+                       listViewrecipt.Items.Add(list);
                     
                        // Calculates the number of quantities the item is bought multiply by its price per item.
-                       TotalItemPrice = item.price * item.quantity;
+                       TotalItemPrice = (float)item.price * item.quantity;
 
                        // calculates the total price of all the items bought
                        ItemTotalPrice += TotalItemPrice;
                        list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
 
+                       orderid = item.OrderId;
+                       employeeid = employee.EmployeeId;
                        lblorderid.Text = item.OrderId.ToString();
                 }
 
@@ -55,18 +62,19 @@ namespace ChapeauUI
                 lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
             double VAT = 0.21;
-            double vatvalue = VAT * ItemTotalPrice;
-            double totalamount = ItemTotalPrice;
+            vatvalue = (float)VAT * ItemTotalPrice;
+             totalamount = ItemTotalPrice;
             lbltotalprice.Text = ItemTotalPrice.ToString("€0.00");
             lblvat.Text = vatvalue.ToString("€0.00");
             lbltotalamount.Text = totalamount.ToString("€0.00");
 
         }
 
+        float tipvalue;
         private void btnupdateamount_Click(object sender, EventArgs e)
         {
 
-            float tipvalue;
+           
             //let user enter a tip amount first
             if (txttip.Text.Length > 0)
             {
@@ -80,14 +88,29 @@ namespace ChapeauUI
             lbltotalamount.Text = ItemTotalPrice.ToString("€0.00");
         }
 
-
+        
         private void btnpay_Click(object sender, EventArgs e)
         {
+            int paymentID = 1;
+            string paymentmethod = "";
             if (radiobtnpin.Checked || radiobtncash.Checked || radiobtnmastercard.Checked)
             {
+                if (radiobtnpin.Checked)
+                {
+                    paymentmethod = "pin";
+                }
+                else if (radiobtncash.Checked)
+                {
+                    paymentmethod = "Cash";
+                }
+                else if (radiobtnmastercard.Checked)
+                {
+                    paymentmethod = "Credit card";
+                }
                 paymentService.UpdatePaidOrders(table);
+                paymentID += 1;
                 paymentService.UpdateTable(table);
-                //paymentService.SaveOrders();
+                paymentService.SaveOrders(paymentID,orderid,employeeid,paymentmethod,DateTime.Now,vatvalue,tipvalue,totalamount);
 
                 this.Hide();
                 TablePage tablepage = new TablePage(employee);
