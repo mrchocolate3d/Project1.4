@@ -110,6 +110,7 @@ namespace ChapeauUI
         {
             details.Update(ord);
             listOrdr.Items.Clear();
+            PrintOrders(false);
             ord.OrderID = 0;
         }
 
