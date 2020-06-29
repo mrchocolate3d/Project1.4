@@ -133,9 +133,9 @@
             this.lblWaitr.ForeColor = System.Drawing.Color.Black;
             this.lblWaitr.Location = new System.Drawing.Point(10, 148);
             this.lblWaitr.Name = "lblWaitr";
-            this.lblWaitr.Size = new System.Drawing.Size(103, 28);
+            this.lblWaitr.Size = new System.Drawing.Size(125, 28);
             this.lblWaitr.TabIndex = 2;
-            this.lblWaitr.Text = "Waiter: ";
+            this.lblWaitr.Text = "Made By: ";
             // 
             // btnDone
             // 
@@ -154,7 +154,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(187)))), ((int)(((byte)(97)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(226, 125);
@@ -177,9 +177,9 @@
             // 
             this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_logout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.Location = new System.Drawing.Point(602, 44);
+            this.btn_logout.Location = new System.Drawing.Point(632, 11);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(137, 49);
+            this.btn_logout.Size = new System.Drawing.Size(107, 36);
             this.btn_logout.TabIndex = 1;
             this.btn_logout.Text = "Logout";
             this.btn_logout.UseVisualStyleBackColor = true;
@@ -188,11 +188,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(275, 44);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(300, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 43);
+            this.label1.Size = new System.Drawing.Size(197, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kitchen/Bar";
             // 

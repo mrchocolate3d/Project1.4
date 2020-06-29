@@ -29,7 +29,6 @@ namespace ChapeauUI
         float TotalPriceOfEachItem = 0;
         float vatvalue = 0.00f;
         int orderid = 0;
-        int employeeid = 0;
         float totalamount;
         private void ShowPanel()
         {
@@ -55,7 +54,6 @@ namespace ChapeauUI
                        list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
 
                        orderid = item.OrderId;
-                       employeeid = employee.EmployeeId;
                        lblorderid.Text = item.OrderId.ToString();
                 }
 
@@ -64,7 +62,7 @@ namespace ChapeauUI
 
             double VAT = 0.21;
             vatvalue = (float)VAT * TotalPriceOfEachItem;
-             totalamount = TotalPriceOfEachItem;
+            totalamount = TotalPriceOfEachItem;
             lbltotalprice.Text = TotalPriceOfEachItem.ToString("€0.00");
             lblvat.Text = vatvalue.ToString("€0.00");
             lbltotalamount.Text = totalamount.ToString("€0.00");
@@ -109,7 +107,9 @@ namespace ChapeauUI
                 }
                 paymentService.UpdatePaidOrders(table);
                 paymentService.UpdateTable(table);
-                paymentService.SaveOrders(orderid,employeeid,paymentmethod,DateTime.Now,vatvalue,tipvalue,totalamount);
+                DateTime dateTime = DateTime.Now;
+                string date = dateTime.ToString("yyyy-MM-dd HH:mm:ss");
+                paymentService.SaveOrders(orderid,employee.EmployeeId,paymentmethod,date,vatvalue,tipvalue,totalamount);
 
                 this.Hide();
                 TablePage tablepage = new TablePage(employee);

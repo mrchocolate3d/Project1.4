@@ -108,9 +108,9 @@ namespace ChapeauDAL
             ExecuteEditQuery(query, sqlParameters);
         }
         // Saves the orders of the payment into the database
-        public void SaveOrders(int orderid, int employeeID, string paymentmethod, DateTime dateOrder,float vat, float tip, float totalprice)
+        public void SaveOrders(int orderid, int employeeID, string paymentmethod, string dateOrder,float vat, float tip, float totalprice)
         {
-            string query = $"INSERT INTO payment(paymentID,orderID,employeeID,paymentMethod,dateOrder,vat,tip,totalPrice) VALUES({orderid}, {employeeID}, {paymentmethod},{dateOrder} ,{vat}, {tip}, {totalprice})";
+            string query = $"INSERT INTO payment(orderID,employeeID,paymentMethod,dateOrder,vat,tip,totalPrice) VALUES({orderid}, {employeeID}, '{paymentmethod}','{dateOrder}' ,{vat}, {tip}, {totalprice})";
             SqlParameter[] sqlParameter = new SqlParameter[0];
             ExecuteEditQuery(query, sqlParameter);
         }

@@ -15,7 +15,7 @@ namespace ChapeauUI
 {
     public partial class OrdersList : Form
     {
-        Employee employee;
+        private Employee employee;
         private Timer timer1;
         OrderMenuItemService details = new OrderMenuItemService();
         Order ord = new Order();
@@ -64,6 +64,7 @@ namespace ChapeauUI
                 li.SubItems.Add(o.orderID.ToString());
                 listOrders.Items.Add(li);
             }
+ 
         }
 
         private void btnComplete_Click(object sender, EventArgs e)
