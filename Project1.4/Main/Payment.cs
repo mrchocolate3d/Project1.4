@@ -25,7 +25,8 @@ namespace ChapeauUI
             InitializeComponent();
             ShowPanel();
         }
-        float ItemTotalPrice = 0;
+        // We make these variables as global as we need this things to save it in the database.
+        float TotalPriceOfEachItem = 0;
         float vatvalue = 0.00f;
         int orderid = 0;
         int employeeid = 0;
@@ -50,7 +51,7 @@ namespace ChapeauUI
                        TotalItemPrice = (float)item.price * item.quantity;
 
                        // calculates the total price of all the items bought
-                       ItemTotalPrice += TotalItemPrice;
+                       TotalPriceOfEachItem += TotalItemPrice;
                        list.SubItems.Add(TotalItemPrice.ToString("€0.00"));
 
                        orderid = item.OrderId;
@@ -62,9 +63,9 @@ namespace ChapeauUI
                 lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
             double VAT = 0.21;
-            vatvalue = (float)VAT * ItemTotalPrice;
-             totalamount = ItemTotalPrice;
-            lbltotalprice.Text = ItemTotalPrice.ToString("€0.00");
+            vatvalue = (float)VAT * TotalPriceOfEachItem;
+             totalamount = TotalPriceOfEachItem;
+            lbltotalprice.Text = TotalPriceOfEachItem.ToString("€0.00");
             lblvat.Text = vatvalue.ToString("€0.00");
             lbltotalamount.Text = totalamount.ToString("€0.00");
 
@@ -79,13 +80,13 @@ namespace ChapeauUI
             if (txttip.Text.Length > 0)
             {
                 tipvalue = float.Parse(txttip.Text);
-                ItemTotalPrice += tipvalue;
+                TotalPriceOfEachItem += tipvalue;
             }
             else
             {
                 tipvalue = 0;
             }
-            lbltotalamount.Text = ItemTotalPrice.ToString("€0.00");
+            lbltotalamount.Text = TotalPriceOfEachItem.ToString("€0.00");
         }
 
         
