@@ -58,7 +58,7 @@ namespace ChapeauUI
             }
             else if (order.orderComplete == false && order.paidOrders == false)
             {
-                label.Text = "Kitchen is preparing Order";
+                label.Text = "Kitchen is preparing order";
             }
         }
 
