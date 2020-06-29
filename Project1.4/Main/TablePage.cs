@@ -58,7 +58,7 @@ namespace ChapeauUI
             }
             else if (order.orderComplete == false && order.paidOrders == false)
             {
-                label.Text = "Order is being prepared";
+                label.Text = "Kitchen is preparing Order";
             }
         }
 
@@ -120,7 +120,7 @@ namespace ChapeauUI
             }
             else if (table.status == OrderStatus.reserved.ToString())
             {
-                DialogResult dialog = MessageBox.Show("Has the reservation arrived or would you like to cancel?", "Reservation", MessageBoxButtons.YesNoCancel);
+                DialogResult dialog = MessageBox.Show("Is the table ready to order or would you like to cancel Reservation?", "Reservation", MessageBoxButtons.YesNoCancel);
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();

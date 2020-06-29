@@ -151,7 +151,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(586, 792);
+            this.label7.Location = new System.Drawing.Point(547, 792);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(12, 17);
             this.label7.TabIndex = 18;
@@ -162,7 +162,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(586, 531);
+            this.label8.Location = new System.Drawing.Point(547, 531);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(12, 17);
             this.label8.TabIndex = 19;
@@ -173,7 +173,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.Location = new System.Drawing.Point(586, 404);
+            this.label9.Location = new System.Drawing.Point(547, 404);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(12, 17);
             this.label9.TabIndex = 20;
@@ -195,7 +195,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label11.Location = new System.Drawing.Point(586, 658);
+            this.label11.Location = new System.Drawing.Point(547, 658);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 17);
             this.label11.TabIndex = 22;
@@ -217,7 +217,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label13.Location = new System.Drawing.Point(586, 900);
+            this.label13.Location = new System.Drawing.Point(547, 900);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(12, 17);
             this.label13.TabIndex = 24;
@@ -240,7 +240,7 @@
             this.btn_table10.FlatAppearance.BorderSize = 0;
             this.btn_table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btn_table10.Location = new System.Drawing.Point(496, 873);
+            this.btn_table10.Location = new System.Drawing.Point(457, 873);
             this.btn_table10.Name = "btn_table10";
             this.btn_table10.Size = new System.Drawing.Size(80, 80);
             this.btn_table10.TabIndex = 9;
@@ -268,7 +268,7 @@
             this.btn_table8.FlatAppearance.BorderSize = 0;
             this.btn_table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btn_table8.Location = new System.Drawing.Point(496, 755);
+            this.btn_table8.Location = new System.Drawing.Point(457, 755);
             this.btn_table8.Name = "btn_table8";
             this.btn_table8.Size = new System.Drawing.Size(80, 80);
             this.btn_table8.TabIndex = 7;
@@ -296,7 +296,7 @@
             this.btn_table6.FlatAppearance.BorderSize = 0;
             this.btn_table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btn_table6.Location = new System.Drawing.Point(498, 621);
+            this.btn_table6.Location = new System.Drawing.Point(459, 621);
             this.btn_table6.Name = "btn_table6";
             this.btn_table6.Size = new System.Drawing.Size(80, 80);
             this.btn_table6.TabIndex = 5;
@@ -324,7 +324,7 @@
             this.btn_table4.FlatAppearance.BorderSize = 0;
             this.btn_table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btn_table4.Location = new System.Drawing.Point(496, 494);
+            this.btn_table4.Location = new System.Drawing.Point(457, 494);
             this.btn_table4.Name = "btn_table4";
             this.btn_table4.Size = new System.Drawing.Size(80, 80);
             this.btn_table4.TabIndex = 3;
@@ -352,7 +352,7 @@
             this.btn_table2.FlatAppearance.BorderSize = 0;
             this.btn_table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btn_table2.Location = new System.Drawing.Point(496, 367);
+            this.btn_table2.Location = new System.Drawing.Point(457, 367);
             this.btn_table2.Name = "btn_table2";
             this.btn_table2.Size = new System.Drawing.Size(80, 80);
             this.btn_table2.TabIndex = 1;

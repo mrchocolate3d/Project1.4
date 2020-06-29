@@ -103,7 +103,7 @@ namespace ChapeauUI
                 }
                 else if (radiobtnmastercard.Checked)
                 {
-                    paymentmethod = "Credit card";
+                    paymentmethod = "CreditCard";
                 }
                 paymentService.UpdatePaidOrders(table);
                 paymentService.UpdateTable(table);
