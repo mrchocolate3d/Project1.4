@@ -43,11 +43,12 @@ namespace ChapeauDAL
 
         public void InsertMenuItem(OrderMenuItem menuItems,int id)
         {
-            string query = "INSERT INTO Order_MenuItem (orderID,MenuItemID,quantity) VALUES (@orderID,@MenuItemID,@quantity)";
-            SqlParameter[] sqlParameters = new SqlParameter[3];
+            string query = "INSERT INTO Order_MenuItem (orderID,MenuItemID,quantity,comment) VALUES (@orderID,@MenuItemID,@quantity,@comment)";
+            SqlParameter[] sqlParameters = new SqlParameter[4];
             sqlParameters[0] = new SqlParameter("@orderID", id);
             sqlParameters[1] = new SqlParameter("@MenuItemID", menuItems.menuItemID);
             sqlParameters[2] = new SqlParameter("@quantity", menuItems.quantity);
+            sqlParameters[3] = new SqlParameter("@comment", menuItems.comments);
             ExecuteEditQuery(query, sqlParameters);
         }
 
@@ -93,21 +94,6 @@ namespace ChapeauDAL
         }
 
 
-        private List<Order> ReadTables(DataTable dataTable)
-        {
-            List<Order> orders = new List<Order>();
-
-            foreach (DataRow dr in dataTable.Rows)
-            {
-                Order order = new Order()
-                {
-                    OrderID = (int)dr["orderID"],
-                    Table = new Table((int)dr["tableID"]),
-                    Employee = new Employee((int)dr["employeeID"])
-                };
-                orders.Add(order);
-            }
-            return orders;
-        }
+        
     }
 }

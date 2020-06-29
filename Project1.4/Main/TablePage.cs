@@ -58,12 +58,10 @@ namespace ChapeauUI
             }
             else if (order.orderComplete == false && order.paidOrders == false)
             {
-                label.Text = "Order Placed";
+                label.Text = "Order is being prepared";
             }
         }
 
-
-        
         private void TableStatusCheck(Table table)
         {
             List<RoundButton> ControlList = Controls.OfType<RoundButton>().OrderBy(x => x.Tag).ToList();
