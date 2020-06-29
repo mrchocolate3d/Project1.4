@@ -107,7 +107,7 @@ namespace ChapeauDAL
             sqlParameters[0] = new SqlParameter("@tableId", table.TableID);
             ExecuteEditQuery(query, sqlParameters);
         }
-        // Saves the orders of the payment into the database
+        // Saves the orders of the payment information into the database
         public void SaveOrders(int orderid, int employeeID, string paymentmethod, string dateOrder,float vat, float tip, float totalprice)
         {
             string query = $"INSERT INTO payment(orderID,employeeID,paymentMethod,dateOrder,vat,tip,totalPrice) VALUES({orderid}, {employeeID}, '{paymentmethod}','{dateOrder}' ,{vat}, {tip}, {totalprice})";
