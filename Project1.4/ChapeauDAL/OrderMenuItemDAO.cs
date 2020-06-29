@@ -57,24 +57,7 @@ namespace ChapeauDAL
             return order;
         }
 
-        private List<OrderMenuItem> ReadTables(DataTable dataTable)
-        {
-            List<OrderMenuItem> menu = new List<OrderMenuItem>();
-
-            foreach (DataRow dr in dataTable.Rows)
-            {
-                OrderMenuItem item = new OrderMenuItem()
-                {
-                    OrderId = (int)dr["orderID"],
-                    menuItemID = (int)dr["MenuItemID"],
-                    quantity = (int)dr["quantity"],
-                    status = (int)dr["[status]"],
-                    comments = (string)dr["comment"]
-                };
-                menu.Add(item);
-            }
-            return menu;
-        }
+       
         // Selects all the values required for the payment section
         public List<OrderMenuItem> db_GetPayments(Table table)
         {
