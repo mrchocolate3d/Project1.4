@@ -92,7 +92,6 @@ namespace ChapeauUI
         
         private void btnpay_Click(object sender, EventArgs e)
         {
-            int paymentID = 1;
             string paymentmethod = "";
             if (radiobtnpin.Checked || radiobtncash.Checked || radiobtnmastercard.Checked)
             {
@@ -109,9 +108,8 @@ namespace ChapeauUI
                     paymentmethod = "Credit card";
                 }
                 paymentService.UpdatePaidOrders(table);
-                paymentID += 1;
                 paymentService.UpdateTable(table);
-                paymentService.SaveOrders(paymentID,orderid,employeeid,paymentmethod,DateTime.Now,vatvalue,tipvalue,totalamount);
+                paymentService.SaveOrders(orderid,employeeid,paymentmethod,DateTime.Now,vatvalue,tipvalue,totalamount);
 
                 this.Hide();
                 TablePage tablepage = new TablePage(employee);
