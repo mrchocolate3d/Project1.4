@@ -46,9 +46,8 @@ namespace ChapeauUI
             btnComplete.BackColor = Color.BurlyWood;
             Enable_Buttons();
             listOrdr.Items.Clear();
-            lblWaitr.Text = "Waiter: ";
-            lblTableNr.Text = "__";
-            lblOrdr.Text = "Order #";
+            Reset_Labels();
+            ord.OrderID = 0;
         }
 
         void PrintOrders(bool comp)
@@ -70,6 +69,9 @@ namespace ChapeauUI
         private void btnComplete_Click(object sender, EventArgs e)
         {
             timer1.Stop();
+            Reset_Labels();
+            listOrdr.Items.Clear();
+            ord.OrderID = 0;
             PrintOrders(true);
             btnOngoing.BackColor = Color.BurlyWood;
             btnComplete.BackColor = Color.Orange;
@@ -89,7 +91,7 @@ namespace ChapeauUI
 
                 ord.OrderID = order.OrderID;
 
-                lblWaitr.Text = "Waiter: " + employee.FirstName;
+                lblWaitr.Text = "Made by: " + employee.FirstName;
                 lblTableNr.Text = order.Table.TableID.ToString();
                 lblOrdr.Text = "Order #" + order.OrderID.ToString();
 
@@ -103,6 +105,8 @@ namespace ChapeauUI
                     li.SubItems.Add(om.comments);
                     listOrdr.Items.Add(li);
                 }
+                btnBar.BackColor = Color.BurlyWood;
+                btnKitchen.BackColor = Color.BurlyWood;
             }
 
         }
@@ -111,6 +115,7 @@ namespace ChapeauUI
         {
             details.Update(ord);
             listOrdr.Items.Clear();
+            Reset_Labels();
             PrintOrders(false);
             ord.OrderID = 0;
         }
@@ -158,22 +163,25 @@ namespace ChapeauUI
 
         private void Disable_Buttons()
         {
-            btnKitchen.BackColor = Color.LightGray;
             btnKitchen.Enabled = false;
-            btnBar.BackColor = Color.LightGray;
             btnBar.Enabled = false;
-            btnDone.BackColor = Color.LightGreen;
             btnDone.Enabled = false;
+            btnBar.BackColor = Color.BurlyWood;
+            btnKitchen.BackColor = Color.BurlyWood;
         }
 
         private void Enable_Buttons()
         {
             btnKitchen.Enabled = true;
-            btnKitchen.BackColor = Color.BurlyWood;
             btnBar.Enabled = true;
-            btnBar.BackColor = Color.BurlyWood;
             btnDone.Enabled = true;
-            btnDone.BackColor = Color.YellowGreen;
+        }
+
+        private void Reset_Labels()
+        {
+            lblWaitr.Text = "Made by: ";
+            lblTableNr.Text = "__";
+            lblOrdr.Text = "Order #";
         }
     }
 }
