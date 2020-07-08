@@ -18,6 +18,7 @@ namespace ChapeauUI
         Employee employee;
         ChapeauLogic.OrderMenuItemService paymentService = new ChapeauLogic.OrderMenuItemService();
 
+        private const double VAT = 0.21;
         public Payment(Employee employee,Table table)
         {
             this.table = table;
@@ -60,7 +61,7 @@ namespace ChapeauUI
                 lbltablenumber.Text = table.TableID.ToString();
                 lblserver.Text = employee.FirstName.ToString() + " " + employee.LastName.ToString();
 
-            double VAT = 0.21;
+            
             vatvalue = (float)VAT * TotalPriceOfEachItem;
             totalamount = TotalPriceOfEachItem;
             lbltotalprice.Text = TotalPriceOfEachItem.ToString("€0.00");
