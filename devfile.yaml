@@ -1,28 +1,31 @@
-schemaVersion: 2.1.0
+schemaVersion: 2.2.0
 metadata:
-  name: dotnet60
-  displayName: .NET 6.0
-  description: Stack with .NET 6.0
+  name: dotnet-basic
+  displayName: Basic .NET
+  version: 1.1.1
   icon: https://github.com/dotnet/brand/raw/main/logo/dotnet-logo.png
+  provider: Red Hat
+  supportUrl: https://github.com/devfile-samples/devfile-support#support-information
   language: .NET
   projectType: dotnet
   tags:
     - .NET
-  version: 1.0.2
+  attributes:
+    alpha.dockerimage-port: 8081
 starterProjects:
-  - name: dotnet60-example
+  - name: s2i-example
     git:
       checkoutFrom:
         remote: origin
         revision: dotnet-6.0
       remotes:
         origin: https://github.com/redhat-developer/s2i-dotnetcore-ex
-    subDir: app
+    subDir: Project1.4
 components:
   - name: dotnet
     container:
       image: registry.access.redhat.com/ubi8/dotnet-60:6.0
-      args: ["tail", "-f", "/dev/null"]
+      command: ['tail', '-f', '/dev/null']
       mountSources: true
       env:
         - name: CONFIGURATION
@@ -31,11 +34,40 @@ components:
           value: app.csproj
         - name: ASPNETCORE_ENVIRONMENT
           value: Development
-        - name: ASPNETCORE_URLS
-          value: http://*:8080
       endpoints:
-        - name: http-dotnet60
+        - name: http-8080
           targetPort: 8080
+  - name: image-build
+    image:
+      imageName: 'dotnet-image:latest'
+      dockerfile:
+        uri: docker/Dockerfile
+        buildContext: .
+        rootRequired: false
+  - name: kubernetes-deploy
+    attributes:
+      deployment/replicas: 1
+      deployment/cpuLimit: '100m'
+      deployment/cpuRequest: 10m
+      deployment/memoryLimit: 300Mi
+      deployment/memoryRequest: 100Mi
+      deployment/container-port: 8081
+    kubernetes:
+      uri: kubernetes/deployment.yaml
+      endpoints:
+        - name: http-8081
+          targetPort: 8081
+          path: /
+  - name: kubernetes-service
+    attributes:
+      deployment/replicas: 1
+      deployment/cpuLimit: '100m'
+      deployment/cpuRequest: 10m
+      deployment/memoryLimit: 200Mi
+      deployment/memoryRequest: 100Mi
+      deployment/container-port: 8081
+    kubernetes:
+      uri: kubernetes/service.yaml
 commands:
   - id: build
     exec:
@@ -53,3 +85,21 @@ commands:
       group:
         isDefault: true
         kind: run
+  - id: build-image
+    apply:
+      component: image-build
+  - id: deploy-deployment
+    apply:
+      component: kubernetes-deploy
+  - id: deploy-service
+    apply:
+      component: kubernetes-service
+  - id: deploy
+    composite:
+      commands:
+        - build-image
+        - deploy-deployment
+        - deploy-service
+      group:
+        isDefault: true
+        kind: deploy
