@@ -20,7 +20,7 @@ starterProjects:
         revision: dotnet-6.0
       remotes:
         origin: https://github.com/redhat-developer/s2i-dotnetcore-ex
-    subDir: Project1.4
+    subDir: app
 components:
   - name: dotnet
     container:
