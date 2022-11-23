@@ -10,8 +10,6 @@ metadata:
   projectType: dotnet
   tags:
     - .NET
-  attributes:
-    alpha.dockerimage-port: 8081
 starterProjects:
   - name: s2i-example
     git:
@@ -37,13 +35,6 @@ components:
       endpoints:
         - name: http-8080
           targetPort: 8080
-  - name: image-build
-    image:
-      imageName: 'dotnet-image:latest'
-      dockerfile:
-        uri: docker/Dockerfile
-        buildContext: .
-        rootRequired: false
   - name: kubernetes-deploy
     attributes:
       deployment/replicas: 1
